@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>about</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        nav {
+            z-index: 99;
+        }
+
+        .index_main section {
+            padding: 0;
+        }
+
+        .about_box1 {
+            width: 100%;
+            height: 100vh;
+            background: #d1c0a5;
+        }
+
+
+        .about_box1 img {
+            width: 60%;
+            position: absolute;
+            top: 11%;
+            left: 22%;
+
+        }
+
+        .about_box2 {
+            width: 26%;
+            height: 40%;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .about_box3 {
+            width: 18%;
+            height: 71%;
+            background: #fff;
+            position: absolute;
+            right: 0;
+        }
+
+        .about_box4 {
+            width: 25%;
+            height: 11%;
+            background: #fff;
+            position: absolute;
+            right: 0;
+        }
+
+        .about_title h2,
+        .about_title h3,
+        .about_title h4 {
+            color: #fff;
+            position: absolute;
+            letter-spacing: 5px;
+        }
+
+        .about_title h2 {
+            left: 15%;
+            top: 22%;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            font-size: 50px;
+        }
+
+        .about_title h3 {
+            font-family: 'SourceHanSerifTC-Bold';
+            writing-mode: vertical-lr;
+            font-size: 40px;
+            left: 16%;
+            top: 30%;
+        }
+
+        .about_title h4 {
+            right: 16%;
+            bottom: 4%;
+        }
+
+        /* 關於我們 */
+
+        .about_us {
+            position: relative;
+            margin: 15% 0 5% 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .about_us figure {
+            width: 100%;
+        }
+
+        .about_us img {
+            width: 84%;
+            margin-left: 16%;
+        }
+
+        .about_box5 {
+            position: absolute;
+            background: #d1c0a5;
+            width: 10%;
+            height: 180px;
+            right: 0;
+            top: -50px;
+        }
+
+        .about_box6 {
+            position: absolute;
+            background: #d1c0a5;
+            width: 18%;
+            height: 480px;
+            bottom: 0;
+        }
+
+        .about_us h2 {
+            position: absolute;
+            font-family: 'Playfair Display';
+            bottom: 2%;
+            color: #fff;
+            font-size: 60px;
+            letter-spacing: 5px;
+            font-weight: 700;
+        }
+
+        .about_article1 {
+            width: 100%;
+            height: 735px;
+            margin-bottom: 10%;
+        }
+
+        .about_left1 {
+            float: left;
+            width: 40%;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        .about_article1 p {
+            font-size: 12px;
+        }
+
+        .about_right1 {
+            float: right;
+            width: 40%;
+        }
+
+        .about_img1 img {
+            width: 100%;
+            margin-bottom: 15%;
+        }
+
+        .about_img2 img {
+            width: 55%;
+            float: right;
+        }
+
+        /* 設計師 */
+
+        .about_designer {
+            width: 100%;
+            /* border: 5px solid #ad776c; */
+        }
+
+        .about_designer h2 {
+            color: #d1c0a5;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            letter-spacing: 5px;
+            font-size: 60px;
+            line-height: 100%;
+        }
+
+        .about_designer h3 {
+            color: #000;
+            font-family: 'SourceHanSerifTC-Bold';
+            letter-spacing: 5px;
+            font-size: 30px;
+            line-height: 100%;
+            margin: 10px 0 100px 0;
+        }
+
+        /* designer 1 */
+
+        .about_left2 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .about_left2 h4 {
+            margin-left: -19%;
+            margin-top: -523px;
+            font-size: 400px;
+            color: #d1c0a5;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+        }
+
+        .about_left2 figure {
+            width: 70%;
+            height: 440px;
+
+        }
+
+        .about_left2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .about_box7 {
+            background: #d1c0a5;
+            height: 430px;
+            width: 70%;
+            margin-left: 31%;
+            margin-top: -65%;
+        }
+
+        .about_left2 p {
+            width: 70%;
+            margin-top: 5%;
+            text-align: justify;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        @keyframes run {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -3360px 0;
+            }
+        }
+
+        .about_animate {
+            background: url('images/Y1.jpg') no-repeat 0 0;
+            height: 440px;
+            width: 420px;
+        }
+
+        .about_animate:hover {
+            animation: run 1s steps(8) infinite;
+        }
+
+        /* designer 2 */
+
+        .about_right2 {
+            margin-top: 45%;
+            width: 40%;
+            height: 100%;
+
+            margin-left: 60%;
+        }
+
+        .about_right2 figure {
+            width: 100%;
+            height: 500px;
+        }
+
+        .about_right2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .about_right2 p {
+            width: 100%;
+            margin-top: 3%;
+            text-align: justify;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .about_right2 h4 {
+            margin-left: -24%;
+            margin-top: -564px;
+            font-size: 400px;
+            color: #d1c0a5;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+        }
+
+        /* designer 3 */
+
+        .about_left3 {
+            width: 50%;
+            height: 100%;
+            font-weight: 900;
+            margin-top: 45%;
+        }
+
+        .about_left3 h4 {
+            margin-left: -28%;
+            margin-top: -409px;
+            font-size: 400px;
+            color: #d1c0a5;
+            font-family: 'Playfair Display';
+        }
+
+        .about_left3 figure {
+            width: 70%;
+            height: 440px;
+
+        }
+
+        .about_left3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 10% center;
+        }
+
+        .about_left3 p {
+            width: 70%;
+            margin-top: 5%;
+            text-align: justify;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        /* designer 4 */
+
+        .about_right3 {
+            margin-top: 45%;
+            width: 40%;
+            height: 100%;
+
+            margin-left: 60%;
+        }
+
+        .about_right3 figure {
+            width: 100%;
+            height: 500px;
+        }
+
+        .about_right3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 80% center;
+        }
+
+        .about_right3 p {
+            width: 100%;
+            margin-top: 20%;
+            text-align: justify;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .about_right3 h4 {
+            margin-left: 52%;
+            margin-top: -262px;
+            font-size: 400px;
+            color: #d1c0a5;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+        }
+
+        .about_box8 {
+            background: #d1c0a5;
+            height: 598px;
+            width: 110%;
+            margin-left: -10%;
+            margin-top: -139%;
+
+        }
+
+        /* store */
+
+        .about_store {
+            margin-top: 400px;
+            width: 100%;
+        }
+
+        .about_store h2 {
+            color: #d1c0a5;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            letter-spacing: 5px;
+            font-size: 60px;
+            line-height: 100%;
+        }
+
+        .about_store h3 {
+
+            color: #000;
+            font-family: 'SourceHanSerifTC-Bold';
+            letter-spacing: 5px;
+            font-size: 30px;
+            line-height: 100%;
+            margin: 10px 0 80px 0;
+        }
+
+        .about_info {
+            justify-content: space-around;
+        }
+
+        .about_store img {
+            width: 95%;
+            height: 100%;
+        }
+
+        .about_location {
+            width: 40%;
+        }
+
+        /* policy */
+
+        .about_policy {
+            margin-top: 200px;
+            width: 100%;
+        }
+
+        .about_policy h2 {
+            color: #d1c0a5;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            letter-spacing: 5px;
+            font-size: 60px;
+            line-height: 100%;
+        }
+
+        .about_policy h3 {
+            color: #000;
+            font-family: 'SourceHanSerifTC-Bold';
+            letter-spacing: 5px;
+            font-size: 30px;
+            line-height: 100%;
+            margin: 10px 0 80px 0;
+        }
+
+        .about_policy h6 {
+            padding: 0 5%;
+            font-family: 'SourceHanSerifTC-SemiBold';
+            font-size: 16px;
+
+        }
+
+        .about_policy p {
+            padding: 0 5%;
+            font-size: 12px;
+            line-height: 20px;
+            margin: 1% 0 3% 0;
+            text-align: justify;
+        }
+
+        /* 麵包屑 */
+
+        #about .bread_crumbs {
+            position: absolute;
+            top: 50px;
+            left: 70px;
+            z-index: 11;
+        }
+
+        #about .bread_crumbs ul li a {
+            color: #fff;
+        }
+
+        /* footer */
+
+        #footer {
+            background-color: #000;
+        }
+
+        .footer {
+            height: 380px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer_top,
+        .footer_bottom {
+            width: 100%;
+        }
+
+        .footer_top {
+            height: 20%;
+            margin: 60px 0 20px 0;
+        }
+
+        .footer_top h2 {
+            font-size: 40px;
+            letter-spacing: 0.05em;
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            color: #ad776c;
+        }
+
+        .footer_bottom {
+            height: 80%;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .footer_bottom h3 {
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            font-family: 'SourceHanSerifTC-SemiBold';
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .footer_bottom ul {
+            margin: 0 40px 20px 0;
+        }
+
+        .footer_bottom_left {
+            width: 60%;
+            justify-content: flex-start;
+        }
+
+        .footer_about li,
+        .footer_contact li,
+        .footer_notice li,
+        .footer_service li {
+            font-size: 13px;
+            letter-spacing: 0.1em;
+            line-height: 25px;
+            font-family: 'Noto Sans TC';
+            font-weight: 300;
+            color: #fff;
+            display: block;
+            transition: all .5s;
+        }
+
+        .footer_service li:hover,
+        .footer_about li:hover,
+        .footer_notice li:hover {
+            color: #ad776c;
+        }
+
+        .footer_bottom_right>ul {
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        .footer_bottom_right figure {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .footer_bottom_right_icon1 {
+            background: url(images/icon/facebook.svg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .footer_bottom_right_icon2 {
+            background: url(images/icon/instagram.svg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .footer_bottom_right h4 {
+            font-size: 12px;
+            font-family: 'Roboto';
+            color: #fff;
+            letter-spacing: 0.01em;
+            line-height: 30px;
+        }
+
+        .footer_bottom_right_mail {
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 40px;
+        }
+
+        input[type="text"].footer_bottom_right_txtmail {
+            width: 75%;
+            height: 40px;
+            border: 1px solid #fff;
+            background: rgba(255, 255, 255, 0);
+            border-radius: 40px;
+            padding: 0;
+            margin: 0 10px 0 0;
+            text-align: center;
+        }
+
+        .footer_bottom_right_send {
+            width: 20%;
+            height: 40px;
+            background-color: #666;
+            border-radius: 40px;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            font-family: 'Noto Sans TC';
+            margin-left: 10px;
+            border: 1px solid #666;
+            padding: 0;
+            margin: 0;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body id="about" class="">
+    <div class="index_top">
+        <header>
+            <h1>palette</h1>
+        </header>
+    </div>
+    <nav>
+        <div class="palette_menu">
+            <!-- menu icon -->
+            <div class="menu_icon">
+                <div class="bar transition"></div>
+                <div class="bar transition"></div>
+                <div class="bar transition"></div>
+            </div>
+            <!-- search icon -->
+            <div class="search_icon transition"></div>
+            <!-- menu -->
+            <div class="palette_menu_open transition">
+                <div class="palette_menubox">
+                    <div class="menubox_l">
+                        <ul>
+                            <li class="selected" data-id="all">
+                                <a href="#">
+                                    <span>Home</span>首頁</a>
+                            </li>
+                            <li data-id="all">
+                                <a href="#">
+                                    <span>About Us</span>關於我們</a>
+                            </li>
+                            <li data-id="collections">
+                                <a href="#">
+                                    <span>Collections</span>精選商品</a>
+                            </li>
+                            <li data-id="articles">
+                                <a href="#">
+                                    <span>Articles</span>風格專欄</a>
+                            </li>
+                            <li data-id="all">
+                                <a href="#">
+                                    <span>Get In Touch</span>聯絡我們</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menubox_r">
+                        <!-- all -->
+                        <div id="all" class="ranking_box selected">ALLLLLLLLLL</div>
+                        <!-- product -->
+                        <div class="ranking_box" id="collections">3</div>
+                        <!-- articles -->
+                        <div class="ranking_box" id="articles">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_list">
+            <a href="#">login</a>
+            <a href="#">signup</a>
+            <a href="#">cart</a>
+        </div>
+    </nav>
+    <div class="index_main">
+        <!-- 麵包屑 -->
+        <section class="bread_crumbs bread_crumbs_b">
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <!-- <li>
+                    <a href="#">Swoon Chair Space Copenhagen</a>
+                </li> -->
+            </ul>
+        </section>
+
+        <!-- 關於我們 -->
+        <section class="item_36">
+            <div class="about_box1">
+                <figure>
+                    <img src="images/_VLX6006.jpg" alt="">
+                </figure>
+                <div class="about_box2"></div>
+                <div class="about_box3"></div>
+                <div class="about_box4"></div>
+                <div class="about_title">
+                    <h2>ABOUT</h2>
+                    <h3>關於我們</h3>
+                    <h4>BETTER LIVING THOUGHT COLOR</h4>
+                </div>
+            </div>
+            <div class="index_conten">
+                <div class="about_us">
+                    <div class="about_box5"></div>
+                    <div class="about_box6"></div>
+                    <h2>THE PALETTE</h2>
+                    <figure>
+                        <img src="images/kasthall_gabrielle_gold_750_ls18.jpg" alt="">
+                    </figure>
+                </div>
+
+                <!-- about start-->
+                <div class="about_article1">
+                    <div class="about_left1">
+                        <p>THE PALETTE 家具以更細緻深入的專業能力，重新詮釋家具歷史，進而將不同的文化，內化成家具甚至空間規劃設計的一部份。「空間完美的演出」是關乎如何引導人們如何去體驗自己生活的空間，從家飾家用品、單品家具、沙發、模組化家具到空間規劃設計，追求整體概念的連貫，嘗試各種組合的可能。
+                        </p>
+                        <br>
+                        <p>美是設計的最高準則，對於設計有情門主張：「特別而順」。透過設計闡述「特別」的意義：突破以往、挑戰自己、審視約定俗成的積習。人和空間是主軸，家具是協助使用空間的道具，兼顧人與空間的需求，家具才有靈魂。「順」方能與人性呼應並令人安心適意。從研發設計、生產製造、門市銷售到物流配送安裝與售後保固維修…藉由各個環節「專業」的要求，從消費者角度出發，以臻於品牌「存真、取善、顯美」的經營理念。
+                        </p>
+                        <br>
+                        <br>
+                        <p>THE PALETTE 成立於 2005 年，主要代理、經銷與銷售世界知名品牌與設計師家飾的線上購物平台。我們挑選設計精美的家具，注重設計以及家俱的實用性。功能設計要方便於消費者生活多樣的收納性，形式風格以能符合現代空間簡約、時尚的美學品味，卻不失家具實用的本質，是我們努力的主張與態度。
+                        </p>
+                        <br>
+                        <p>如果你喜歡線條明快、有色彩性的居家佈置。衷心希望您能夠從THE PALETTE平台，輕鬆擁有知名設計師精心設計的物品。在購物的同時，提供給您輕鬆、便利、雅致的購物環境，並且增添生活中的幽雅氣息與時尚品味。
+                        </p>
+                    </div>
+                    <div class="about_right1">
+                        <div class="about_img1">
+                            <img src="images/1532947292018879720.jpg" alt="">
+                        </div>
+                        <div class="about_img2">
+                            <img src="images/1532946633455684891.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- about end-->
+
+                <!-- designer start-->
+                <div class="about_designer">
+                    <h2>DESIGNER</h2>
+                    <h3>關於設計師</h3>
+
+                    <div class="about_left2">
+                        <div style="height: 440px;
+                        width: 420px;z-index: 11;">
+                            <div class="about_animate"></div>
+                        </div>
+                        <div class="about_box7"></div>
+
+                        <p>CARL HANSEN擅長活用建築中的結構、力學等概念，他的設計經過精密計算，並以簡潔的線條表現出來。不僅如此，他的作品也散發著濃濃的北歐之情和自然主義，「像是Ant Chair、蛋椅、天鵝椅，都是以有機的造型為主。」在形隨機能之餘，取法自然，CARL
+                            HANSEN 的作品歷經半個世紀至今依然清新無比，深具吸引力。
+                        </p>
+                        <h4>Y</h4>
+                    </div>
+
+                    <div class="about_right2 ">
+                        <figure>
+                            <img src="images/S.jpg" alt="">
+                        </figure>
+                        <p>La Rambla 從小對藝術求知若渴，相當迷戀抽象畫與雕塑。他的設計不僅貫徹功能性及實用主義，更是大膽地重新組合形式與表現抽象的概念。
+                            <br>
+                            <br> 他認為家具的線條與細緻的手工藝是該被強調的，並嘗試透過不同的素材創造形態與功能的平衡。La Rambla 的作品相較其他幾位大師，更顯得自由無拘束、極具實驗性質，讓人過目難忘，卻難以仿效。</p>
+                        <h4>S</h4>
+                    </div>
+
+
+                    <div class="about_left3">
+                        <figure>
+                            <img src="images/O.jpg" alt="">
+                        </figure>
+
+                        <p>VITRA 像是家具界的藝術家一樣，創作相對稀少珍貴，成為收藏家眼中的夢幻逸品，1973年，他遇見工匠 Niels Vodder，兩人攜手合作，打造出許多在當年製作流程相當困難的作品，替北歐設計定義了全新的當代風格，並推向全世界。
+                            <br>
+                            <br> 她的知名作品包括：有「 世界上最美的扶手椅 」之稱的 ｢ 45 Chair ｣、充滿原始部落意象的｢ Chieftain's Chair ｣（酋長椅）、｢ Poet Sofa ｣或是｢
+                            Pelican Chair ｣（鵜鶘椅）等。
+                        </p>
+                        <h4>O</h4>
+                    </div>
+
+                    <div class="about_right3">
+                        <figure>
+                            <img src="images/W.jpg" alt="">
+                        </figure>
+                        <div class="about_box8"></div>
+                        <p>當代建築大師 DE PADOVA，他提倡簡約式的設計風格，為丹麥機能主義的倡導人。「他將自己獨特的建築觀念及見解，帶入到家具、家飾的設計上。」</p>
+                        <h4>W</h4>
+                    </div>
+                </div>
+                <!-- designer end-->
+
+                <!-- store start-->
+                <div class="about_store">
+                    <h2>STORE</h2>
+                    <h2>LOCATOR</h2>
+                    <h3>實體店面</h3>
+                    <div class="about_info flex">
+                        <figure>
+                            <img src="images/27855179879_0f2427679a_b.jpg" alt="">
+                        </figure>
+                        <div class="about_location">
+                            <h4>THE PALETTE家具 中山門市 
+                            </h4>
+                            <p>台北市中山北路二段20巷2號1F</p>
+                            <p>客服電話 2658-4833</p>
+                            <p>營業時間 MON-SAT 11:00-21:00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- store end-->
+
+                <!-- policy start-->
+                <div class="about_policy">
+                    <h2>POLICY</h2>
+                    <h3>服務條款及隱私權政策</h3>
+                    <h6>關於個人資料保護，請會員詳細閱讀以下 THE PALETTE家具的隱私權聲明</h6>
+                    <p>THE PALETTE家具為 THE PALETTE家具所經營；為了維護個人隱私權與支持個人資料保護， THE PALETTE家具行謹以下列聲明，向您說明 THE PALETTE家具蒐集個人資料之目的、類別、利用範圍及方式、以及您所得行使之權利等事項；如果您對於
+                        THE PALETTE家具的隱私權聲明、以下相關告知事項、或與個人資料保護有關之相關事項有任何疑問，可以和 THE PALETTE家具客服中心聯絡， THE PALETTE家具將儘快回覆說明。</p>
+
+                    <h6>適用範圍</h6>
+                    <p>THE PALETTE家具隱私權聲明及其所包含之告知事項，僅適用於 THE PALETTE家具所擁有及經營的網站。 THE PALETTE家具網站內可能包含許多連結、或其他合作夥伴及個別開店店家所提供的商品或服務，關於該等連結網站、合作夥伴網站或個別開店店家之網路店家的隱私權聲明及與個人資料保護有關之告知事項，請參閱各該連結網站、合作夥伴網站或個別開店店家之網路店家。</p>
+
+                    <h6>個人資料蒐集之目的與類別</h6>
+                    <p>THE PALETTE家具為了提供電子商務服務、售後服務、履行法定或合約義務、保護當事人及相關利害關係人之權益、行銷、客戶管理與服務、以及經營合於營業登記項目或組織章程所定之業務等目的，依照各服務之性質，有可能會蒐集您的姓名、連絡方式(包括但不限於電話、E-MAIL及地址等)、為完成收款或付款所需之資料、ＩＰ位址、及其他得以直接或間接識別使用者身分之個人資料。
+                        此外，為提升服務品質， THE PALETTE家具會依照所提供服務之性質，記錄使用者的IP位址、以及在 THE PALETTE家具相關網站或APP內的瀏覽活動(例如，使用者所使用的軟硬體、所點選的網頁、下載的APP)等資料，但是這些資料僅供作流量分析和網路行為調查，以便於改善
+                        THE PALETTE家具相關網站的服務品質，不會和特定個人相連繫。</p>
+
+                    <h6>個人資料的利用</h6>
+                    <p>THE PALETTE家具所蒐集的足以識別使用者身分的個人資料、消費與交易資料，或日後經您同意而提供之其他個人資料，都僅供 THE PALETTE家具於其內部、依照蒐集之目的進行處理和利用、或為完成提供服務或履行合約義務之必要、或依照相關法令規定或有權主管機關（包括但不限於法院或台灣票據交換所）之命令或要求，否則
+                        THE PALETTE家具不會將足以識別使用者身分的個人資料提供給第三人（包括境內及境外）、或移作蒐集目的以外之使用。THE PALETTE家具會持續保管、處理及利用相關資料。在上開蒐集目的範圍內，本商店會將所蒐集的個人資料，提供予合作廠商（包括但不限提供本服務之91APP、宅配貨運業者或其他）以協助交易完成或終止。若選擇以信用卡方式支付，僅限信用卡持卡人本人使用，且得就此交易資料向發卡銀行、收單行及持卡人照會並確認是否屬實，於核對無誤後付款程序才算完成。</p>
+
+                    <h6>資料安全</h6>
+                    <p>THE PALETTE家具將以合於產業標準之合理技術及程序，維護THE PALETTE家具個人資料之安全。</p>
+
+                    <h6>資料當事人之權利</h6>
+                    <p>資料當事人可以請求查詢、閱覽本人的個人資料或要求給予複本。若您的個人資料有變更、或發現您的個人資料不正確，可以向THE PALETTE家具要求修改或更正。當蒐集個人資料之目的消失或期限屆滿時，您可要求刪除、停止處理或利用個人資料。但因THE
+                        PALETTE家具執行職務或業務所必須者，不在此限。
+                    </p>
+
+                    <h6>Cookie</h6>
+                    <p>為了便利使用者， THE PALETTE家具網站可能會讀取儲存在使用者電腦中的cookie資料。使用者可以經由瀏覽器的設定，取消、或限制此項功能，但可能因此無法使用部份網站功能。若您想知道如何取消、或限制此項功能，請與
+                        THE PALETTE家具客服中心聯絡。</p>
+
+                    <h6>Google Analyics(分析)廣告功能</h6>
+                    <p>本服務已安裝 Google Analytics (分析) 廣告功能。本功能僅用於提供 THE PALETTE家具分析廣告投放效益及優化使用流程，如您欲停用 Google Analytics (分析) 廣告功能，建議您可參考Google所提供
+                        不透露資訊的方式以停用該服務。
+                    </p>
+
+                    <h6>影響</h6>
+                    <p>若您不願意提供各服務或交易所要求的相關個人資料予 THE PALETTE家具，並同意 THE PALETTE家具就該等個人資料依法令規定、以及本隱私權聲明及其相關告知內容為相關之個人資料蒐集、處理、利用及國際傳輸，
+                        THE PALETTE家具將尊重您的決定，但依照各該服務之性質或條件，您可能因此無法使用該等服務或完成相關交易， THE PALETTE家具並保留是否同意提供該等相關服務或完成相關交易之權利。</p>
+
+                    <h6>修訂之權利</h6>
+                    <p>THE PALETTE家具有權隨時修訂本隱私權聲明及相關告知事項，並得於修訂後公佈在 THE PALETTE家具網站，不另行個別通知，您可以隨時在 THE PALETTE家具網站上詳閱修訂後的隱私權聲明及相關告知事項。</p>
+                </div>
+                <!-- policy end-->
+
+                <!-- 下面不要動 -->
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+
+
+<!-- <div class="about_left2">
+        <figure>
+            <img src="images/Y1 .jpg" alt="">
+        </figure>
+        <div class="about_box7"></div>
+
+        <p>CARL HANSEN擅長活用建築中的結構、力學等概念，他的設計經過精密計算，並以簡潔的線條表現出來。不僅如此，他的作品也散發著濃濃的北歐之情和自然主義，「像是Ant Chair、蛋椅、天鵝椅，都是以有機的造型為主。」在形隨機能之餘，取法自然，CARL
+            HANSEN 的作品歷經半個世紀至今依然清新無比，深具吸引力。
+        </p>
+        <h4>Y</h4>
+    </div> 
+
+    /* designer 1 */
+
+    .about_left2 {
+        width: 50%;
+        height: 100%;
+    }
+
+    .about_left2 h4 {
+        margin-left: -31%;
+        margin-top: -494px;
+        font-size: 500px;
+        color: #d1c0a5;
+        font-family: 'Playfair Display';
+        font-weight: 700;
+    }
+
+    .about_left2 figure {
+        width: 70%;
+        height: 440px;
+
+    }
+
+    .about_left2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* object-position: center center; */
+    }
+
+    .about_box7 {
+        background: #d1c0a5;
+        height: 430px;
+        width: 70%;
+        margin-left: 31%;
+        margin-top: -65%;
+    }
+
+    .about_left2 p {
+        width: 70%;
+        margin-top: 5%;
+        text-align: justify;
+        line-height: 20px;
+        font-weight: 400;
+    }
+-->

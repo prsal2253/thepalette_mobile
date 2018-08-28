@@ -1,0 +1,524 @@
+#product_detail_01{
+    height: 90vh;
+}
+.product_detail_01{
+    justify-content: space-between;
+    margin-top: -30px;
+}
+.product_detail_h1{
+    border-color: black;
+    color:black;
+}
+/* 左邊 */
+.product_detail_01_left{
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+}
+.product_detail_01_h2{
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.product_detail_01_h3{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    font-family: 'Playfair Display', serif;
+}
+.product_detail_01_h4{
+    font-size: 12px;
+    letter-spacing: 0.05em; 
+    font-weight: 300;
+    color: #666;
+    font-family: 'Noto Sans TC', serif;
+}
+.s_rate{
+    justify-content: flex-start;
+    align-items: center;
+}
+.s_star{
+    width: 75px;
+    height: 15px;
+    background: url(../images/icon/star.svg) repeat left center;
+    background-size: contain;
+}
+.product_detail_image{
+    width: 800px;
+}
+.product_detail_image img{
+    width: 80%;
+    object-fit: cover;
+}
+/* 右邊 */
+.product_detail_01_right{
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.s_sale_01{
+    width: 350px;
+    height: 30px;
+    border-radius: 40px;
+    background: #bf301d;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.s_sale_02{
+    width: 220px;
+    height: 30px;
+    border-radius: 40px;
+    background: #bc5446;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.product_detail_01_h5{
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Noto Sans TC', serif;
+}
+.product_detail_01_h6{
+    font-size: 15px;
+    letter-spacing: 0.15em;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Noto Sans TC', serif;
+    text-decoration:underline;
+}
+.product_detail_01_h7{
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    color: #000;
+    font-family: 'Noto Sans TC', serif;
+}
+.product_detail_01_price{
+    padding: 100px 0 40px 0;
+}
+.product_detail_01_h8{
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Playfair Display';
+}
+.product_detail_01_color{
+    padding: 0 0 0 0;
+}
+.color01,.color02,.color03{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 2px;
+}
+.choose_color{
+    border: 3px solid #fff;
+}
+.choose_color:hover{
+    border-color: #333;
+    cursor: pointer;
+}
+.color01{
+    background-color: #bf301d;
+}
+.color02{
+    background-color: #916c57;
+}
+.color03{
+    background-color: #8ba095;
+}
+.s_product_detail_01_num{
+    width: 48%;
+    height: 40px;
+    background-color: #e7e6e6;
+    border-radius: 40px;
+    margin-top:10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.add_to_cart{
+    width: 48%;
+    height: 40px;
+    background-color: #000;
+    border-radius: 40px;
+    margin-top:10px;
+    padding: 0 0 0 5px;
+}
+/* part2 */
+#product_detail_02{
+    background-color: #000;
+    height: 90vh;
+}
+.product_detail_02{
+    height: 90vh;
+    flex-direction: column;
+}
+.product_detail_02_topic{
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 50px 0;
+}
+.product_detail_02_h2{
+    font-size: 25px;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    line-height: 35px;
+    color: #fff;
+    font-family: 'Playfair Display';
+}
+.product_detail_02_h3{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    color: #fff;
+    font-family: 'SourceHanSerifTC-SemiBold';
+}
+.product_detail_02_h4{
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    font-family: 'Playfair Display';
+}
+.product_detail_02_group{
+    width: 100%;
+    height: 60%;
+    margin:50px, 0;
+}
+.product_detail_02_group_pic{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../images/tonella_02.jpg) no-repeat center center;
+    background-size: cover;
+}
+.product_detail_02_group_pic img{
+    width: 100%;
+    object-fit: cover;
+}
+.product_detail_02_box1{
+    background-color:#000;
+    height: 60px;
+    width: 300px;
+    margin-top: -60px;
+    float: right;
+    z-index: 999;
+    text-align: center;
+}
+.product_detail_02_h5{
+    color:#fff;
+    font-size: 12px;
+    line-height: 70px;
+    letter-spacing: 0.15em;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.product_detail_02_h6{
+    color:#fff;
+    font-size: 14px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+/* part3 */
+#product_detail_03{
+    margin-top: 100px;
+    }
+    /* section1 */
+    .product_detail_03_sec1{
+        width: 100%;
+    }
+    .product_detail_03_sec1_left, .product_detail_03_sec1_right{
+        width: 50%;
+        flex-direction: column;
+    }
+    .product_detail_03_sec1_left01{
+        width: 100%;
+        height: 400px;
+        background: url(../images/tonella_sofa_23.jpg) no-repeat right center;
+        background-size: cover;
+    }
+    .product_detail_03_sec1_left02{
+        width: 100%;
+        height: 800px;
+    }
+    .product_detail_03_sec1_txt, .product_detail_03_sec1_txt, .product_detail_03_sec1_txt{
+        width: 70%;
+        margin: 0 0 0 80px;
+        padding-top: 80px;
+    }
+    .product_detail_03_h2{
+        font-size: 35px;
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        line-height: 40px;
+        color: #000;
+    }
+    .product_detail_03_h3{
+        font-size: 15px;
+        font-family: 'Noto Sans TC';
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        line-height: 28px;
+        color: #000;
+        margin-top: 30px;
+    }
+    .product_detail_03_sec1_left03{
+        width: 100%;
+        height: 800px;
+        background: url(../images/tonella-2015-blue-book-021-sillones-h.jpg) no-repeat left bottom;
+        background-size: cover;
+    }
+    .product_detail_03_sec1_right01{
+        width: 100%;
+        height: 400px;
+    }
+    .product_detail_03_sec1_right02{
+        width: 100%;
+        height: 800px;
+        background: url(../images/tonella-2015-blue-book-024-sillones-b.jpg) no-repeat left center;
+        background-size: cover;
+    }
+    .product_detail_03_sec1_right03{
+        width: 100%;
+        height: 400px;
+        background: url(../images/tonella_sofa_05.jpg) no-repeat left center;
+        background-size: cover;
+    }
+    /* section2 */
+    .product_detail_03_sec2_01{
+        width: 100%;
+        height: 600px;
+    }
+    .product_detail_03_sec2_01_bg{
+        width: 100%;
+        height: 100%;
+    }
+    .product_detail_03_sec2_01_bg_box{
+        width: 50%;
+        height: 100%;
+        background-color: #662424; 
+    }
+    .product_detail_03_sec2_01_top{
+        width: 100%;
+        height: 100%;
+        margin-top: -600px;
+    }
+    .product_detail_03_sec2_01_top_box{
+        width: 70%;
+        height: 70%;
+        float: right;
+        margin: 150px 50px 0 0;
+        background: url(../images/Sancal-Producto-Sofa-Tonella-07.png) no-repeat center center;
+    }
+    .product_detail_03_sec2_03{
+        width: 100%;
+        height: 500px;
+        background: url(../images/Sancal-Producto-Mesita-Mosaico-02.jpg) no-repeat bottom center;
+        background-size: cover;
+    }
+/* part4 */
+.product_detail_04{
+    width: 100%;
+    flex-direction: column;
+    margin: 80px auto;
+}
+.product_detail_04_products{
+    justify-content: space-between;
+}
+.product_detail_04_topic{
+    margin-bottom: 30px;
+}
+.product_detail_04_h2{
+    font-size: 25px;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    line-height: 35px;
+    color: #000;
+    font-family: 'Playfair Display';
+}
+.product_detail_04_h3{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    color: #000;
+    font-family: 'SourceHanSerifTC-Bold';
+}
+/* part5 */
+#product_detail_05{
+    background-color: #000;
+    height: 65vh;
+    padding-top: 1px;
+}
+.product_detail_05{
+    margin: 80px auto;
+    height: 60vh;
+    flex-direction: column;
+}
+.product_detail_05_topic{
+margin-bottom: 30px;
+}
+.product_detail_05_h2{
+    font-size: 25px;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    line-height: 35px;
+    color: #fff;
+    font-family: 'Playfair Display';
+}
+.product_detail_05_h3{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    color: #fff;
+    font-family: 'SourceHanSerifTC-SemiBold';
+}
+.product_detail_05_article{
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+}
+.product_detail_05_article_01{
+    width: 48%;
+    height: 80%;
+    background: url(../images/122089_6.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.product_detail_05_article_02{
+    width: 48%;
+    height: 80%;
+    background: url(../images/gf_1642_bm_2226_sc_1740_mood_rgb_high.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.product_detail_05_article_box{
+    width: 90%;
+    height: 35%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+}        
+.product_detail_05_article_box:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.article_txt{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.article_date{
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.article_topic{
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 23px;
+    color: #000;
+    font-family: 'SourceHanSerifTC-Bold';
+}
+.product_detail_05_article a{
+    text-decoration: none;
+} 
+.article_date_deco{
+    width: 18px;
+    height: 3px;
+    background-color: #333;
+    margin:3px 0; 
+}
+/* part6 */
+.product_detail_06{
+    margin: 80px auto;
+    flex-direction: column;
+}
+.product_detail_06_topic{
+margin-bottom: 30px;
+}
+.product_detail_06_h2{
+    font-size: 25px;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    line-height: 35px;
+    color: #000;
+    font-family: 'Playfair Display';
+}
+.product_detail_06_h3{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    color: #000;
+    font-family: 'SourceHanSerifTC-Bold';
+}
+.product_detail_06_ig{
+    justify-content: space-between;
+}
+.ig_box1{
+    width: 350px;
+    height: 350px;
+    background: url(../images/Sancal-Catalogo-Pink_book-02.jpg) no-repeat center center;
+    background-size: cover;
+}
+.ig_box2{
+    width: 250px;
+    height: 250px;
+}
+.ig_box2:hover{
+    filter:brightness(.6);
+    cursor: pointer;
+}
+.ig_pic1{
+    background: url(../images/6028_era_lounge_chair_home_2_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.ig_pic2{
+    background: url(../images/049.jpg) no-repeat center center;
+    background-size: cover;
+}
+.ig_pic3{
+    background: url(../images/Sancal-Catalogo-Pink_book-02.jpg) no-repeat center center;
+    background-size: cover;
+}
+.ig_pic4{
+    background: url(../images/Muuto-Stacked-Regal-Regalmodule-mit-Tuer-Oslo-Sofa-Ply-Rug-Teppich-Ambiente.jpg) no-repeat center center;
+    background-size: cover;
+}
+.ig_pic5{
+    background: url(../images/terzopiano-3d-render-graniti-fiandre-marble-lab-project-cersaie-2016.jpg) no-repeat center center;
+    background-size: cover;
+}
+/* hashtag */
+.product_detail_06_hashtag{
+    width: 100%;
+    margin-top: 20px;
+}
+.product_detail_06_hashtag li{
+    display: inline-block;
+    padding: 7px 15px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 50px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #666;
+    font-family: 'Noto Sans TC','Roboto';
+    font-weight: 400;
+}
+.product_detail_06_hashtag li:hover{
+    background-color: rgb(240, 240, 240);
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>article</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product_detail.css">
+</head>
+<style>
+    nav {
+        z-index: 99;
+    }
+
+    .item_31 figure {
+        position: relative;
+    }
+
+    .item_31 {
+        background: #fff;
+    }
+
+    .index_main section {
+        padding: 0;
+    }
+
+    .art_box1 {
+        width: 100%;
+        height: 100vh;
+        background: lightblue;
+        position: relative;
+    }
+
+    .art_box2 {
+        width: 65%;
+        height: 175px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .art_title {
+        position: relative;
+        top: -110px;
+    }
+
+    .art_box3 {
+        width: 100%;
+        width: auto;
+        background: #fff;
+        padding: 6% 0;
+        position: relative;
+    }
+
+    .art_hot {
+        width: 75%;
+        height: 600px;
+        background: url("images/article/jotun3-1300x750.jpg") no-repeat center center;
+        position: absolute;
+        right: 0;
+    }
+
+    .art_box4 {
+        margin: 25% 0 5% 0;
+        position: relative;
+        height: 200px;
+        width: 500px;
+        background: #000;
+        padding: 5% 3%;
+    }
+
+    .art_box4 h3,
+    h4 {
+        color: #fff;
+    }
+
+    .art_box4 h3 {
+        font-family: 'Playfair Display';
+        font-size: 40px;
+    }
+
+    .art_box4 h4 {
+        font-family: 'SourceHanSerifTC-Bold';
+        line-height: 30px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .art_title h2 {
+        display: inline-block;
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .art_title h3 {
+        display: inline-block;
+        font-family: 'SourceHanSerifTC-Heavy';
+        font-size: 28px;
+        letter-spacing: 5px;
+        padding-left: 15px;
+    }
+
+    .art_box1 figure {
+        background: url("images/article/BM_2002_TP_1230_WL_4300_mood_rgb_high.jpg") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #articles .bread_crumbs {
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        z-index: 11;
+    }
+
+    #articles .bread_crumbs ul li a {
+        color: #fff;
+    }
+    
+    #articles .index_conten{padding: 0 0 70px;}
+
+    .art_box5 {
+        background: #fff;
+        margin-bottom: 100px;
+    }
+
+    .art_article {
+        padding: 0 5%;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 5%;
+        align-items: flex-start;
+    }
+
+    .art_left {
+        width: 40%;
+    }
+
+    .art_left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .art_right {
+
+        width: 60%;
+        padding-left: 50px;
+
+    }
+
+    .art_right h4 {
+        color: #000;
+        margin-top: 5%;
+    }
+
+    .art_right h2 {
+        font-family: 'SourceHanSerifTC-SemiBold';
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .art_right h3 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .article_date_deco {
+        width: 18px;
+        height: 3px;
+        background-color: #333;
+        margin: 3px 0;
+    }
+
+
+    /* footer */
+
+    #footer {
+        background-color: #000;
+    }
+
+    .footer {
+        height: 380px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer_top,
+    .footer_bottom {
+        width: 100%;
+    }
+
+    .footer_top {
+        height: 20%;
+        margin: 60px 0 20px 0;
+    }
+
+    .footer_top h2 {
+        font-size: 40px;
+        letter-spacing: 0.05em;
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        color: #ad776c;
+    }
+
+    .footer_bottom {
+        height: 80%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer_bottom h3 {
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        font-family: 'SourceHanSerifTC-SemiBold';
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .footer_bottom ul {
+        margin: 0 40px 20px 0;
+    }
+
+    .footer_bottom_left {
+        width: 60%;
+        justify-content: flex-start;
+    }
+
+    .footer_about li,
+    .footer_contact li,
+    .footer_notice li,
+    .footer_service li {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        line-height: 25px;
+        font-family: 'Noto Sans TC';
+        font-weight: 300;
+        color: #fff;
+        display: block;
+        transition: all .5s;
+    }
+
+    .footer_service li:hover,
+    .footer_about li:hover,
+    .footer_notice li:hover {
+        color: #ad776c;
+    }
+
+    .footer_bottom_right>ul {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .footer_bottom_right figure {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .footer_bottom_right_icon1 {
+        background: url(images/icon/facebook.svg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .footer_bottom_right_icon2 {
+        background: url(images/icon/instagram.svg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .footer_bottom_right h4 {
+        font-size: 12px;
+        font-family: 'Roboto';
+        color: #fff;
+        letter-spacing: 0.01em;
+        line-height: 30px;
+    }
+
+    .footer_bottom_right_mail {
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 40px;
+    }
+
+    input[type="text"].footer_bottom_right_txtmail {
+        width: 75%;
+        height: 40px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 40px;
+        padding: 0;
+        margin: 0 10px 0 0;
+        text-align: center;
+    }
+
+    .footer_bottom_right_send {
+        width: 20%;
+        height: 40px;
+        background-color: #666;
+        border-radius: 40px;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        font-family: 'Noto Sans TC';
+        margin-left: 10px;
+        border: 1px solid #666;
+        padding: 0;
+        margin: 0;
+        font-weight: 300;
+    }
+</style>
+
+<body id="articles" class="">
+    <div class="index_top">
+        <header>
+            <h1>palette</h1>
+        </header>
+        <nav>
+            <div class="palette_menu">
+                <!-- menu icon -->
+                <div class="menu_icon">
+                    <div class="bar transition"></div>
+                    <div class="bar transition"></div>
+                    <div class="bar transition"></div>
+                </div>
+                <!-- search icon -->
+                <div class="search_icon transition"></div>
+                <!-- menu -->
+                <div class="palette_menu_open transition">
+                    <div class="palette_menubox">
+                        <div class="menubox_l">
+                            <ul>
+                                <li class="selected" data-id="all">
+                                    <a href="#">
+                                        <span>Home</span>首頁</a>
+                                </li>
+                                <li data-id="all">
+                                    <a href="#">
+                                        <span>About Us</span>關於我們</a>
+                                </li>
+                                <li data-id="collections">
+                                    <a href="#">
+                                        <span>Collections</span>精選商品</a>
+                                </li>
+                                <li data-id="articles">
+                                    <a href="#">
+                                        <span>Articles</span>風格專欄</a>
+                                </li>
+                                <li data-id="all">
+                                    <a href="#">
+                                        <span>Get In Touch</span>聯絡我們</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menubox_r">
+                            <!-- all -->
+                            <div id="all" class="ranking_box selected">ALLLLLLLLLL</div>
+                            <!-- product -->
+                            <div class="ranking_box" id="collections">3</div>
+                            <!-- articles -->
+                            <div class="ranking_box" id="articles">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_list">
+                <a href="#">login</a>
+                <a href="#">signup</a>
+                <a href="#">cart</a>
+            </div>
+        </nav>
+    </div>
+    <div class="index_main">
+        <!-- 麵包屑 -->
+        <section class="bread_crumbs bread_crumbs_b">
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">article</a>
+                </li>
+            </ul>
+        </section>
+        <section class="item_31">
+            <div class="art_box1">
+                <figure>
+                    <div class="art_box2"></div>
+                </figure>
+
+            </div>
+
+            <div class="index_conten">
+                <div class="art_title">
+                    <h2>Design Column</h2>
+                    <h3>設計專欄</h3>
+                </div>
+
+                <div class="art_box3">
+                    <div class="art_hot"></div>
+
+
+                    <div class="art_box4">
+                        <h3>Hot Article</h3>
+                        <h4>7個裝潢提案，將狹小公寓改造成宜人居住的美妙空間</h4>
+                    </div>
+                </div>
+
+                <div class="art_box5">
+                    <div class="art_article flex">
+                        <div class="art_left">
+                            <img src="images/article/fogia_02.jpg" alt="">
+                        </div>
+                        <div class="art_right ">
+                            <h4>
+                                <div class="article_date_deco"></div>2017 JUN 23</h4>
+                            <h2>7個裝潢提案，將狹小公寓改造成宜人居住的美妙空間</h2>
+                            <br>
+                            <h3>隨著房價上漲，越來越多人負擔不起大坪數的房子，這時溫馨小公寓漸漸成為租/買屋主流。然而，面對如此狹小的空間，「居住」這件事彷彿成為某種心理上的負擔，其實只要了解清楚住屋格局、適當地投資一些多功能家具、好好地打理從地板與...</h3>
+                            <div class="product_detail_06_hashtag">
+                                <ul>
+                                    <a href="">
+                                        <li class="transition">生活品味</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="transition">設計</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_article flex">
+                        <div class="art_left">
+                            <img src="images/article/fogia_02.jpg" alt="">
+                        </div>
+                        <div class="art_right ">
+                            <h4>
+                                <div class="article_date_deco"></div>2017 JUN 23</h4>
+                            <h2>7個裝潢提案，將狹小公寓改造成宜人居住的美妙空間</h2>
+                            <br>
+                            <h3>隨著房價上漲，越來越多人負擔不起大坪數的房子，這時溫馨小公寓漸漸成為租/買屋主流。然而，面對如此狹小的空間，「居住」這件事彷彿成為某種心理上的負擔，其實只要了解清楚住屋格局、適當地投資一些多功能家具、好好地打理從地板與...</h3>
+                            <div class="product_detail_06_hashtag">
+                                <ul>
+                                    <a href="">
+                                        <li class="transition">生活品味</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="transition">設計</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_article flex">
+                        <div class="art_left">
+                            <img src="images/article/fogia_02.jpg" alt="">
+                        </div>
+                        <div class="art_right ">
+                            <h4>
+                                <div class="article_date_deco"></div>2017 JUN 23</h4>
+                            <h2>7個裝潢提案，將狹小公寓改造成宜人居住的美妙空間</h2>
+                            <br>
+                            <h3>隨著房價上漲，越來越多人負擔不起大坪數的房子，這時溫馨小公寓漸漸成為租/買屋主流。然而，面對如此狹小的空間，「居住」這件事彷彿成為某種心理上的負擔，其實只要了解清楚住屋格局、適當地投資一些多功能家具、好好地打理從地板與...</h3>
+                            <div class="product_detail_06_hashtag">
+                                <ul>
+                                    <a href="">
+                                        <li class="transition">生活品味</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="transition">設計</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_article flex">
+                        <div class="art_left">
+                            <img src="images/article/fogia_02.jpg" alt="">
+                        </div>
+                        <div class="art_right ">
+                            <h4>
+                                <div class="article_date_deco"></div>2017 JUN 23</h4>
+                            <h2>7個裝潢提案，將狹小公寓改造成宜人居住的美妙空間</h2>
+                            <br>
+                            <h3>隨著房價上漲，越來越多人負擔不起大坪數的房子，這時溫馨小公寓漸漸成為租/買屋主流。然而，面對如此狹小的空間，「居住」這件事彷彿成為某種心理上的負擔，其實只要了解清楚住屋格局、適當地投資一些多功能家具、好好地打理從地板與...</h3>
+                            <div class="product_detail_06_hashtag">
+                                <ul>
+                                    <a href="">
+                                        <li class="transition">生活品味</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="transition">設計</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art_article flex">
+                        <div class="art_left">
+                            <img src="images/article/fogia_02.jpg" alt="">
+                        </div>
+                        <div class="art_right ">
+                            <h4>
+                                <div class="article_date_deco"></div>2017 JUN 23</h4>
+                            <h2>7個裝潢提案，將狹小公寓改造成宜人居住的美妙空間</h2>
+                            <br>
+                            <h3>隨著房價上漲，越來越多人負擔不起大坪數的房子，這時溫馨小公寓漸漸成為租/買屋主流。然而，面對如此狹小的空間，「居住」這件事彷彿成為某種心理上的負擔，其實只要了解清楚住屋格局、適當地投資一些多功能家具、好好地打理從地板與...</h3>
+                            <div class="product_detail_06_hashtag">
+                                <ul>
+                                    <a href="">
+                                        <li class="transition">生活品味</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="transition">設計</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 頁碼 -->
+                <div class="page_num">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li>1</li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <!-- <div class="index_footer"></div> -->
+        <div id="footer">
+            <section>
+                <div class="index_conten_flex footer">
+                    <div class="footer_top">
+                        <h2>Better Living Through Color</h2>
+                    </div>
+                    <div class="footer_bottom flex">
+                        <div class="footer_bottom_left flex">
+                            <ul class="footer_about">
+                                <h3>關於我們</h3>
+                                <a href="">
+                                    <li>品牌理念</li>
+                                </a>
+                                <a href="">
+                                    <li>實體店面</li>
+                                </a>
+                                <a href="">
+                                    <li>最新消息</li>
+                                </a>
+                                <a href="">
+                                    <li>聯絡我們</li>
+                                </a>
+                                <a href="">
+                                    <li>隱私權條款</li>
+                                </a>
+                            </ul>
+                            <ul class="footer_notice">
+                                <h3>購物須知</h3>
+                                <a href="">
+                                    <li>購物流程</li>
+                                </a>
+                                <a href="">
+                                    <li>安裝說明</li>
+                                </a>
+                                <a href="">
+                                    <li>運送說明</li>
+                                </a>
+                            </ul>
+                            <ul class="footer_service">
+                                <h3>客戶服務</h3>
+                                <a href="">
+                                    <li>線上客服</li>
+                                </a>
+                                <a href="">
+                                    <li>常見問題</li>
+                                </a>
+                                <a href="">
+                                    <li>運送說明</li>
+                                </a>
+                            </ul>
+                            <ul class="footer_contact">
+                                <h3>聯絡我們</h3>
+                                <li>客服電話 &nbsp;2658-4833</li>
+                                <li>客服信箱 &nbsp;@thepalette@gmail.com</li>
+                                <li>營業時間 &nbsp;MON-SAT 11:00-21:00</li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom_right" style="width:35%">
+                            <ul class="flex">
+                                <li class="footer_bottom_right">
+                                    <figure class="footer_bottom_right_icon1"></figure>
+                                    <figure class="footer_bottom_right_icon2"></figure>
+                                </li>
+                                <li class="footer_bottom_right">
+                                    <h4>Copyright © 2018 THE PALETTE All rights reserved.</h4>
+                                </li>
+                                <li class="footer_bottom_right_input">
+                                    <div class="footer_bottom_right_mail flex">
+                                        <input class="footer_bottom_right_txtmail" type="text" placeholder="請輸入Email訂閱電子報">
+                                        <button class="footer_bottom_right_send">送出</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+</body>
+
+</html>
