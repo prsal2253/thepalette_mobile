@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-#member .index_main{background: url(../images/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: 100% auto;min-height:100vh;}
-#login .index_main{background: url(../images/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: 100% auto;min-height:100vh;}
-#signup .index_main{background: url(../images/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: 100% auto;min-height:100vh;}
-#shoppingcar .index_main{background: url(../images/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: 100% auto;min-height:100vh;}
+#member .index_main{background: url(../images/background/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: cover;min-height:100vh;}
+#login .index_main{background: url(../images/background/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size:cover;min-height:100vh;}
+#signup .index_main{background: url(../images/background/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: cover;min-height:100vh;}
+#shoppingcar .index_main{background: url(../images/background/S-wall-03-1920px.jpg) bottom center repeat-y;background-attachment: fixed;background-size: cover;min-height:100vh;}
 
 #member .index_conten_r{padding: 0 0 0 15px;}
 
@@ -154,7 +154,7 @@ a.description_q:hover{background: #ccc;}
 .item_13 .item_02 {width: 100%;}
 .item_13box{width: 100%;padding: 25px; background:rgba(247, 247, 247, .95);line-height:36px;font-size: 13px;}
 .item_13box>div{height: 50vh;overflow-y: auto;}
-.item_13 .item_02 .item_02_conten input[type="submit"],.item_13 .item_02 .item_02_conten input[type="button"]{margin: 35px auto 0 10px;}
+.item_13 .item_02 .item_02_conten input[type="submit"],.item_13 .item_02 .item_02_conten input[type="button"]{margin: 35px auto 10px;}
 
 /* item_14完成頁 */
 .item_14 .item_02 {width: 60%}
@@ -195,3 +195,4 @@ input[type="text"].flatpickr-input{width: 55%;margin: 0 ;}
 .item_19 .item_19_title p{font-size: 13px;width: 100%; text-align: center;line-height: 24px;}
 .item_19 .member_title{color: #000;height: auto;justify-content: center;}
 .item_19 .item_conten_button{justify-content: center;}
+.item_19 .item_02 .item_02_conten input[type="submit"],.item_19 .item_02 .item_02_conten input[type="button"]{margin: 35px auto 0 10px;}

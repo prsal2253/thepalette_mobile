@@ -4,20 +4,11 @@ require __DIR__. '/__db_connect.php';
 
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>signup_03</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/member.css">
+<?php include 'page_item/head.php';?>
 </head>
-<body id="signup" class="signup_03">
-<div class="index_top">
-    <header><h1>palette</h1></header>
+<body id="signup" class="">
+    <div class="index_top">
+    <?php include 'page_item/header.php';?> 
 </div>
 <div class="index_main">
     <!-- 麵包屑 -->
@@ -29,8 +20,8 @@ require __DIR__. '/__db_connect.php';
         </ul></section>
     <section class="item_12">
         <div class="index_conten_flex">
-            <div class="step_box"><span>01</span><span>會員條款</span></div>
-            <div class="step_box"><span>02</span><span>填寫會員資料</span></div>
+            <div class="step_box step_box_in"><span>01</span><span>會員條款</span></div>
+            <div class="step_box step_box_in"><span>02</span><span>填寫會員資料</span></div>
             <div class="step_box step_box_in"><span>03</span><span>認證會員<br/>註冊條款</span></div>
         </div>
     </section>
@@ -55,6 +46,8 @@ require __DIR__. '/__db_connect.php';
         </div>
     </section>
 </div>
-<div class="index_footer"></div>
+<div class="index_footer">
+<?php include 'page_item/footer.php';?>
+</div>
 </body>
 </html>

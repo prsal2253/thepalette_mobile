@@ -8,28 +8,17 @@ require __DIR__. '/__db_connect.php';
 $pageName = 'register';
 //命名頁面
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>signup_02</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/member.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
+<?php include 'page_item/head.php';?>
     <style>
         small{
             display: none;
         }
     </style>
 </head>
-<body id="signup" class="signup_02">
-<div class="index_top">
-    <header><h1>palette</h1></header>
-</div>
+<body id="signup" class="">
+    <div class="index_top">
+        <?php include 'page_item/header.php';?> 
+    </div>
 <div class="index_main">
     <!-- 麵包屑 -->
     <section  class="bread_crumbs">
@@ -41,7 +30,7 @@ $pageName = 'register';
     </section>
     <section class="item_12">
         <div class="index_conten_flex">
-            <div class="step_box"><span>01</span><span>會員條款</span></div>
+            <div class="step_box step_box_in"><span>01</span><span>會員條款</span></div>
             <div class="step_box step_box_in"><span>02</span><span>填寫會員資料</span></div>
             <div class="step_box"><span>03</span><span>認證會員<br/>註冊條款</span></div>
         </div>
@@ -91,7 +80,7 @@ $pageName = 'register';
                             <div class="palette_select member_input40">
                                 <select class="sel_year" rel="years" name="year" ></select>
                             </div>
-                            <div class="palette_select member_inp  <divember_input25">
+                            <div class="palette_select member_input40 member_input25">
                                 <select class="sel_month" rel="month" name="month"></select>
                             </div>
 
@@ -310,6 +299,8 @@ $pageName = 'register';
         return false;
     };
 </script>
-<div class="index_footer"></div>
+<div class="index_footer">
+<?php include 'page_item/footer.php';?>
+</div>
 </body>
 </html>
