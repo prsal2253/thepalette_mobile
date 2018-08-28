@@ -33,31 +33,31 @@ a:active 	{ font:15px/18px 'Roboto', 'Noto Sans TC'; color:#000; text-decoration
 
 /* 網站主內容架構 */
 .index_top{  width:100%; height:auto; position:relative;}
-.index_main{width:100%; margin:0 auto;min-height:100vh;}
-.index_main section{padding: 50px 70px;}
-.index_footer{width:100%; clear:both; margin:0 auto;background: #000; height: 300px;}
+.index_main{width:100%; margin:0 auto;min-height:100vh;padding: 100px 0 0 0}
+.index_main section{padding: 50px 15px;}
+.index_footer{width:100%; clear:both; margin:0 auto;background: #000;height: 300px; z-index: 99;position: absolute;}
 
 /* 內容架構，不做滿版時限制寬度為1200 */
 .index_conten{width:100%; max-width:1200px;margin:0 auto;}
-.index_conten_flex{width:100%; max-width:1200px;margin:0 auto;display: flex;}
-.index_conten_l{width:calc(100% / 6);margin:0 auto;}
-.index_conten_r{width:calc(500% / 6);margin:0 auto;}
+.index_conten_flex{width:100%; max-width:1200px;margin:0 auto;display: flex;flex-direction: column;}
+.index_conten_l{width:100%;margin:0 auto;}
+.index_conten_r{width:100%;margin:0 auto;}
 
 /* 文字＆標題 */
 /* Photoshop 里设置的间距值/1000＝以 em 为单位的所得值（letter-spacing: Xem） */
 
 /* button */
-button,input[type="button"],input[type="submit"],a.palette_btn{display: block;border: 0px solid #000;border-radius: 20px; text-align: center; color: #fff; font-size: 15px;letter-spacing: .5em;background: #000;line-height: 40px; padding: 0 52px 0 60px;margin: 0 auto;cursor: pointer;text-decoration: none;transition: all .5s}
+button,input[type="button"],input[type="submit"],a.palette_btn{display: block;border: 0px solid #000;border-radius: 20px; text-align: center; color: #fff; font-size: 15px;letter-spacing: .3em;background: #000;line-height: 40px; padding: 0 32px 0 40px;margin: 0 auto;cursor: pointer;text-decoration: none;transition: all .5s}
 input[type="button"].palette_btn_back,a.palette_btn_back{background-color: #888;}
 button:hover,input[type="button"]:hover,input[type="submit"]:hover,a.palette_btn:hover{background: #444;}
 
-a.palette_btncolor2{width: auto;background-color: #e3e3e3;padding: 0 32px 0 40px;}
+a.palette_btncolor2{width: 100%;background-color: #e3e3e3;padding: 0 32px 0 40px;}
 a.palette_btncolor2:hover{background-color: #888;}
 
 /* input & form系列*/
-input[type="text"],input[type="password"],input[type="password"]{background:#e3e3e3;width: 100%;margin: 0 auto; height: 40px; border: 0px solid #000;border-radius: 20px;padding:0 20px;text-align: left;color: #888;font-size: 15px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC';}
+input[type="text"],input[type="password"],input[type="password"]{background:#e3e3e3;width: 100%;margin: 0 auto; height: 40px; border: 0px solid #000;border-radius: 20px;padding:0 12px;text-align: left;color: #888;font-size: 15px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC';}
 nput[type="text"].error{background:#e3e3e3;}
-input[type="text"].member_name{width: 65%; margin: 0;}
+input[type="text"].member_name{width: 55%; margin: 0;}
 input[type="text"].margin_top{margin: 10px 0 0;}
 
 .radio_box{position: relative; height: 40px;}
@@ -66,7 +66,7 @@ input[type="radio"],.radio_box input[type="checkbox"]{
   display:block;  
   width: 12px;  
   height: 12px;  
-  margin: 13px 10px; 
+  margin: 13px 5px; 
   -webkit-appearance: none;  
   background-color: transparent;  
   border: 1px solid #888;  
@@ -93,11 +93,12 @@ textarea{background:#e3e3e3;width: 100%;margin: 0 auto;border: 0px solid #000;bo
 
 /* select */
 .palette_select{width: 100%;}
-.palette_select select {width: 100%;margin: 0 auto; height: 40px; border: 0px solid #000;border-radius: 20px;appearance:none; -moz-appearance:none; -webkit-appearance:none; background:#e3e3e3 url(../images/icon/next.svg) no-repeat center right 15px;
- background-size: 13px auto;font-size: 15px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC'; padding:0 20px;text-align: left;color: #888;
+.palette_select select {width: 100%;margin: 0 auto; height: 40px; border: 0px solid #000;border-radius: 20px;appearance:none; -moz-appearance:none; -webkit-appearance:none; background:#e3e3e3 url(../images/icon/next.svg) no-repeat center right 10px;
+ background-size: 13px auto;font-size: 15px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC'; padding:0 10px 0 12px;text-align: left;color: #888;
 }
 .palette_select option{font-size: 16px;line-height: 18px;letter-spacing: 2px;font-family: 'Roboto', 'Noto Sans TC';padding:0;border: 0px solid #000;margin: 40px auto 0;}
 .member_input40{width: 42%; margin: 0 3% 0 0;}
+.member_input50{width: 49%;}
 p.address_num{width: 10%;color: #888;}
 .member_input25{width:26%;}
 
@@ -110,11 +111,11 @@ p.address_num{width: 10%;color: #888;}
 .icon_love_click{ background-image: url(../images/icon/heart_hover.svg);}
 
 /* fancybox */
-.fancybox-slide--html .fancybox-content{max-width:50%;}
+.fancybox-slide--html .fancybox-content{width:90%;}
 
 /* header */
 #heard .index_main{background: url(../images/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: 100% auto;min-height:500vh;}
-header h1{display:inline-flex; position: fixed; top: 50px; left: 30px; width:100px;height: 100px;border: 2px solid #fff;color: #fff;text-transform: uppercase;align-items: flex-end;justify-content:flex-end;letter-spacing: .15em;z-index: 9999;}
+header h1{display:inline-flex; position: absolute; top: 10px; left: 10px; width:70px;height: 70px;border: 2px solid #fff;color: #fff;text-transform: uppercase;align-items: flex-end;justify-content:center;letter-spacing: .1em;z-index: 9999;font-size: 12px;}
 .index_top nav{position: fixed;right: 30px; top:0px; width: 40px;height: 100%;padding: 50px 0;z-index: 999;}
 
 .palette_menu {cursor: pointer;z-index: 999;}
