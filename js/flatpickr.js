@@ -9,8 +9,8 @@ function Flatpickr(element, config) {
 	function init() {
 		self.element = element;
 		self.instanceConfig = config || {};
-
-		self.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		// mobile時減少許多功能 故先隱藏
+		//self.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 		setupFormats();
 

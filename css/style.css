@@ -33,7 +33,7 @@ a:active 	{ font:15px/18px 'Roboto', 'Noto Sans TC'; color:#000; text-decoration
 
 /* 網站主內容架構 */
 .index_top{  width:100%; height:auto; position:relative;}
-.index_main{width:100%; margin:0 auto;min-height:100vh;padding: 100px 0 0 0}
+.index_main{width:100%; margin:0 auto;min-height:100vh;padding: 50px 0 0 0}
 .index_main section{padding: 50px 15px;}
 .index_footer{width:100%; clear:both; margin:0 auto;background: #000;height: 300px; z-index: 99;position: absolute;}
 
@@ -55,7 +55,7 @@ a.palette_btncolor2{width: 100%;background-color: #e3e3e3;padding: 0 32px 0 40px
 a.palette_btncolor2:hover{background-color: #888;}
 
 /* input & form系列*/
-input[type="text"],input[type="password"],input[type="password"]{background:#e3e3e3;width: 100%;margin: 0 auto; height: 40px; border: 0px solid #000;border-radius: 20px;padding:0 12px;text-align: left;color: #888;font-size: 15px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC';}
+input[type="text"],input[type="password"],input[type="password"],input[type="date"]{background:#e3e3e3;width: 100%;margin: 0 auto; height: 40px; border: 0px solid #000;border-radius: 20px;padding:0 12px;text-align: left;color: #888;font-size: 13px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC';}
 nput[type="text"].error{background:#e3e3e3;}
 input[type="text"].member_name{width: 55%; margin: 0;}
 input[type="text"].margin_top{margin: 10px 0 0;}
@@ -94,7 +94,7 @@ textarea{background:#e3e3e3;width: 100%;margin: 0 auto;border: 0px solid #000;bo
 /* select */
 .palette_select{width: 100%;}
 .palette_select select {width: 100%;margin: 0 auto; height: 40px; border: 0px solid #000;border-radius: 20px;appearance:none; -moz-appearance:none; -webkit-appearance:none; background:#e3e3e3 url(../images/icon/next.svg) no-repeat center right 10px;
- background-size: 13px auto;font-size: 15px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC'; padding:0 10px 0 12px;text-align: left;color: #888;
+ background-size: 11px auto;font-size: 13px;line-height: 40px;letter-spacing:.1em;font-family: 'Roboto', 'Noto Sans TC'; padding:0 10px 0 12px;text-align: left;color: #888;
 }
 .palette_select option{font-size: 16px;line-height: 18px;letter-spacing: 2px;font-family: 'Roboto', 'Noto Sans TC';padding:0;border: 0px solid #000;margin: 40px auto 0;}
 .member_input40{width: 42%; margin: 0 3% 0 0;}
