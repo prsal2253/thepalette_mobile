@@ -30,7 +30,7 @@
 .sort_red01_top>figure{
     width: 100%;
     height: 80%;
-    background: url(../images/bol_bby_weavehero.jpg) no-repeat center center;
+    background: url(../images/banner/3D-interior-design-by-studio-brasch-6.jpg) no-repeat center bottom;
     background-size: cover;
     position: relative;
 }
@@ -478,7 +478,7 @@
 }
 /* part5 */
 .sort_red05{
-    width: 70%;
+    /*width: 70%;*/
     flex-direction: column;
     justify-content: space-between;
     margin-top: 80px;
@@ -527,9 +527,10 @@
 }
 .sort_red05_row{
     width: 100%;
-    height: 300px;
-    justify-content: space-between;
+    /*height: 300px;*/
+    /*justify-content: space-between;*/
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .sort_red05_box_l{
     width: 50%;

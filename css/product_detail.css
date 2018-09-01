@@ -19,6 +19,7 @@
     font-size: 30px;
     letter-spacing: 0.01em;
     font-weight: 700;
+    line-height: 30px;
     font-family: 'Playfair Display', serif;
 }
 .product_detail_01_h3{
@@ -60,7 +61,6 @@
 }
 .s_sale_01{
     width: 350px;
-    height: 30px;
     border-radius: 40px;
     background: #bf301d;
     text-align: center;
@@ -68,7 +68,6 @@
 }
 .s_sale_02{
     width: 220px;
-    height: 30px;
     border-radius: 40px;
     background: #bc5446;
     text-align: center;
@@ -196,7 +195,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: url(../images/tonella_02.jpg) no-repeat center center;
+    background: url(../images/banner/tonella_02.jpg) no-repeat center center;
     background-size: cover;
 }
 .product_detail_02_group_pic img{
@@ -243,7 +242,7 @@
     .product_detail_03_sec1_left01{
         width: 100%;
         height: 400px;
-        background: url(../images/tonella_sofa_23.jpg) no-repeat right center;
+        background: url(../images/banner/tonella_sofa_23.jpg) no-repeat right center;
         background-size: cover;
     }
     .product_detail_03_sec1_left02{
@@ -275,7 +274,7 @@
     .product_detail_03_sec1_left03{
         width: 100%;
         height: 800px;
-        background: url(../images/tonella-2015-blue-book-021-sillones-h.jpg) no-repeat left bottom;
+        background: url(../images/banner/tonella-2015-blue-book-021-sillones-h.jpg) no-repeat left bottom;
         background-size: cover;
     }
     .product_detail_03_sec1_right01{
@@ -285,13 +284,13 @@
     .product_detail_03_sec1_right02{
         width: 100%;
         height: 800px;
-        background: url(../images/tonella-2015-blue-book-024-sillones-b.jpg) no-repeat left center;
+        background: url(../images/banner/tonella-2015-blue-book-024-sillones-b.jpg) no-repeat left center;
         background-size: cover;
     }
     .product_detail_03_sec1_right03{
         width: 100%;
         height: 400px;
-        background: url(../images/tonella_sofa_05.jpg) no-repeat left center;
+        background: url(../images/banner/tonella_sofa_05.jpg) no-repeat left center;
         background-size: cover;
     }
     /* section2 */
@@ -323,7 +322,7 @@
     .product_detail_03_sec2_03{
         width: 100%;
         height: 500px;
-        background: url(../images/Sancal-Producto-Mesita-Mosaico-02.jpg) no-repeat bottom center;
+        background: url(../images/banner/Sancal-Producto-Mesita-Mosaico-02.jpg) no-repeat bottom center;
         background-size: cover;
     }
 /* part4 */
@@ -390,14 +389,14 @@ margin-bottom: 30px;
 .product_detail_05_article_01{
     width: 48%;
     height: 80%;
-    background: url(../images/122089_6.jpg) no-repeat center center;
+    background: url(../images/banner/122089_6.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
 }
 .product_detail_05_article_02{
     width: 48%;
     height: 80%;
-    background: url(../images/gf_1642_bm_2226_sc_1740_mood_rgb_high.jpg) no-repeat center center;
+    background: url(../images/banner/gf_1642_bm_2226_sc_1740_mood_rgb_high.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -472,7 +471,7 @@ margin-bottom: 30px;
 .ig_box1{
     width: 350px;
     height: 350px;
-    background: url(../images/Sancal-Catalogo-Pink_book-02.jpg) no-repeat center center;
+    background: url(../images/banner/Sancal-Catalogo-Pink_book-02.jpg) no-repeat center center;
     background-size: cover;
 }
 .ig_box2{
@@ -484,23 +483,23 @@ margin-bottom: 30px;
     cursor: pointer;
 }
 .ig_pic1{
-    background: url(../images/6028_era_lounge_chair_home_2_1.jpg) no-repeat center center;
+    background: url(../images/article/6028_era_lounge_chair_home_2_1.jpg) no-repeat center center;
     background-size: cover;
 }
 .ig_pic2{
-    background: url(../images/049.jpg) no-repeat center center;
+    background: url(../images/banner/049.jpg) no-repeat center center;
     background-size: cover;
 }
 .ig_pic3{
-    background: url(../images/Sancal-Catalogo-Pink_book-02.jpg) no-repeat center center;
+    background: url(../images/banner/Sancal-Catalogo-Pink_book-02.jpg) no-repeat center center;
     background-size: cover;
 }
 .ig_pic4{
-    background: url(../images/Muuto-Stacked-Regal-Regalmodule-mit-Tuer-Oslo-Sofa-Ply-Rug-Teppich-Ambiente.jpg) no-repeat center center;
+    background: url(../images/banner/Muuto-Stacked-Regal-Regalmodule-mit-Tuer-Oslo-Sofa-Ply-Rug-Teppich-Ambiente.jpg) no-repeat center center;
     background-size: cover;
 }
 .ig_pic5{
-    background: url(../images/terzopiano-3d-render-graniti-fiandre-marble-lab-project-cersaie-2016.jpg) no-repeat center center;
+    background: url(../images/banner/terzopiano-3d-render-graniti-fiandre-marble-lab-project-cersaie-2016.jpg) no-repeat center center;
     background-size: cover;
 }
 /* hashtag */
@@ -521,4 +520,71 @@ margin-bottom: 30px;
 }
 .product_detail_06_hashtag li:hover{
     background-color: rgb(240, 240, 240);
+}
+
+/* 手機板 */
+@media only screen and (max-width:800px){
+    #product_detail_01{height: auto;}
+    .product_detail_01{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product_detail_01_left, .product_detail_01_right{
+        width: 100%;
+    }
+    .product_detail_01_h2{
+        font-size:20px; 
+    }
+    .s_rate{
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .s_sale_01{
+        width: 100%;
+    }
+    .product_detail_image{
+        width: 100%;
+    }
+    .product_detail_image img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .product_detail_01_price{
+        padding: 30px 0 20px 0;
+    }
+    .color01,.color02,.color03{
+        width: 35px;
+        height: 35px;
+    }
+    .product_detail_01_h7{
+        font-size: 12px;
+    }
+    /* part02 */
+    #product_detail_02{
+        height: 82vh;
+    }
+    .product_detail_02_topic{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0 20px 0;
+    }
+    .product_detail_02_h2{
+        font-size: 20px;
+    }
+    .product_detail_02_h3{
+        font-size: 16px;
+    }
+    .product_detail_02_h4{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .product_detail_02_box1{
+       display: none;
+    }
+    .product_detail_02_pname{
+      display: none;
+    }
+    /* part3 */
+    
 }
