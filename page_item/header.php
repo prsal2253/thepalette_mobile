@@ -1,186 +1,98 @@
 
-        <header><h1>palette</h1></header>
+    <header id="navbar"><h1><a class="palette_logo" href="../index.php">The Palette</a></h1>
         <nav>
-            <div class="palette_menu">
-            <!-- menu icon -->
-            <div class="menu_icon">
-                <div class="bar transition"></div>
-                <div class="bar transition"></div>
-                <div class="bar transition"></div>
-            </div>
-            <!-- menu -->
-            <div class="palette_menu_open transition">
-                <div class="palette_menubox">
-                    <div class="menubox_l">
-                        <ul>
-                            <li class="selected" data-id="all"><a href="#"><span>Home</span>首頁</a></li>
-                            <li data-id="all"><a href="#"><span>About Us</span>關於我們</a></li>
-                            <li data-id="collections"><a href="#" ><span>Collections</span>精選商品</a></li>
-                            <li data-id="articles"><a href="#"><span>Articles</span>風格專欄</a></li>
-                            <li data-id="all"><a href="#"><span>Get In Touch</span>聯絡我們</a></li>
-                        </ul>
-                    </div>
-                    <div class="menubox_r">
-                        <!-- all -->
-                        <div id="all" class="ranking_box selected">
-                            <div class="all_box">
-                                <h2>最新活動</h2>
-                                <img src="images/blaise_desktop_1.jpg" alt=""></div>
-                        </div>
-                        <!-- product -->
-                        <div class="ranking_box" id="collections">
-                            <div class="collectionsbox">
-                                <h2>商品分類</h2>
-                                <div class="collectionsbox_l">
-                                        <ul>
-                                            <li class="selected" data-id="sort01"><a href="#">紅橘粉 系列</a></li>
-                                            <li data-id="sort02"><a href="#">藍綠黃 系列</a></li>
-                                            <li data-id="sort03"><a href="#">黑白灰 系列</a></li>
-                                            <li data-id="sort04"><a href="#">大地色 系列</a></li>
-                                            <li data-id="sort05"><a href="#">材質 系列</a></li>
-                                        </ul>
-                                </div>
-                                <div class="collectionsbox_r">
-                                    <!-- 01 -->
-                                    <div id="sort01" class="ranking_box selected"><img src="../images/banner/39195293794_6055c635a0_k.jpg" alt=""></div>
-                                    <!-- 02 -->
-                                    <div id="sort02" class="ranking_box"><img src="../images/banner/40745884310_4b1e901143_b.jpg" alt=""></div>
-                                    <!-- 03 -->
-                                    <div id="sort03" class="ranking_box"><img src="../images/banner/40745889000_96ba023acb_k.jpg" alt=""></div>
-                                    <!-- 04 -->
-                                    <div id="sort04" class="ranking_box"><img src="../images/banner/38924676214_1e6d29ce12_b.jpg" alt=""></div>
-                                    <!-- 05 -->
-                                    <div id="sort05" class="ranking_box"><img src="../images/banner/28680134718_346947a0b7_b.jpg" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- articles -->
-                        <div class="ranking_box" id="articles">
-                            
-                            <div class="menu_articlesbox">
-                                <h2>最新專欄</h2>
-                                <a class="menu_articles" href="#">
-                                    <figure><img src="../images/banner/BM_2002_TP_1230_WL_4300_mood_rgb_high.jpg" alt=""></figure>
-                                    <h3 class="menuarticles_titlebox">
-                                        <span class="menuarticles_time">2017 JUN 31</span>
-                                        <span class="menuarticles_title">不再盲目追逐流行：藏於細節裡的時尚感。</span>
-                                    </h3>
-                                </a>
-                                <a class="menu_articles" href="#">
-                                        <figure><img src="../images/banner/BM_2002_TP_1230_WL_4300_mood_rgb_high.jpg" alt=""></figure>
-                                        <h3 class="menuarticles_titlebox">
-                                            <span class="menuarticles_time">2017 JUN 31</span>
-                                            <span class="menuarticles_title">不再盲目追逐流行：藏於細節裡的時尚感。</span>
-                                        </h3>
-                                    </a>
-                            </div>
-                        </div>
-                        <!-- icon list -->
-                        <div class="menu_iconbar">
-                            <a href="#">
-                                <span class="transition">站內搜尋</span>
-                                <div class="search_icon"></div>
-                            </a>
-                            <a href="../login.html">
-                                    <span class="transition">會員登入</span>
-                                    <div class="padlock_icon"></div>
-                            </a>
-                            <!-- 登出 -->
-                            <!-- 
-
-                            <a href="#">
-                                    <span class="transition">會員登出</span>
-                                    <div class="padunlock_icon"></div>
-                            </a>
-
-                             -->
-                             <a href="../order_list.html">
-                                    <span class="transition">會員中心</span>
-                                    <div class="member_icon"></div>
-                             </a>
-                             <a href="../shoppingcar_01.html">
-                                    <span class="transition">購物車(0)</span>
-                                    <div class="car_icon"></div>
-                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-
             <!-- cart icon -->
-            <div class="car_icon transition"><span>1</span>
-            <div class="car_iconhover">
-                <div class="order_listbox">
-                    <figure class="description_20"><a href="#"><img src="../images/banner/S-yellow-chair01-500px.png" alt="商品名稱"></a></figure>
-                    <div class="description_70">
-                        <a href="#" class="product_name">Anastasia Tufted Chair - Christopher Knight HomeAnastasia Tufted Chair - Christopher Knight Home</a>
-                        <p>黃色Ｘ1</p>
-                        <p>$20,000</p>
+            <div class="car_icon transition"><a href="#"><span>1</span></a></div>
+
+            <div class="palette_menu">
+                    <!-- menu icon -->
+                    <div class="menu_icon">
+                        <div class="bar transition"></div>
+                        <div class="bar transition"></div>
+                        <div class="bar transition"></div>
                     </div>
-                    <div class="description_10"><div class="icon_garbage"></div></div>
-                </div>
-
-                <div class="order_listbox">
-                    <figure class="description_20"><a href="#"><img src="../images/banner/S-yellow-chair01-500px.png" alt="商品名稱"></a></figure>
-                    <div class="description_70">
-                        <a href="#" class="product_name">Anastasia Tufted Chair - Christopher Knight HomeAnastasia Tufted Chair - Christopher Knight Home</a>
-                        <p>黃色Ｘ1</p>
-                        <p>$20,000</p>
+                    <!-- menu -->
+                    <div class="palette_menu_open transition">
+                        <div class="palette_menubox">
+                            <div class="menubox_l" id="sbt_m_manuhover1">
+                                    <h3 class="menutile">
+                                        <a class="menutile_link" href="../about.html">關於我們<span>About Us</span></a>
+                                    </h3> 
+                                    <h3 class="menutile" id="menutile">
+                                    <a class="menutile_link" href="#">精選商品<span>Collections</span></a>
+                                    <div class="menutile_box1">
+                                    <a class="menutile_link2" href="#">紅橘粉系列</a>
+                                    <a class="menutile_link2" href="#">藍綠黃系列</a>
+                                    <a class="menutile_link2" href="#">黑白灰系列</a>
+                                    <a class="menutile_link2" href="#">大地色系列</a>
+                                    <a class="menutile_link2" href="#">材質系列</a>
+                                    </div></h3>
+                                    <h3 class="menutile">
+                                        <a class="menutile_link" href="#">風格專欄<span>Articles</span></a></h3>
+                                    <h3 class="menutile">
+                                        <a class="menutile_link" href="#">聯絡我們<span>Get In Touch</span></a></h3>
+                                    <h3 class="menutile" id="menutile2">
+                                        <a class="menutile_link" href="#">客戶服務<span>Service</span></a>
+                                        <div class="menutile_box1">
+                                                <a class="menutile_link2" href="#">線上客服</a>
+                                                <a class="menutile_link2" href="#">常見問題</a>
+                                                <a class="menutile_link2" href="#">運送說明</a>
+                                                <a class="menutile_link2" href="#">安裝說明</a>
+                                        </div>
+                                    </h3>
+                            </div>
+                            <div class="menubox_r">
+                                
+                               
+                                <!-- icon list -->
+                                <div class="menu_iconbar">
+                                    <a href="#">
+                                        <div class="search_icon"></div>
+                                        <span class="icontitle transition">站內搜尋</span>
+                                    </a>
+                                    <a href="../login.html">
+                                            <div class="padlock_icon"></div>
+                                            <span class="icontitle transition">會員登入</span>
+                                    </a>
+                                    <!-- 登出 -->
+                                    <!-- 
+        
+                                    <a href="#">
+                                            <div class="padunlock_icon"></div>
+                                            <span class="icontitle transition">會員登出</span>
+                                    </a>
+        
+                                     -->
+                                     <a href="../order_list.html">
+                                            <div class="member_icon"></div>
+                                            <span class="icontitle transition">會員中心</span>
+                                     </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="description_10"><div class="icon_garbage"></div></div>
-                </div> 
-                <div class="check_outbox"><a class="check_out" href="../shoppingcar_01.html">CHECK OUT</a></div>
-               
-                <!-- 購物車沒有商品時的狀態 -->
-                <!-- <div class="order_listbox carts_none">
-                        <h3>購物車目前沒有任何商品</h3>
-                </div> -->
-   
-            </div>
-            </div>
-
-            <!-- member icon -->
-            <a href="../order_list.html" class="member_icon"></a>
-
-            
-            <!-- <div class="menu_list">
-                <a href="#"><span class="list_en">longin</span><span class="list_cn">會員登入</span></a>
-                <a href="#"><span class="list_en">longout</span><span class="list_cn">會員登出</span></a>
-                <a href="#"><span class="list_en">signup</span><span class="list_cn">會員註冊</span></a>
-            </div> -->
+                    </div>
         </nav>
+    </header>
         <div class="go_top"></div>
-<script>
+    <script>
     // menu
-        $("nav>.palette_menu,nav>.car_icon").click(function(){
-            $(this).toggleClass("menu_active");
+        $(".menu_icon").click(function(){
+            $(this).parents().find(".palette_menu").toggleClass("menu_active");
         });
     // tab
-    $(function(){
-    $(".palette_menubox .menubox_l ul li").mouseover(function () {
-        $(".palette_menubox .menubox_l ul li").removeClass("selected");
-        $(".palette_menubox .menubox_r .ranking_box").removeClass("selected");
-        $(this).addClass("selected");
-       $("#"+$(this).attr("data-id")).addClass("selected");
-    });
-    });
-     // tab2
-     $(function(){
-    $(".collectionsbox_l ul li").mouseover(function () {
-        $(".collectionsbox_l ul li").removeClass("selected");
-        $(".collectionsbox_r .ranking_box").removeClass("selected");
-        $(this).addClass("selected");
-       $("#"+$(this).attr("data-id")).addClass("selected");
-    });
-    });
-    //go top
+        $("#menutile,#menutile2").click(function(){
+            $(this).toggleClass("open");
+        });
+    //go top & header class
     $(function(){
         $(window).scroll(function(){
-		if( $(window).scrollTop() > 1620 ){
-			$(".go_top").fadeIn(800);
+		if( $(window).scrollTop() > 800){
+            $(".go_top").fadeIn(800);
+            $("#navbar").addClass('fixed_bg');
 		}else{
-			$(".go_top").fadeOut(600);
+            $(".go_top").fadeOut(600);
+            $("#navbar").removeClass('fixed_bg');
 		};
 	})	
         $('.go_top').click(function(){
@@ -190,4 +102,18 @@
         return false;
         });
     });
+
+         // 漢堡選單下滑收合 上滑顯示
+         var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+        
+    
 </script>
