@@ -221,13 +221,13 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
   .footer_bottom_left {flex-direction: column;width: 100%;}
   .footer_bottom h3 {margin: 20px 0 20px 0; }
   .footer_bottom_left>ul {margin: 0;padding: 0 0 0 25px;border-top: 1px solid #333;}
-  .footer_about_in, .footer_notice_in, .footer_service_in, .footer_contact_in {height: 0;overflow: hidden;transition: all .5s; }
+  .footer_about_in, .footer_notice_in, .footer_service_in, .footer_contact_in {max-height: 0;overflow: hidden;transition: all .8s ease-in-out; }
   .footer_about li, .footer_contact li, .footer_notice li, .footer_service li{padding: 5px 0;font-size: 15px;color: #999;display: block;}
   .footer_bottom_right {width: 90%;margin: 50px 0 10px 25px; }
   .footer_bottom_right_input{margin: -20px 0 10px 0;}
 }
 .show_content {
-  height: auto;
+  max-height: 500px;
 }
 
 
