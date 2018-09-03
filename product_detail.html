@@ -9,6 +9,59 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product_detail.css">
+    <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container, .swiper-container2 {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            height: 155px;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-pagination {
+            position: relative;
+        }
+
+        .swiper-pagination-clickable .swiper-pagination-bullet {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,11 +111,6 @@
                                 <br>
                                 <br>
                             </h7>
-                            <h6 class="product_detail_01_h6">商品規格</h6>
-                            <h7 class="product_detail_01_h7">W: 200CM x H: 70CM X D: 100cm
-                                <br>混紡羊毛 60%
-                                <br>電鍍銅椅腳
-                                <br>奈米布料椅背</h7>
                         </div>
                         <div class="product_detail_01_price">
                             <h8 class="product_detail_01_h8">
@@ -197,71 +245,30 @@
                         <h2 class="product_detail_04_h2">Recommendations</h2>
                         <h3 class="product_detail_04_h3">推薦商品</h3>
                     </div>
-                    <div class="product_detail_04_products flex">
-                        <!-- 一組商品 -->
-                        <div class="product_box" style="width: 25%;">
-                            <img src="images/H-blue-chair-11.png" alt="商品名稱">
-                            <div class="product_mask transition">
-                                <div class="product_favorate transition"></div>
-                                <div class="product_name_nd_btn">
-                                    <div class="product_name">
-                                        <h3 class="product_name_h3">
-                                            <a href="#">Arch Zen Chair</a>
-                                        </h3>
-                                    </div>
-                                    <div class="product_btn"></div>
-                                    <a class="palette_btn quick_look_palette_btn" data-fancybox data-src="#modal" class="btn btn-primary">快速查看</a>
+                    <div class="product_detail_04_products">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- 一組商品 -->
+                                <div class="product_box swiper-slide">
+                                    <img src="images/H-blue-chair-11.png" alt="商品名稱">
+                                </div>
+                                <!-- 一組商品 -->
+                                <div class="product_box swiper-slide">
+                                    <img src="images/H-yellow-chair-06.png" alt="商品名稱">
+                                </div>
+                                <!-- 一組商品 -->
+                                <div class="product_box swiper-slide">
+                                    <img src="images/H-light-07.png" alt="商品名稱">
+                                </div>
+                                <!-- 一組商品 -->
+                                <div class="product_box swiper-slide">
+                                    <img src="images/H-blue-chair-10.png" alt="商品名稱">
                                 </div>
                             </div>
                         </div>
-                        <!-- 一組商品 -->
-                        <div class="product_box" style="width: 25%;">
-                            <img src="images/H-yellow-chair-06.png" alt="商品名稱">
-                            <div class="product_mask transition">
-                                <div class="product_favorate transition"></div>
-                                <div class="product_name_nd_btn">
-                                    <div class="product_name">
-                                        <h3 class="product_name_h3">
-                                            <a href="#">Arch Zen Chair</a>
-                                        </h3>
-                                    </div>
-                                    <div class="product_btn"></div>
-                                    <a class="palette_btn quick_look_palette_btn" data-fancybox data-src="#modal" class="btn btn-primary">快速查看</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 一組商品 -->
-                        <div class="product_box" style="width: 25%;">
-                            <img src="images/H-light-07.png" alt="商品名稱">
-                            <div class="product_mask transition">
-                                <div class="product_favorate transition"></div>
-                                <div class="product_name_nd_btn">
-                                    <div class="product_name">
-                                        <h3 class="product_name_h3">
-                                            <a href="#">Arch Zen Chair</a>
-                                        </h3>
-                                    </div>
-                                    <div class="product_btn"></div>
-                                    <a class="palette_btn quick_look_palette_btn" data-fancybox data-src="#modal" class="btn btn-primary">快速查看</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 一組商品 -->
-                        <div class="product_box" style="width: 25%;">
-                            <img src="images/H-blue-chair-10.png" alt="商品名稱">
-                            <div class="product_mask transition">
-                                <div class="product_favorate transition"></div>
-                                <div class="product_name_nd_btn">
-                                    <div class="product_name">
-                                        <h3 class="product_name_h3">
-                                            <a href="#">Arch Zen Chair</a>
-                                        </h3>
-                                    </div>
-                                    <div class="product_btn"></div>
-                                    <a class="palette_btn quick_look_palette_btn" data-fancybox data-src="#modal" class="btn btn-primary">快速查看</a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -303,7 +310,7 @@
                                         <h8 class="product_quicklook_01_h8">
                                             <span style="font-family: Georgia">$</span>16,970
                                             <span style="font-size: 12px; color:#666; text-decoration: line-through">
-                                            21,300</span>
+                                                21,300</span>
                                         </h8>
                                     </div>
                                     <div class="product_quicklook_01_color">
@@ -340,7 +347,7 @@
                         <h2 class="product_detail_05_h2">Style Insights</h2>
                         <h3 class="product_detail_05_h3">風格專欄</h3>
                     </div>
-                    <div class="product_detail_05_article flex">
+                    <div class="product_detail_05_article">
                         <div class="product_detail_05_article_01">
                             <a href="/" class="product_detail_05_article_box transition">
                                 <div class="article_txt flex">
@@ -350,7 +357,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="product_detail_05_article_02">
+                        <!-- <div class="product_detail_05_article_02">
                             <a href="/" class="product_detail_05_article_box transition">
                                 <div class="article_txt flex">
                                     <div class="article_date">
@@ -358,25 +365,39 @@
                                     <div class="article_topic">七個裝潢提案,將你的公寓改造成宜人的居住空間。</div>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
         </div>
         <div id="product_detail_06">
             <section>
-                <div class="index_conten_flex product_detail_06">
+                <div class="index_conten product_detail_06">
                     <div class="product_detail_06_topic">
                         <h2 class="product_detail_06_h2">Share Your Taste</h2>
                         <h3 class="product_detail_06_h3">分享你的家</h3>
                     </div>
-                    <div class="product_detail_06_ig flex">
-                        <!-- <div class="ig_box1 ig_hover"></div> -->
-                        <div class="ig_box2 ig_pic1 ig_hover transition"></div>
-                        <div class="ig_box2 ig_pic2 ig_hover transition"></div>
-                        <!-- <div class="ig_box2 ig_pic3 ig_hover transition"></div> -->
-                        <!-- <div class="ig_box2 ig_pic4 ig_hover transition"></div>
-                        <div class="ig_box2 ig_pic5 ig_hover transition"></div> -->
+                    <div class="product_detail_06_ig">
+                        <!-- Swiper -->
+                        <div class="swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="ig_box2 ig_pic1 ig_hover transition swiper-slide">
+                                    <img src="images//banner/049.jpg" alt="">
+                                </div>
+                                <div class="ig_box2 ig_pic2 ig_hover transition swiper-slide">
+                                    <img src="images//banner/Sancal-Catalogo-Pink_book-02.jpg" alt="">
+                                </div>
+                                <div class="ig_box2 ig_pic3 ig_hover transition swiper-slide">
+                                    <img src="images//banner/Muuto-Stacked-Regal-Regalmodule-mit-Tuer-Oslo-Sofa-Ply-Rug-Teppich-Ambiente.jpg" alt="">
+                                </div>
+                                <div class="ig_box2 ig_pic4 ig_hover transition swiper-slide">
+                                    <img src="images//banner/terzopiano-3d-render-graniti-fiandre-marble-lab-project-cersaie-2016.jpg" alt="">
+                                </div>
+                                <div class="ig_box2 ig_pic5 ig_hover transition swiper-slide">
+                                    <img src="images//banner/Sancal-Catalogo-Pink_book-02.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="product_detail_06_hashtag">
                         <ul>
@@ -404,6 +425,47 @@
             </section>
         </div>
     </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiper = new Swiper('.swiper-container2', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 
 </html>
