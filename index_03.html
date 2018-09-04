@@ -10,7 +10,64 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/reveal_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
+
     <style>
+        /* swipe */
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container,
+        .swiper-container2 {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            height: 100%;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-pagination {
+            position: relative;
+        }
+
+        .swiper-pagination-clickable .swiper-pagination-bullet {
+            margin-right: 5px;
+        }
+
+        /* index03 */
+
         #index03 {
             margin: 50px 0 150px 0;
         }
@@ -42,18 +99,16 @@
 
         /* left */
 
-        .index03_left01 {
-            background: url(images/banner/27683687327_6181c92a30_b.jpg) no-repeat center center;
-            background-size: cover;
+        .left01_swipe img,
+        .left04_swipe img,
+        .right05_swipe img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .index03_left02 {
             background-color: #32465a;
-        }
-
-        .index03_left04 {
-            background: url(images/banner/27683687327_6181c92a30_b.jpg) no-repeat center center;
-            background-size: cover;
         }
 
         .index03_left05 {
@@ -74,7 +129,7 @@
         .index03_txt01_right {
             width: 11%;
             float: right;
-            margin-top: -15px;
+            margin-top: -6%;
         }
 
         .index03_h2 {
@@ -160,15 +215,15 @@
 
         .index03_right04_box {
             height: 70%;
+            width: 100%;
             overflow: hidden;
             transition: all .5s .1s;
-
+            transform: translate(5%, -8%);
         }
 
         .index03_right04_box img {
             height: 135%;
             object-fit: cover;
-            margin: -50px 0 0 40px;
         }
 
         .index03_txt02 {
@@ -195,271 +250,12 @@
         .index03_right01_box img {
             height: 125%;
             object-fit: cover;
-            margin: 0 0 0 150px;
+            margin: 0 0 0 120px;
             transform: rotateY(180deg);
         }
 
-        /* hidden parts */
-
-        .index03_right01:hover,
-        .index03_right03:hover,
-        .index03_right04:hover,
-        .index03_left02:hover,
-        .index03_left05:hover {
-            cursor: pointer;
-        }
-
-        .right01_hide_bg {
-            background-color: #333;
-            width: 100%;
-            height: 100%;
-            margin: -80% 0 0 100%;
-        }
-
-        .index03_right01:hover .right01_hide_bg {
-            margin-left: 0;
-        }
-
-        .index03_txt02_show,
-        .index03_txt01_show,
-        .index03_txt01_right04_show,
-        .index03_txt01_right03_show,
-        .index03_txt01_left05_show {
-            transition: all .3s .2s;
-        }
-
-        .index03_right01:hover .index03_txt02_show,
-        .index03_left02:hover .index03_txt01_show,
-        .index03_right04:hover .index03_txt01_right04_show,
-        .index03_right03:hover .index03_txt01_right03_show,
-        .index03_left05:hover .index03_txt01_left05_show {
-            opacity: 0;
-        }
-
-        .txt02_hide {
-            float: left;
-            margin: -67% 0 0 -50%;
-            transition: all .8s;
-            opacity: 0;
-        }
-
-        .index03_right01:hover .txt02_hide {
-            margin-left: 15%;
-            opacity: 1;
-        }
-
-        .right01_box_hide {
-            margin: -67% 0 0 100px;
-            transition: all .8s;
-            opacity: 0;
-        }
-
-        .right01_box_hide img {
-            width: 100%;
-            margin: -30px 0 0 170px;
-        }
-
-        .index03_right01:hover .right01_box_hide {
-            margin: -67% 0 0 0;
-            opacity: 1;
-        }
-
-        .index03_right01:hover .right01_box_show {
-            margin-left: 500px;
-            opacity: 0;
-        }
-
-        /* left02 hidden */
-
-        .left02_hide_bg {
-            width: 100%;
-            height: 110%;
-            background-color: #e29a09;
-            margin: -150% 0 0 -100%;
-        }
-
-        .index03_left02:hover .left02_hide_bg {
-            margin: -150% 0 0 0;
-        }
-
-        .txt01_hide {
-            float: left;
-            margin: -133% 0 0 -20%;
-            transition: all .8s;
-            opacity: 0;
-        }
-
-        .index03_left02:hover .txt01_hide {
-            margin-left: 15%;
-            opacity: 1;
-            margin: -133% 0 0 15%;
-        }
-
-        .left02_box_hide {
-            transform: translate(600px, -700px);
-            transition: all .8s;
-            opacity: 0;
-        }
-
-        .left02_box_hide img {
-            object-fit: contain;
-        }
-
-        .index03_left02:hover .left02_box_hide {
-            transform: translate(0px, -680px);
-            opacity: 1;
-        }
-
-        .index03_left02:hover .left02_box_show {
-            margin-left: 500px;
-            opacity: 0;
-        }
-
-        /* right04 */
-
-        .right04_hide_bg {
-            width: 100%;
-            height: 110%;
-            background-color: #661b1b;
-            margin: -270% 0 0 100%;
-        }
-
-        .index03_right04:hover .right04_hide_bg {
-            margin: -270% 0 0 0;
-        }
-
-        .index03_right04:hover .index03_txt01_right04_hide {
-            transform: translate(15px, -230px);
-            opacity: 1;
-        }
-
-        .index03_txt01_right04_hide {
-            transition: all .8s;
-            transform: translate(550px, -230px);
-            opacity: 0;
-        }
-
-        .index03_right04:hover .right04_box_hide {
-            transform: translate(0px, -1050px);
-            opacity: 1;
-        }
-
-        .right04_box_hide {
-            transform: translate(100px, -1020px);
-            transition: all .5s .1s;
-            opacity: 0;
-        }
-
-        .index03_right04:hover .right04_box_hide img {
-            width: 150%;
-            height: 150%;
-            object-fit: cover;
-        }
-
-        .right04_box_hide img {
-            width: 140%;
-            height: 140%;
-        }
-
-        .index03_right04:hover .right04_box_show {
-            transform: translateX(600px);
-            opacity: 0;
-        }
-
-        /* right03 hidden */
-
-        .right03_hide_bg {
-            background: url(images/banner/wood_bg.jpg) no-repeat center center;
-            background-size: cover;
-            width: 100%;
-            height: 110%;
-            margin: -270% 0 0 100%;
-        }
-
-        .index03_right03:hover .right03_hide_bg {
-            margin: -270% 0 0 0;
-        }
-
-        .index03_right03:hover .right03_box1_show,
-        .index03_right03:hover .right03_box2_show {
-            opacity: 0;
-            transform: translateY(-300px);
-        }
-
-        .right03_box_hide {
-            width: 130%;
-            transform: translate(-450px, -550px);
-            opacity: 0;
-        }
-
-        .right03_box_hide img {
-            width: 90%;
-            object-fit: cover;
-            margin-top: -50px;
-        }
-
-        .index03_right03:hover .right03_box_hide {
-            transform: translate(-90px, -550px);
-            opacity: 1;
-        }
-
-        .index03_txt01_right03_hide {
-            transform: translate(0px, -900%);
-            opacity: 0;
-            transition: all .5s .2s;
-        }
-
-        .index03_right03:hover .index03_txt01_right03_hide {
-            transform: translate(0px, -820%);
-            opacity: 1;
-        }
-
-        /* left05 */
-
-        .left05_hide_bg {
-            background-color: #c2704f;
-            width: 100%;
-            height: 110%;
-            margin: -300% 0 0 -100%;
-        }
-
-        .index03_left05:hover .left05_hide_bg {
-            margin: -300% 0 0 0;
-        }
-
-        .index03_left05:hover .left05_box_show {
-            transform: translateX(-600px);
-            opacity: 0;
-        }
-
-        .left05_box_hide {
-            transform: translate(20px, -270%);
-            opacity: 0;
-        }
-
-        .left05_box_hide img {
-            width: 100%;
-            object-fit: contain;
-            margin-left: 1px;
-        }
-
-        .index03_left05:hover .left05_box_hide {
-            transform: translate(0px, -182%);
-            opacity: 1;
-        }
-
-        .index03_txt01_left05_hide {
-            transition: all .8s;
-            opacity: 0
-        }
-
-        .index03_left05:hover .index03_txt01_left05_hide {
-            transform: translateY(-230%);
-            opacity: 1;
-        }
-
         @media screen and (max-width:800px) {
-            #index03{
+            #index03 {
                 margin: 0;
             }
             .index03 {
@@ -507,11 +303,11 @@
             }
             .index03_right03_box2 {
                 height: 80%;
-                margin: -320px 0 0 70px;
+                margin: -320px 0 0 50px;
             }
             .index03_right03_box {
                 height: 80%;
-                margin: 0 0 0 -4%;
+                margin: 0 0 0 -10%;
             }
 
         }
@@ -524,7 +320,20 @@
             <div class="index_conten_flex index03">
                 <div class="index03_left flex">
                     <div class="index03_left01 index03_400">
-                        <div class="left01_hideimg transition"></div>
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="left01_swipe swiper-slide">
+                                    <img src="images/banner/27683687327_6181c92a30_b.jpg" alt="商品名稱">
+                                </div>
+                                <div class="left01_swipe swiper-slide">
+                                    <img src="images/banner/27855179879_0f2427679a_b.jpg" alt="商品名稱">
+                                </div>
+                                <div class="left01_swipe swiper-slide">
+                                    <img src="images/banner/28680114308_27d5d126d9_b.jpg" alt="商品名稱">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="index03_left02 index03_800">
                         <div class="index03_txt01 index03_txt01_show">
@@ -540,24 +349,25 @@
                         <div class="index03_left02_box left02_box_show">
                             <img src="images/H-blue-chair-14.png" alt="">
                         </div>
-                        <!-- hidden parts -->
-                        <div class="index03_txt01 txt01_hide">
-                            <div class="index03_txt01_left">
-                                <div class="index03_deco"></div>
-                                <h2 class="index03_h2">Sunshine
-                                    <br>Yellow</h2>
-                            </div>
-                            <div class="index03_txt01_right">
-                                <h2 class="index03_h2">04</h2>
-                            </div>
-                        </div>
-                        <div class="left02_hide_bg transition"></div>
-                        <div class="index03_left02_box left02_box_hide">
-                            <img src="images/H-yellow-chair-07.png" alt="">
-                        </div>
+
                     </div>
                     <div class="index03_left03 index03_400"></div>
-                    <div class="index03_left04 index03_400"></div>
+                    <div class="index03_left04 index03_400">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="left04_swipe swiper-slide">
+                                    <img src="images/banner/40745889000_96ba023acb_k.jpg" alt="商品名稱">
+                                </div>
+                                <div class="left04_swipe swiper-slide">
+                                    <img src="images/banner/fogia_02.jpg" alt="商品名稱">
+                                </div>
+                                <div class="left04_swipe swiper-slide">
+                                    <img src="images/banner/GRANITI-FIANDRE-Project-by-studio-TERZOPIANO-image-3d-rendering.jpg" alt="商品名稱">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="index03_left05 index03_800">
                         <div class="index03_txt01 index03_txt01_left05_show">
                             <div class="index03_txt01_left">
@@ -572,22 +382,6 @@
                         <div class="index03_left05_box left05_box_show transition">
                             <img src="images/H-blue-chair-11-side.png" alt="">
                         </div>
-                        <!-- hidden parts -->
-                        <div class="index03_txt01 index03_txt01_left05_hide">
-                            <div class="index03_txt01_left">
-                                <div class="index03_deco"></div>
-                                <h2 class="index03_h2">Energetic
-                                    <br>Orange</h2>
-                            </div>
-                            <div class="index03_txt01_right">
-                                <h2 class="index03_h2">10</h2>
-                            </div>
-                        </div>
-                        <div class="index03_left05_box left05_box_hide">
-                            <img src="images/H-light-09.png" alt="">
-                        </div>
-                        <div class="left05_hide_bg transition"></div>
-
                     </div>
                 </div>
                 <div class="index03_right flex">
@@ -606,21 +400,6 @@
                                 <h2 class="index03_h2">01</h2>
                             </div>
                         </div>
-                        <!-- right01 hidden parts -->
-                        <div class="index03_txt02 txt02_hide">
-                            <div class="index03_txt02_top">
-                                <div class="index03_deco"></div>
-                                <h2 class="index03_h2">Shaded
-                                    <br>Gray</h2>
-                            </div>
-                            <div class="index03_txt02_bottom">
-                                <h2 class="index03_h2">02</h2>
-                            </div>
-                        </div>
-                        <div class="right01_hide_bg transition"></div>
-                        <div class="index03_right01_box right01_box_hide">
-                            <img src="images/H-grey-chair-07.png" alt="">
-                        </div>
                     </div>
                     <div class="index03_right02 index03_400"></div>
                     <div class="index03_right03 index03_800">
@@ -630,37 +409,35 @@
                         <div class="index03_right03_box2 right03_box2_show transition">
                             <img src="images/H-light-07.png" alt="" class="index03_right03_box_img2">
                         </div>
-                        <div class="index03_txt01 index03_txt01_right03_show" style="margin-top: 70px">
+                        <div class="index03_txt01 index03_txt01_right03_show" style="margin-top: -45px">
                             <div class="index03_txt01_left">
                                 <div class="index03_deco" style="background-color: #000"></div>
                                 <h2 class="index03_h2" style="color: #000">Noble
                                     <br>Marble</h2>
                             </div>
-                            <div class="index03_txt01_right">
+                            <div class="index03_txt01_right" style="margin-top:48px">
                                 <h2 class="index03_h2" style="color: #000">05</h2>
                             </div>
                         </div>
-                        <!-- right03 hidden -->
-                        <div class="index03_right03_box right03_box_hide transition">
-                            <img src="images/H-black-table-01.png" alt="" class="index03_right03_box_img1">
-                        </div>
-                        <div class="index03_txt01 index03_txt01_right03_hide" style="margin-top: 70px">
-                            <div class="index03_txt01_left">
-                                <div class="index03_deco"></div>
-                                <h2 class="index03_h2">Bald
-                                    <br>Texture</h2>
+                    </div>
+                    <div class="index03_right05 index03_400">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="right05_swipe swiper-slide">
+                                    <img src="images/banner/38924674714_98b7dee86b_k.jpg" alt="商品名稱">
+                                </div>
+                                <div class="right05_swipe swiper-slide">
+                                    <img src="images/banner/banner02.jpg" alt="商品名稱">
+                                </div>
+                                <div class="right05_swipe swiper-slide">
+                                    <img src="images/banner/Sancal-Producto-Sofa-Sumo-01.jpg" alt="商品名稱">
+                                </div>
                             </div>
-                            <div class="index03_txt01_right">
-                                <h2 class="index03_h2">06</h2>
-                            </div>
                         </div>
-                        <div class="right03_hide_bg transition"></div>
                     </div>
                     <div class="index03_right04 index03_800">
-                        <div class="index03_right04_box right04_box_show">
-                            <img src="images/H-pink-chair-08.png" alt="" class="index03_right04_box">
-                        </div>
-                        <div class="index03_txt01 index03_txt01_right04_show" style="margin-top: 70px">
+                        <div class="index03_txt01 index03_txt01_right04_show">
                             <div class="index03_txt01_left">
                                 <div class="index03_deco"></div>
                                 <h2 class="index03_h2">Soft
@@ -670,24 +447,11 @@
                                 <h2 class="index03_h2">07</h2>
                             </div>
                         </div>
-                        <!-- hidden parts -->
-                        <div class="index03_txt01 index03_txt01_right04_hide" style="margin-top: 70px">
-                            <div class="index03_txt01_left">
-                                <div class="index03_deco"></div>
-                                <h2 class="index03_h2">Burgundy
-                                    <br>Red</h2>
-                            </div>
-                            <div class="index03_txt01_right">
-                                <h2 class="index03_h2">08</h2>
-                            </div>
+                        <div class="index03_right04_box right04_box_show">
+                            <img src="images/H-pink-chair-08.png" alt="" class="index03_right04_box">
                         </div>
-                        <div class="index03_right04_box right04_box_hide">
-                            <img src="images/H-red-chair-06.png" alt="" class="index03_right04_box">
-                        </div>
-                        <div class="right04_hide_bg transition"></div>
-                    </div>
 
-                    <div class="index03_right05 index03_400"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -703,6 +467,8 @@
 
     <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+    <script src="js/swiper/js/swiper.min.js"></script>
+
     <script>
         $('.slide-nav').on('hover', function (e) {
             e.preventDefault();
@@ -724,6 +490,25 @@
                     $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
                 }, 800);
             }
+        });
+
+        // swipe輪播
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
         });
     </script>
 </body>
