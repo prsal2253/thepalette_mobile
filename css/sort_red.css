@@ -133,7 +133,7 @@
     position: relative;
 }
 .sort_red05_box_s figure{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(250, 250, 250);
 }
 .sort_red05_box_s img{
     height: 100%;
@@ -466,14 +466,13 @@ line-height: 40px;
     
 /* 顏色1 */
     .sort_red02{
-        height: 150vh;
         padding: 50px 0; 
     }
     .sort_red02_h2{
         font-weight: 700;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
-        text-align: center;
+        text-align: left;
         color: #a4594a;
         font-size: 80px;
         line-height: 80px;
@@ -490,30 +489,31 @@ line-height: 40px;
         margin: 0 auto;
     }
     .sort_red02_intro_img{
-        height: 50vh;
+        height: 70vh;
         background: url(../images/H-red-chair-07.png) no-repeat center center;
-        background-size: cover;
-        margin-top: -50%;
+        background-size: contain;
+        margin: -60% 0 0 -30%;
+
     }
     .sort_red02_intro_txt{
         width: 80%;
-        margin: 20px auto 0 auto;
+        margin: 0 auto;
     }
     .sort_red02_intro_txt > h3{
         color: #a4594a;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
-        text-align: center;
+        text-align: left;
         letter-spacing: 0.1em;
     }
     .sort_red02_intro_txt > p{
         color: #c09898;
         font-family: 'Noto Sans TC';
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 30px;
-        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: left;
         letter-spacing: 0.1em;
     }
     /* 推薦商品導引文字 */
@@ -543,18 +543,72 @@ line-height: 40px;
     .sort_red02_rec_product{
         
     }
-
+    /* 推薦商品 */
+.sort_red02_rec_product{
+    height: 30%;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.sort_red02_rec_product a{
+    text-decoration: none;
+}
+.sort_red02_rec_product_s{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.sort_red03_rec_product_img{
+    width: 100%;
+    height: 100%;
+}
+.sort_red03_rec_product01 img, .sort_red03_rec_product03 img{
+    height: 100%;
+    width: 60%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.sort_red03_rec_product02 img{
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.sort_red02_rec_product_l{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+}
+.sort_red02_rec_product01{
+    height: 80%;
+}
+.sort_red02_rec_product02{
+    height: 80%;
+    background: url(../images/H-red-chair-06.png) no-repeat center center;
+    background-size: cover;
+}
+.sort_red02_rec_product03{
+    height: 80%;
+    background: url(../images/H-red-chair-01.png) no-repeat center center;
+    background-size: contain;
+}
+.sort_red02_rec_product h6{
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+}
 
 /* 顏色2 */
     .sort_red03{
-        height: 150vh;
         padding: 50px 0; 
     }
     .sort_red03_h2{
         font-weight: 700;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
-        text-align: center;
+        text-align: left;
         color: #973612;
         font-size: 80px;
         line-height: 80px;
@@ -571,30 +625,30 @@ line-height: 40px;
         margin: 0 auto;
     }
     .sort_red03_intro_img{
-        height: 50vh;
+        height: 70vh;
         background: url(../images/H-red-chair-05.png) no-repeat center center;
         background-size: cover;
-        margin-top: -50%;
+        margin: -70% 0 0 -30%;
     }
     .sort_red03_intro_txt{
         width: 80%;
-        margin: 20px auto 0 auto;
+        margin: 0 auto;
     }
     .sort_red03_intro_txt > h3{
         color: #973612;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
-        text-align: center;
+        text-align: left;
         letter-spacing: 0.1em;
     }
     .sort_red03_intro_txt > p{
         color: #efa98c;
         font-family: 'Noto Sans TC';
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 30px;
-        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: left;
         letter-spacing: 0.1em;
     }
     /* 推薦商品導引文字 */
@@ -626,14 +680,14 @@ line-height: 40px;
     }
 /* 顏色3 */
     .sort_red04{
-        height: 150vh;
         padding: 50px 0; 
     }
     .sort_red04_h2{
+
         font-weight: 700;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
-        text-align: center;
+        text-align: left;
         color: #a4594a;
         font-size: 80px;
         line-height: 80px;
@@ -650,30 +704,30 @@ line-height: 40px;
         margin: 0 auto;
     }
     .sort_red04_intro_img{
-        height: 40vh;
-        background: url(../images/H-pink-chair-03.png) no-repeat center center;
+        height: 70vh;
+        background: url(../images/H-pink-chair-09.png) no-repeat center center;
         background-size: cover;
-        margin-top: -55%;
+        margin: -75% 0 0 -30%;
     }
     .sort_red04_intro_txt{
         width: 80%;
-        margin: 20px auto 0 auto;
+        margin: 0 auto;
     }
     .sort_red04_intro_txt > h3{
         color: #a4594a;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
-        text-align: center;
+        text-align: left;
         letter-spacing: 0.1em;
     }
     .sort_red04_intro_txt > p{
         color: #a4594a;
         font-family: 'Noto Sans TC';
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 30px;
-        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: left;
         letter-spacing: 0.1em;
     }
     /* 推薦商品導引文字 */

@@ -9,8 +9,58 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sort_red.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
+    <style>
+            html,
+            body {
+                position: relative;
+                height: 100%;
+            }
+    
+            body {
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .swiper-container, .swiper-container2 {
+                width: 100%;
+                height: 40vh;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .swiper-slide {
+                
+                text-align: center;
+                font-size: 18px;
+    
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+    
+            .swiper-pagination {
+                position: relative;
+            }
+    
+            .swiper-pagination-clickable .swiper-pagination-bullet {
+                margin-right: 5px;
+            }
+        </style>
+
 </head>
 
 <body>
@@ -47,8 +97,9 @@
                         <div class="sort_red02_intro_bg"></div>
                         <div class="sort_red02_intro_img"></div>
                     </div>
-                    <h2 class="sort_red02_h2">Red</h2>
+                    
                     <div class="sort_red02_intro_txt">
+                        <h2 class="sort_red02_h2">Red</h2>
                         <h3>熱情的紅 沉穩的紅 撩人的紅</h3>
 
                         <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
@@ -61,23 +112,30 @@
                         <img src="images/icon/next_w.svg" alt="">
                     </figure>
                 </div>
-                <div class="sort_red02_rec_product multiple-items" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
-                    <div>your content</div>
-                    <div>your content</div>
-                    <div>your content</div>
-                    <!-- <a href="/" class="sort_red02_rec_product_s">
-                        <div class="sort_red02_rec_product01 sort_red02_rec_product_scale transition"></div>
-                        <h6>Stacked System</h6>
-                    </a>
-                    <a href="/" class="sort_red02_rec_product_l">
-                        <div class="sort_red02_rec_product02 sort_red02_rec_product_scale transition"></div>
-                        <h6>Oscar Sectional Sofa</h6>
-                    </a>
-                    <a href="/" class="sort_red02_rec_product_s">
-                        <div class="sort_red02_rec_product03 sort_red02_rec_product_scale transition"></div>
-                        <h6>Fringe Pouf</h6>
-                    </a> -->
-                </div>
+                <div class="sort_red03_rec_product">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product01 sort_red03_rec_product_img transition">
+                                        <img src="images/H-pink-cabinet-01.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_l swiper-slide">
+                                    <div class="sort_red03_rec_product02 sort_red03_rec_product_img transition">
+                                         <img src="images/H-red-chair-06.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
+                                         <img src="images/H-red-chair-01.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
             </div>
         </section>
     </div>
@@ -92,8 +150,9 @@
                         <div class="sort_red03_intro_bg"></div>
                         <div class="sort_red03_intro_img"></div>
                     </div>
-                    <h2 class="sort_red03_h2">Orange</h2>
+                    
                     <div class="sort_red03_intro_txt">
+                        <h2 class="sort_red03_h2">Orange</h2>
                         <h3>熱情的橘 沉穩的橘 撩人的橘</h3>
 
                         <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
@@ -106,19 +165,35 @@
                         <img src="images/icon/next_w.svg" alt="">
                     </figure>
                 </div>
-                <div class="sort_red03_rec_product flex">
-                    <a href="/" class="sort_red03_rec_product_s">
-                        <div class="sort_red03_rec_product01 sort_red03_rec_product_scale transition"></div>
-                        <h6>Stacked System</h6>
-                    </a>
-                    <a href="/" class="sort_red03_rec_product_l">
-                        <div class="sort_red03_rec_product02 sort_red03_rec_product_scale transition"></div>
-                        <h6>Oscar Sectional Sofa</h6>
-                    </a>
-                    <a href="/" class="sort_red03_rec_product_s">
-                        <div class="sort_red03_rec_product03 sort_red03_rec_product_scale transition"></div>
-                        <h6>Fringe Pouf</h6>
-                    </a>
+                <div class="sort_red03_rec_product">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product01 sort_red03_rec_product_img transition">
+                                        <img src="images/H-orange-chair-04.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product02 sort_red03_rec_product_img transition">
+                                         <img src="images/H-pink-chair-05.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
+                                         <img src="images/H-light-09.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
+                                         <img src="images/H-orange-chair-07.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -134,8 +209,9 @@
                         <div class="sort_red04_intro_bg"></div>
                         <div class="sort_red04_intro_img"></div>
                     </div>
-                    <h2 class="sort_red04_h2">Pink</h2>
+                    
                     <div class="sort_red04_intro_txt">
+                        <h2 class="sort_red04_h2">Pink</h2>
                         <h3>熱情的粉 沉穩的粉 撩人的粉</h3>
 
                         <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
@@ -148,19 +224,35 @@
                         <img src="images/icon/next_w.svg" alt="">
                     </figure>
                 </div>
-                <div class="sort_red04_rec_product flex">
-                    <a href="/" class="sort_red04_rec_product_s">
-                        <div class="sort_red04_rec_product01 sort_red04_rec_product_scale transition"></div>
-                        <h6>Stacked System</h6>
-                    </a>
-                    <a href="/" class="sort_red04_rec_product_l">
-                        <div class="sort_red04_rec_product02 sort_red04_rec_product_scale transition"></div>
-                        <h6>Oscar Sectional Sofa</h6>
-                    </a>
-                    <a href="/" class="sort_red04_rec_product_s">
-                        <div class="sort_red04_rec_product03 sort_red04_rec_product_scale transition"></div>
-                        <h6>Fringe Pouf</h6>
-                    </a>
+                <div class="sort_red04_rec_product">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product01 sort_red03_rec_product_img transition">
+                                        <img src="images/H-pink-chair-09.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
+                                         <img src="images/H-pink-chair-03.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
+                                         <img src="images/H-pink-cabinet-02.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
+                                         <img src="images/H-pink-chair-07.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -262,7 +354,7 @@
                                 <h3>$14,620</h3>
                             </div>
                         </a>
-                        <div class="sort_red05_box_s">
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -270,11 +362,11 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="sort_red05_row flex">
-                        <div class="sort_red05_box_s">
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -282,8 +374,8 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
-                        <div class="sort_red05_box_s">
+                        </a>
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -291,11 +383,11 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="sort_red05_row flex">
-                        <div class="sort_red05_box_s">
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -303,8 +395,8 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
-                        <div class="sort_red05_box_s">
+                        </a>
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -312,11 +404,11 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="sort_red05_row flex">
-                        <div class="sort_red05_box_s">
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -324,8 +416,8 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
-                        <div class="sort_red05_box_s">
+                        </a>
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -333,11 +425,11 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="sort_red05_row flex">
-                        <div class="sort_red05_box_s">
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -345,8 +437,8 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
-                        <div class="sort_red05_box_s">
+                        </a>
+                        <a class="sort_red05_box_s">
                             <figure>
                                 <img src="images/H-orange-chair-07.png" alt="商品名稱">
                             </figure>
@@ -354,7 +446,7 @@
                                 <h2>Swoon Fabric Chair</h2>
                                 <h3>$14,620</h3>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- 頁碼 -->
@@ -387,13 +479,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script src="js/swiper/js/swiper.min.js"></script>
 
     <script>
         // 背景變色
@@ -401,9 +487,9 @@
             var scrolltop = $(this).scrollTop();
             if (scrolltop > 100 && scrolltop < 1500) {
                 $(".changebg").css('background-color', '#662424');
-            } else if (scrolltop > 1500 && scrolltop < 2500) {
+            } else if (scrolltop > 1500 && scrolltop < 3000) {
                 $('.changebg').css('background-color', '#c2704f');
-            } else if (scrolltop > 2500) {
+            } else if (scrolltop > 3000) {
                 $('.changebg').css('background-color', '#df9282');
             }
         });
@@ -435,13 +521,42 @@
             document.getElementById('value2').innerHTML = value;
             console.log("#value");
         }
-        // slider
-        $(document).ready(function () {
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
-            });
+  
+        // swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiper = new Swiper('.swiper-container2', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
         });
 
     </script>
