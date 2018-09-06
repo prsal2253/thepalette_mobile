@@ -63,6 +63,8 @@ span.description_mark_b{color: #000;}
 .item_02 .order_listbox.shopping_group{border-bottom: 0px solid #eee;}
 .item_02 .order_listbox.shopping_group_d{border-bottom: 0px solid #eee;background: rgba(247, 247, 247, .5);margin-bottom: 5px;}
 .item_02 .shopping_group + div{border-bottom: 1px solid #ddd; width: 100%;}
+#twzipcode,#twzipcode2{display: inline-flex;justify-content: space-between;}
+#twzipcode>div,#twzipcode2>div{width:33%;}
 
 /* item03 訂單列表 */
 .item_03 {width: 100%;}
