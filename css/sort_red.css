@@ -30,7 +30,7 @@
 .sort_red01_top>figure{
     width: 100%;
     height: 80%;
-    background: url(../images/banner/3D-interior-design-by-studio-brasch-6.jpg) no-repeat center bottom;
+    background: url(../images/article/41831742764_29cab9c5a9_k.jpg) no-repeat 60% bottom;
     background-size: cover;
     position: relative;
 }
@@ -51,7 +51,7 @@
     right: 0;
 }
 .sort_red01_top_topic{
-    z-index: 999;
+    z-index: 5;
     position: absolute;
     left: 10%;
     bottom: 17%;

@@ -567,5 +567,74 @@
                 </div>
             </section>
         </div>
+<!-- footer -->
+<div class="index_footer">
+<?php include 'page_item/footer.php';?>
+</div>
+<script type="text/javascript" src="js/slider.js"></script>
+<script>
+
+        $(function() {
+        Slider.init();
+         });
+
+        $('.slide-nav').on('hover', function (e) {
+            e.preventDefault();
+            // get current slide
+            var current = $('.flex--active').data('slide'),
+                // get button data-slide
+                next = $(this).data('slide');
+
+            $('.slide-nav').removeClass('active');
+            $(this).addClass('active');
+
+            if (current === next) {
+                return false;
+            } else {
+                $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+                $('.flex--active').addClass('animate--end');
+                setTimeout(function () {
+                    $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+                    $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+                }, 800);
+            }
+        });
+
+        // swipe輪播
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+        var swiper = new Swiper('.swiper-container2', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 </html>

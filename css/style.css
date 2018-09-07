@@ -32,7 +32,7 @@ a:hover 	{ font:15px/18px 'Roboto', 'Noto Sans TC'; color:#000; text-decoration:
 a:active 	{ font:15px/18px 'Roboto', 'Noto Sans TC'; color:#000; text-decoration: underline;}
 
 /* 網站主內容架構 */
-.index_top{  width:100%; height:auto; position:relative;}
+.index_top{  width:100%; height:auto; position:relative;z-index: 10;}
 .index_main{width:100%; margin:0 auto;min-height:100vh;padding: 0}
 .index_main section{padding: 50px 15px;}
 .index_footer{width:100%; clear:both; margin:0 auto;background: #000;height: 300px; z-index: 99;position: absolute;}
@@ -134,7 +134,7 @@ h3#menutile2.open .menutile_box1{height: 122px;padding: 10px 0 0 0;}
 
 .car_icon{width: 30px;height: 30px;opacity: 1;cursor: pointer;background: url(../images/icon/shopping-cart.svg) center no-repeat;position: relative;background-size: 88% auto;margin: 0 auto; right: 35px;margin: 15px auto;}
 .car_icon a{display: block;text-decoration: none;}
-.car_icon span{width: 20px;height: 20px;position: absolute;top:0px;right: -9px;border-radius: 50%;background-color: #df9282;color: #fff;font-size: 12px;text-align: center;line-height: 20px;transition: all .5s;letter-spacing: 0;}
+.car_icon span{width: 20px;height: 20px;position: absolute;top:0px;right: -9px;border-radius: 50%;background-color: #c82424;color: #fff;font-size: 12px;text-align: center;line-height: 20px;transition: all .5s;letter-spacing: 0;}
 
 /* menu_iconbar */
 .menu_iconbar{position: absolute;left:0;bottom:30px;display: inline-flex;width: 100%;justify-content: center;}
