@@ -22,10 +22,10 @@
                                     <a class="menutile_link" href="#">精選商品<span>Collections</span></a>
                                     <div class="menutile_box1">
                                     <a class="menutile_link2" href="sort_red.php">紅橘粉系列</a>
-                                    <a class="menutile_link2" href="#">藍綠黃系列</a>
-                                    <a class="menutile_link2" href="#">黑白灰系列</a>
-                                    <a class="menutile_link2" href="#">大地色系列</a>
-                                    <a class="menutile_link2" href="#">材質系列</a>
+                                    <a class="menutile_link2" href="sort_blue.php">藍綠黃系列</a>
+                                    <a class="menutile_link2" href="sort_black.php">黑白灰系列</a>
+                                    <a class="menutile_link2" href="sort_earth.php">大地色系列</a>
+                                    <a class="menutile_link2" href="sort_texture.php">材質系列</a>
                                     </div></h3>
                                     <h3 class="menutile">
                                         <a class="menutile_link" href="#">風格專欄<span>Articles</span></a></h3>
