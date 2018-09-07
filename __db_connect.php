@@ -1,5 +1,6 @@
 <?php
 $mysqli = new mysqli('localhost','orange','0987','the palette');
+//$mysqli = new mysqli('localhost', 'sandra', 'ssan+1222', 'the palette');
 
 $mysqli->query("SET NAMES utf8");
 //query為執行指令，進出校正編碼為ut8
