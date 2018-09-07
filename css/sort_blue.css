@@ -11,13 +11,13 @@
 .sort_blue01_bg_l{
     width: 65%;
     height: 100%;
-    background-color: #ad776c;
+    background-color: #568080;
     float:left;
 } 
 .sort_blue01_bg_r{
     width: 35%;
     height: 100%;
-    background-color: #662424;
+    background-color: #2e4553;
     float: right;
 }
 /* 前方圖片與色塊 */
@@ -37,7 +37,7 @@
 .sort_blue01_top_box1{
     height: 20%;
     width: 40%;
-    background-color: #ad776c;
+    background-color: #568080;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -45,7 +45,7 @@
 .sort_blue01_top_box2{
     width: 20%;
     height: 15%;
-    background-color: #662424;
+    background-color: #2e4553;
     position: absolute;
     top: 0;
     right: 0;
@@ -147,251 +147,6 @@ font-weight: 700;
 color: #fff;
 line-height: 40px;
 }
-/* 篩選 */
-.filter_sec1 {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 30px;
-}
-
-.filter_sec1 li {
-    display: inline-block;
-    padding: 10px;
-    font-size: 14px;
-    font-family: 'Noto Sans TC';
-    line-height: 20px;
-    letter-spacing: 0.1em;
-}
-
-.filter_filter {
-    width: 130px;
-    background-color: #000;
-    border-radius: 40px;
-    color: #fff;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.filter_filter:hover {
-    background-color: #666;
-    cursor: pointer;
-}
-
-.filter_filter>figure {
-    width: 20px;
-    height: 20px;
-    background: url(../images/icon/filter.svg) no-repeat center center;
-    background-size: cover;
-    margin-left: 10px;
-    float: left;
-}
-
-.filter_byprice>figure,
-.filter_bytime>figure {
-    width: 10px;
-    height: 15px;
-    background: url(../images/icon/next.svg) no-repeat center center;
-    background-size: cover;
-    margin: 2px 0 0 4px;
-    float: right;
-}
-
-.filter_byprice,
-.filter_bytime {
-    border: 1px solid #999;
-    border-radius: 40px;
-}
-
-.filter_byprice:hover,
-.filter_bytime:hover {
-    background-color: rgb(240, 240, 240);
-    cursor: pointer;
-}
-
-/* 篩選第一層 */
-.flex {
-    display: flex;
-}
-
-.filter {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    flex-direction: space-between;
-}
-
-/* .filter_inner {
-
-    display: fixed;
-    background:rgb(30, 30, 30);
-    width:100vw;
-    height: 100vh;
-    opacity: 1;
-    max-height: 0;
-    overflow: hidden;
-    padding: 50% 0 0 0;
-    z-index: 99;
-} */
-.filter_inner{
-    background-color: #000;
-    height: 10vh;
-    width: 100vw;
-    transition: all .5s;
-    display: none;
-}
-.show_filter_inner{
-    transition: all .5s;
-    height: 100vh;
-    display: block;
-    float: right;
-}
-
-.filter_color {
-    height: 30%;
-}
-
-.filter_item {
-    height: 40%;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-}
-/* 選顏色 */
-
-.filter_color {
-    align-items: center;
-    justify-content: center;
-}
-
-.filter_color_box {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 60px auto 15px auto;
-}
-
-.filter_color_in {
-    margin: 0 0 0 80px;
-    color: #999;
-}
-
-.filter_color1 {
-    background-color: #662424;
-}
-
-.filter_color2 {
-    background-color: #ad776c;
-}
-
-.filter_color3 {
-    background-color: #a4594a;
-}
-
-/* 選品項 */
-
-.filter_item li {
-    margin: 50px 10px 0 0;
-    padding: 10px 30px;
-    border-radius: 20px;
-    border: 1px solid #000;
-}
-.filter_item p{
-    color: rgb(240, 240, 240);
-    letter-spacing: 0.3em;
-    text-align: center;
-    font-weight: 400;
-    line-height: 25px;
-    font-size: 15px;
-    margin-top: 10px;
-}
-
-.filter_item li:hover {
-    border-radius: 20px;
-    border: 1px solid #999;
-    cursor: pointer;
-}
-.filter_item figure{
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-}
-.filter_item01 figure{
-    background: url(images/icon/filter_chair.svg) no-repeat center center;
-    background-size: cover;
-}
-.filter_item02 figure{
-    background: url(../images/icon/filter_table.svg) no-repeat center center;
-    background-size: cover;
-}
-.filter_item03 figure{
-    background: url(../images/icon/filter_sofa.svg) no-repeat center center;
-    background-size: cover;
-}
-.filter_item04 figure{
-    background: url(../images/icon/filter_shelf.svg) no-repeat center center;
-    background-size: cover;
-}
-.filter_item05 figure{
-    background: url(../images/icon/filter_light.svg) no-repeat center center;
-    background-size: cover;
-}
-.filter_item06 figure{
-    background: url(../images/icon/filter_deco.svg) no-repeat center center;
-    background-size: cover;
-}
-.item_choose{
-    border: 1px solid rgb(240, 240, 240);
-}
-/* 選高度寬度 */
-
-.filter_sbar {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    height: 40%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.filter_sbar1,
-.filter_sbar2 {
-    width: 70%;
-    margin-bottom: 50px;
-}
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 3px;
-    border-radius: 5px;
-    background: #888;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-}
-.sbar1_txt{
-    padding:20px 0 0 0;
-    text-align: center;
-    color: #fff;
-}
-
-.filter_open {
-    height: auto;
-    opacity: 1;
-}
-
 /* 頁碼 */
 .sort_blue05_page{
     width: 100%;
@@ -473,7 +228,7 @@ line-height: 40px;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #a4594a;
+        color: #9cbac4;
         font-size: 80px;
         line-height: 80px;
     }
@@ -500,7 +255,7 @@ line-height: 40px;
         margin: 0 auto;
     }
     .sort_blue02_intro_txt > h3{
-        color: #a4594a;
+        color: #9cbac4;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -508,7 +263,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_blue02_intro_txt > p{
-        color: #c09898;
+        color: #7095a1;
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;
@@ -609,7 +364,7 @@ line-height: 40px;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #973612;
+        color: #407060;
         font-size: 80px;
         line-height: 80px;
     }
@@ -635,7 +390,7 @@ line-height: 40px;
         margin: 0 auto;
     }
     .sort_blue03_intro_txt > h3{
-        color: #973612;
+        color: #407060;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -643,7 +398,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_blue03_intro_txt > p{
-        color: #efa98c;
+        color: #407060;
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;
@@ -688,7 +443,7 @@ line-height: 40px;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #a4594a;
+        color: #407060;
         font-size: 80px;
         line-height: 80px;
     }
@@ -714,7 +469,7 @@ line-height: 40px;
         margin: 0 auto;
     }
     .sort_blue04_intro_txt > h3{
-        color: #a4594a;
+        color: #407060;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -722,7 +477,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_blue04_intro_txt > p{
-        color: #a4594a;
+        color: #407060;
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;

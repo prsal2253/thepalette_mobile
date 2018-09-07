@@ -486,6 +486,16 @@
                 $('.changebg').css('background-color', '#df9282');
             }
         });
+        $(window).scroll(function() {
+            var scrolltop = $(this).scrollTop();
+            if (scrolltop>100 && scrolltop<1500){
+                $(".changebox").css('background-color','#2e4553');
+            }else if(scrolltop>1500 && scrolltop<3000){
+                $('.changebox').css('background-color','#568080');
+            }else if(scrolltop>3000){
+                $('.changebox').css('background-color','#d89d54');
+            }
+        });
 
         // 選擇篩選顏色
         $(".filter_color_box").click(function () {
