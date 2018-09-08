@@ -1,3 +1,92 @@
+<?php
+
+//require __DIR__ . '/__db_connect.php';
+$mysqli = new mysqli('localhost', 'orange', '0987', 'the palette');
+//$mysqli = new mysqli('localhost', 'sandra', 'ssan+1222', 'the palette');
+$mysqli->query("SET NAMES utf8");
+$pageName = 'product_list_red';
+
+$build_query = [];
+
+# 商品資料 begin>
+$per_page = 16; //一頁有幾筆
+$page = isset($_GET['page']) ? intval($_GET['page']) : 1; //用戶要看第幾頁
+//intval取整數
+$page1 = $page + 1;
+$page2 = $page - 1;
+
+
+$color = isset($_GET['color']) ? $_GET['color'] : 0; //顏色
+$items = isset($_GET['items']) ? $_GET['items'] : 0;//種類
+$long = isset($_GET['long']) ? intval($_GET['long']) : 0;//寬度
+$high = isset($_GET['high']) ? intval($_GET['high']) : 0;//高度
+$price = isset($_GET['price']) ? intval($_GET['price']) : 0; //時間價格
+
+$where = " WHERE `product_color_sid` BETWEEN 7 AND 9 ";
+
+if(!empty($color)){
+    $c = explode(',', $color);
+    $color_condition = ' AND (product_color_sid='. implode(' OR product_color_sid=', $c) . ')';
+    // 2 OR product_color_sid=3
+    $where .= $color_condition;
+}
+
+if(!empty($items)){
+    $i = explode(',', $items);
+    $items_condition = ' AND (category_sid='. implode(' OR category_sid=', $i) . ')';
+    $where .= $items_condition;
+}
+
+if ($long == 50) {
+    $where .= " AND `size_sid_w`=1";
+
+} elseif ($long == 100) {
+    $where .= " AND `size_sid_w`=2";
+
+} elseif ($long == 150) {
+    $where .= " AND `size_sid_w`=3";
+
+}
+
+if ($high == 50) {
+    $where .= " AND `size_sid_h`=1";
+
+} elseif ($high == 100) {
+    $where .= " AND `size_sid_h`=2";
+
+} elseif ($high == 150) {
+    $where .= " AND `size_sid_h`=3";
+
+}
+
+
+if ($price == 1) {
+    $where .= " ORDER BY `price` ASC ";
+
+} elseif ($price == 2) {
+    $where .= "  ORDER BY `price` DESC  ";
+
+}elseif ($price == 3) {
+    $where .= "  ORDER BY `publish_date` ASC  ";
+
+}elseif ($price == 4) {
+    $where .= "  ORDER BY `publish_date` DESC  ";
+
+}
+
+
+$total_sql = "SELECT COUNT(1) FROM `products_list` $where";
+$total_rows = $mysqli->query($total_sql)->fetch_row()[0]; //這邊拿到的是總筆數
+$total_pages = ceil($total_rows / $per_page);
+
+
+$product_sql = sprintf("SELECT * FROM  `products_list` $where LIMIT %s, %s ", ($page - 1) * $per_page, $per_page);
+
+//echo $product_sql; exit;
+//這裡會拿到sql的字串
+$product_rs = $mysqli->query($product_sql);
+
+?>
 <?php include 'page_item/head.php';?>
     <style>
             html,

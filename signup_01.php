@@ -73,7 +73,7 @@
                         <p>消費者可來電洽詢本公司客服進行申請。</p></div>
                 </div>
             <div class="item_02_conten">
-                <input type="submit" value="註冊會員">
+                <a href="signup.php" class="palette_btn">我同意會員條款</a>
             </div>
             </div>
         </div>
