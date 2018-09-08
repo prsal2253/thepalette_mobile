@@ -96,7 +96,6 @@ p.address_num{width: 10%;color: #888;}
 
 .icon_love{width: 19px; height: 19px;margin: 0 auto; background-image: url(../images/icon/heart.svg);background-position:center;background-repeat: no-repeat; background-size: 100% auto;cursor: pointer;transition: all .5s;}
 .icon_love:hover{ background-image: url(../images/icon/heart_hover.svg);}
-.icon_love_click{ background-image: url(../images/icon/heart_hover.svg);}
 
 /* fancybox */
 .fancybox-slide--html .fancybox-content{width:90%;}
@@ -284,6 +283,12 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 .sbar1_txt{  padding:20px 0 0 0;  text-align: center;  color: #fff;}
 .filter_open {  height: 45vh;}
 
+/* alertdiv */
+#alertdiv{position: fixed;overflow: hidden;padding: 30px 50px;top: 50%;left: 50%;text-align: center;line-height: 30px;background-color: rgba(247, 247, 247, .95);color: #444; transform: translate(-50%, -50%);box-shadow: 3px 4px 11px 0px rgba(78, 78, 78, 0.27);font-size: 15px;}
+#alertdiv input[type="submit"]{background-color: #888;margin-top:10px;}
+
+/* 加icon class */
+.icon_love_click{ background-image: url(../images/icon/heart_w_hover.svg);}
 
 
 
