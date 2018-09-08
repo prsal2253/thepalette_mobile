@@ -1,5 +1,5 @@
 
-    <header id="navbar"><h1><a class="palette_logo" href="../index.php">The Palette</a></h1>
+    <header id="navbar"><h1><a class="palette_logo" href="index.php">The Palette</a></h1>
         <nav>
             <!-- cart icon -->
             <div class="car_icon transition"><a href="#"><span>1</span></a></div>
@@ -16,7 +16,7 @@
                         <div class="palette_menubox">
                             <div class="menubox_l" id="sbt_m_manuhover1">
                                     <h3 class="menutile">
-                                        <a class="menutile_link" href="../about.html">關於我們<span>About Us</span></a>
+                                        <a class="menutile_link" href="about.html">關於我們<span>About Us</span></a>
                                     </h3> 
                                     <h3 class="menutile" id="menutile">
                                     <a class="menutile_link" href="#">精選商品<span>Collections</span></a>
@@ -30,7 +30,7 @@
                                     <h3 class="menutile">
                                         <a class="menutile_link" href="#">風格專欄<span>Articles</span></a></h3>
                                     <h3 class="menutile">
-                                        <a class="menutile_link" href="#">聯絡我們<span>Get In Touch</span></a></h3>
+                                        <a class="menutile_link" href="#">最新活動<span>Latest Events</span></a></h3>
                                     <h3 class="menutile" id="menutile2">
                                         <a class="menutile_link" href="#">客戶服務<span>Service</span></a>
                                         <div class="menutile_box1">
