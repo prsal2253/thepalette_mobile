@@ -403,33 +403,33 @@
                         <div class="top_banner_slider">
                             <ul>
                             <li class="prev_slide">
-                                    <div class="top_banner_image" style="background-image:url(images/banner/banner01.jpg)">
-                                    <div class="ps-content">
+                                    <div class="top_banner_image" style="background-image:url(images/article/27683649797_babbcb85cc_b.jpg)">
+                                    <div class="ps-content" style="background-color: #ad776c ">
                                             <h2>Red<br/>Orange<br/>Pink</h2>
                                             <p>Better Living Throug Color</p>
                                     </div>
-                                    <div class="ps-number"></div>
-                                    <div class="ps-slidewrapper"></div>
+                                    <div class="ps-number" style="background-color: #8f594a"></div>
+                                    <div class="ps-slidewrapper" style="background-color: #d89d54 "></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="top_banner_image" style="background-image:url(images/banner/banner02.jpg)">
-                                        <div class="ps-content" style="background-color: #6f8c7e">
+                                    <div class="top_banner_image" style="background-image:url(images/about/28680117748_367563dcee_h.jpg)">
+                                        <div class="ps-content" style="background-color: rgb(46, 69, 83);">
                                                 <h2>Blue<br/>Green<br/>Yellow</h2>
                                                 <p style="">Better Living Throug Color</p>
                                         </div>
-                                        <div class="ps-number" style="background-color: #e5aa33 "></div>
-                                        <div class="ps-slidewrapper" style="background-color: #254159"></div>
+                                        <div class="ps-number" style="background-color: rgb(80, 121, 130) "></div>
+                                        <div class="ps-slidewrapper" style="background-color: #568080"></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="top_banner_image" style="background-image:url(images/banner/banner03.jpg)">
+                                    <div class="top_banner_image" style="background-image:url(images/article/40745881410_ab590a502f_k.jpg)">
                                         <div class="ps-content" style="background-color:gray">
                                                 <h2>Black<br/>White<br/>Gray</h2>
                                                 <p>Better Living Throug Color</p>
                                         </div>
                                         <div class="ps-number" style="background-color: #f0f0f0"></div>
-                                        <div class="ps-slidewrapper" style="background-color: #000"></div>
+                                        <div class="ps-slidewrapper" style="background-color: #d89d54"></div>
                                     </div>
                                 </li>
                                 

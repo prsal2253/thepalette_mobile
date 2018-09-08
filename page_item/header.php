@@ -73,19 +73,19 @@ if (!empty($_SESSION['cart'])) {
 
                                     <?php if (isset($_SESSION['user'])): ?>
 
-                                    <a href="../logout.php">
+                                    <a href="../thepalette_mobile/logout.php">
                                         <div class="padunlock_icon"></div>
                                         <span class="icontitle transition">會員登出</span>
                                     </a>
 
-                                    <a href="../order_list.php">
+                                    <a href="../thepalette_mobile/order_list.php">
                                         <div class="member_icon"></div>
                                         <span class="icontitle transition">會員中心</span>
                                     </a>
 
                                     <?php else: ?>
 
-                                    <a href="../login.php">
+                                    <a href="../thepalette_mobile/login.php">
                                             <div class="padlock_icon"></div>
                                             <span class="icontitle transition">會員登入</span>
                                     </a>
@@ -112,8 +112,8 @@ if (!empty($_SESSION['cart'])) {
     //go top & header class
     $(function(){
         $(window).scroll(function(){
-		if( $(window).scrollTop() > 800){
-            $(".go_top").fadeIn(800);
+		if( $(window).scrollTop() > 300){
+            $(".go_top").fadeIn(600);
             $("#navbar").addClass('fixed_bg');
 		}else{
             $(".go_top").fadeOut(600);
