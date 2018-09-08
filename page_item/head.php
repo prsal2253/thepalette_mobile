@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/sort_earth.css?123">
     <link rel="stylesheet" href="css/sort_texture.css?123">
     <link rel="stylesheet" href="css/flatpickr.min.css?123">
-        <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+        <!-- <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> -->
     <!-- ＪＱ --><script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />

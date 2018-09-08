@@ -12,18 +12,18 @@ require __DIR__. '/__db_connect.php';
 </div>
 <div class="index_main">
     <!-- 麵包屑 -->
-    <section  class="bread_crumbs">
+    <!-- <section  class="bread_crumbs">
         <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">member</a></li>
             <li>signup</member></li>
-        </ul></section>
+        </ul></section> -->
     <section class="item_12">
-        <div class="index_conten_flex">
-            <div class="step_box step_box_in"><span>01</span><span>會員條款</span></div>
-            <div class="step_box step_box_in"><span>02</span><span>填寫會員資料</span></div>
-            <div class="step_box step_box_in"><span>03</span><span>認證會員<br/>註冊條款</span></div>
-        </div>
+    <div class="index_conten_flex">
+                <div class="step_box step_box_in"><span>01</span><span>同意<br/>會員條款</span></div>
+                <div class="step_box step_box_in"><span>02</span><span>填寫<br/>會員資料</span></div>
+                <div class="step_box step_box_in"><span>03</span><span>認證會員<br/>註冊條款</span></div>
+            </div>
     </section>
     <section class="item_12 item_13 item_14">
         <div class="index_conten ">
