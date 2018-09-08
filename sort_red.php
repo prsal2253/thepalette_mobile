@@ -276,8 +276,9 @@
                     </div>
                     <div class="filter_inner">
 
-                    </div>
-                    <!-- <div class="filter_inner transition">
+                    </div> 
+                    <!-- 篩選列表 -->
+                    <div class="filter_inner transition">
                         <div class="filter_color flex">
                             <div class="filter_color_in" style="margin-left: 0">
                                 <div class="filter_color1 filter_color_box"></div>
@@ -315,7 +316,7 @@
                             </li>
                             <li class="filter_item06 filter_items transition" style="margin: 50px 0 0 0">
                                 <figure></figure>
-                                <p>織品</p>
+                                <p>其他</p>
                             </li>
                         </ul>
                         <div class="filter_sbar flex">
@@ -323,7 +324,7 @@
                                 
                                 <input id="range" type="range" min="0" max="150" value="0" step="50" oninput="change()" onchange="change()" class="slider">
                                 <div class="sbar1_txt">
-                                    家具長度 :
+                                    家具高度 :
                                     <span id="value">0</span> cm
                                 </div>
                             </div>
@@ -336,7 +337,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
 
                     <div class="sort_red05_row flex">
