@@ -1,8 +1,28 @@
+<?php
 
+if (!empty($_SESSION['cart'])) {
+    $keys = array_keys($_SESSION['cart']);
+//字面上意思是拿到$_SESSION['cart']所有的key
+    $sql = sprintf("SELECT * FROM `products_list` WHERE `product_sid` IN (%s)", implode(',', $keys));
+    //IN (這邊要塞sid逗號隔開)
+//黏著符號js叫做join()
+//php叫做implode
+//SELECT * FROM `products_list` WHERE `product_sid` IN (1,2)
+    $rs = $mysqli->query($sql);
+
+    $data = [];
+
+    while ($r = $rs->fetch_assoc()) {
+        $r['qty'] = $_SESSION['cart'][$r['product_sid']];
+
+        $data[$r['product_sid']] = $r;
+    }
+}
+?>
     <header id="navbar"><h1><a class="palette_logo" href="index.php">The Palette</a></h1>
         <nav>
             <!-- cart icon -->
-            <div class="car_icon transition"><a href="#"><span>1</span></a></div>
+            <div class="car_icon transition"><a href="shoppingcar_01.php"><span class="qty-badge"></span></a></div>
 
             <div class="palette_menu">
                     <!-- menu icon -->
@@ -50,23 +70,28 @@
                                         <div class="search_icon"></div>
                                         <span class="icontitle transition">站內搜尋</span>
                                     </a>
+
+                                    <?php if (isset($_SESSION['user'])): ?>
+
+                                    <a href="#">
+                                        <div class="padunlock_icon"></div>
+                                        <span class="icontitle transition">會員登出</span>
+                                    </a>
+
+                                    <a href="../order_list.html">
+                                        <div class="member_icon"></div>
+                                        <span class="icontitle transition">會員中心</span>
+                                    </a>
+
+                                    <?php else: ?>
+
                                     <a href="../login.html">
                                             <div class="padlock_icon"></div>
                                             <span class="icontitle transition">會員登入</span>
                                     </a>
-                                    <!-- 登出 -->
-                                    <!-- 
-        
-                                    <a href="#">
-                                            <div class="padunlock_icon"></div>
-                                            <span class="icontitle transition">會員登出</span>
-                                    </a>
-        
-                                     -->
-                                     <a href="../order_list.html">
-                                            <div class="member_icon"></div>
-                                            <span class="icontitle transition">會員中心</span>
-                                     </a>
+
+
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -115,5 +140,55 @@
         prevScrollpos = currentScrollPos;
         }
         
-    
-</script>
+    // ____php_____
+    $(".car_icon").click(function () {
+        $(this).parents().find(".car_iconhover").toggleClass("menu_active");
+        //即時更新
+        $.get('./page_item/header_api.php', function (data) {
+            $('.car_iconhover').html(data);
+        }, 'text');
+    });
+
+    //    購物車功能區塊
+    var changeQty = function (obj) {
+        //這個函式丟一個物件進來
+        var total = 0;
+        for (var s in obj) {
+
+            total += obj[s];
+        }
+        $('.qty-badge').text(total);
+    };
+
+    var changeSmallCart = function () {
+        $.get('./page_item/header_api.php', function (data) {
+            $('.car_iconhover').html(data);
+        }, 'text');
+    };
+    $.get('add_to_cart.php', function (data) {
+        changeQty(data);
+        // $.get('header_api.php', function(data){
+        //     $('.car_iconhover').html(data);
+        // }, 'text');
+    }, 'json');
+
+
+    $('.icon_garbage').click(function (e) {
+        var tr = $(this).closest('.order_listbox');
+        var sid = tr.attr('data-sid');
+        e.stopPropagation();
+        //    氣泡事件
+        $.get('./page_item/header_api.php', {sid: sid}, function (data) {
+            tr.remove();//要等ajax回來才可以做刪除動作
+            window.changeQty(data);
+        }, 'json');
+
+    });
+
+
+
+
+
+
+
+    </script>
