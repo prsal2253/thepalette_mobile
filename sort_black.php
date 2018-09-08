@@ -1,3 +1,92 @@
+<?php
+
+//require __DIR__ . '/__db_connect.php';
+$mysqli = new mysqli('localhost', 'orange', '0987', 'the palette');
+//$mysqli = new mysqli('localhost', 'sandra', 'ssan+1222', 'the palette');
+$mysqli->query("SET NAMES utf8");
+$pageName = 'product_list_red';
+
+$build_query = [];
+
+# 商品資料 begin>
+$per_page = 16; //一頁有幾筆
+$page = isset($_GET['page']) ? intval($_GET['page']) : 1; //用戶要看第幾頁
+//intval取整數
+$page1 = $page + 1;
+$page2 = $page - 1;
+
+
+$color = isset($_GET['color']) ? $_GET['color'] : 0; //顏色
+$items = isset($_GET['items']) ? $_GET['items'] : 0;//種類
+$long = isset($_GET['long']) ? intval($_GET['long']) : 0;//寬度
+$high = isset($_GET['high']) ? intval($_GET['high']) : 0;//高度
+$price = isset($_GET['price']) ? intval($_GET['price']) : 0; //時間價格
+
+$where = " WHERE `product_color_sid` BETWEEN 7 AND 9 ";
+
+if(!empty($color)){
+    $c = explode(',', $color);
+    $color_condition = ' AND (product_color_sid='. implode(' OR product_color_sid=', $c) . ')';
+    // 2 OR product_color_sid=3
+    $where .= $color_condition;
+}
+
+if(!empty($items)){
+    $i = explode(',', $items);
+    $items_condition = ' AND (category_sid='. implode(' OR category_sid=', $i) . ')';
+    $where .= $items_condition;
+}
+
+if ($long == 50) {
+    $where .= " AND `size_sid_w`=1";
+
+} elseif ($long == 100) {
+    $where .= " AND `size_sid_w`=2";
+
+} elseif ($long == 150) {
+    $where .= " AND `size_sid_w`=3";
+
+}
+
+if ($high == 50) {
+    $where .= " AND `size_sid_h`=1";
+
+} elseif ($high == 100) {
+    $where .= " AND `size_sid_h`=2";
+
+} elseif ($high == 150) {
+    $where .= " AND `size_sid_h`=3";
+
+}
+
+
+if ($price == 1) {
+    $where .= " ORDER BY `price` ASC ";
+
+} elseif ($price == 2) {
+    $where .= "  ORDER BY `price` DESC  ";
+
+}elseif ($price == 3) {
+    $where .= "  ORDER BY `publish_date` ASC  ";
+
+}elseif ($price == 4) {
+    $where .= "  ORDER BY `publish_date` DESC  ";
+
+}
+
+
+$total_sql = "SELECT COUNT(1) FROM `products_list` $where";
+$total_rows = $mysqli->query($total_sql)->fetch_row()[0]; //這邊拿到的是總筆數
+$total_pages = ceil($total_rows / $per_page);
+
+
+$product_sql = sprintf("SELECT * FROM  `products_list` $where LIMIT %s, %s ", ($page - 1) * $per_page, $per_page);
+
+//echo $product_sql; exit;
+//這裡會拿到sql的字串
+$product_rs = $mysqli->query($product_sql);
+
+?>
 <?php include 'page_item/head.php';?>
     <style>
             html,
@@ -255,225 +344,6 @@
             </div>
         </section>
     </div>
-
-
-    <!-- 商品列表 -->
-    <div class="index_main">
-        <div id="sort_black05">
-            <section>
-                <div class="index_conten_flex sort_black05">
-                    <div id="filter" class="transition">
-
-                        <div class="index_conten_flex filter">
-                            <ul class="filter_sec1">
-                                <li class="filter_filter transition">
-                                    <figure></figure>商品篩選</li>
-                                <li class="filter_byprice transition"> 依價錢
-                                    <figure></figure>
-                                </li>
-                                <li class="filter_bytime transition"> 依上架順序
-                                    <figure></figure>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="filter_inner">
-
-                    </div>
-                    <!-- <div class="filter_inner transition">
-                        <div class="filter_color flex">
-                            <div class="filter_color_in" style="margin-left: 0">
-                                <div class="filter_color1 filter_color_box"></div>
-                                <p>紅色</p>
-                            </div>
-                            <div class="filter_color_in">
-                                <div class="filter_color2 filter_color_box"></div>
-                                <p>粉色</p>
-                            </div>
-                            <div class="filter_color_in">
-                                <div class="filter_color3 filter_color_box"></div>
-                                <p>橘色</p>
-                            </div>
-                        </div>
-                        <ul class="filter_item flex">
-                            <li class="filter_item01 filter_items transition">
-                                <figure></figure>
-                                <p>椅子</p>
-                            </li>
-                            <li class="filter_item02 filter_items transition">
-                                <figure></figure>
-                                <p>桌子</p>
-                            </li>
-                            <li class="filter_item03 filter_items transition">
-                                <figure></figure>
-                                <p>沙發</p>
-                            </li>
-                            <li class="filter_item04 filter_items transition">
-                                <figure></figure>
-                                <p>櫃子</p>
-                            </li>
-                            <li class="filter_item05 filter_items transition">
-                                <figure></figure>
-                                <p>燈飾</p>
-                            </li>
-                            <li class="filter_item06 filter_items transition" style="margin: 50px 0 0 0">
-                                <figure></figure>
-                                <p>織品</p>
-                            </li>
-                        </ul>
-                        <div class="filter_sbar flex">
-                            <div class="filter_sbar1">
-                                
-                                <input id="range" type="range" min="0" max="150" value="0" step="50" oninput="change()" onchange="change()" class="slider">
-                                <div class="sbar1_txt">
-                                    家具長度 :
-                                    <span id="value">0</span> cm
-                                </div>
-                            </div>
-                            <div class="filter_sbar2">
-                                
-                                <input id="range2" type="range" min="0" max="150" value="0" step="50" oninput="change2()" onchange="change2()" class="slider">
-                                <div class="sbar1_txt">
-                                    家具寬度 :
-                                    <span id="value2">0</span> cm
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                    <div class="sort_black05_row flex">
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="sort_black05_row flex">
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="sort_black05_row flex">
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="sort_black05_row flex">
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="sort_black05_row flex">
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                        <a class="sort_black05_box_s">
-                            <figure>
-                                <img src="images/H-orange-chair-07.png" alt="商品名稱">
-                            </figure>
-                            <div class="sort_black05_pname">
-                                <h2>Swoon Fabric Chair</h2>
-                                <h3>$14,620</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- 頁碼 -->
-                    <div class="sort_black05_page">
-                        <ul>
-                            <a href="/">
-                                <li class="page_prev">
-                                    <figure></figure>PREV</li>
-                            </a>
-                            <a href="/">
-                                <li class="page p1"> 1 </li>
-                            </a>
-                            <a href="/">
-                                <li class="page p2"> 2 </li>
-                            </a>
-                            <a href="/">
-                                <li class="page p3"> 3 </li>
-                            </a>
-                            <a href="/">
-                                <li class="page_next">
-                                    <figure></figure>NEXT</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>

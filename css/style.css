@@ -122,7 +122,7 @@ header.fixed_bg{background-color: rgba(0,0,0,1);}
 .menu_active:hover .bar{width: 100%;}
 .menu_active:hover .bar:nth-child(3){width: 100%;}
 
-.palette_menu_open{position: absolute;right:-100vw;top:0px;background:#000;display:inline-flex;width:100vw;opacity: 0;height: 100vh;z-index: 1;justify-content: center;align-items: center;overflow: hidden;}
+.palette_menu_open{position: absolute;right:-100vw;top:0px;background:#000;display:inline-flex;width:100vw;opacity: 0;height: 100vh;z-index: 10;justify-content: center;align-items: center;overflow: hidden;}
 .menu_active .palette_menu_open{opacity: 1;right:-0px}
 .palette_menu_open .palette_menubox{width:90vw;height: 90vh;display: inline-flex;}
 .palette_menu_open .palette_menubox .menubox_l{width: 100%;height:calc(100% - 60px);overflow-y: auto;display: inline-flex;align-content: center;flex-wrap: wrap;}
@@ -236,7 +236,7 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 }
 /* filter篩選器 */
 .filter_sec1 { width: 100%; height: 30px; margin-bottom: 0 auto;}
-.filter_sec1 li { display: inline-block;  padding: 10px;  font-size: 14px;  font-family: 'Noto Sans TC'; line-height: 20px;  letter-spacing: 0.1em; width: 40%}
+.filter_sec1 li { display: inline-block;  padding: 10px;  font-size: 14px;  font-family: 'Noto Sans TC'; line-height: 20px;  letter-spacing: 0.1em; width: 47%;}
 .filter_filter { width: 130px; background-color: #000; border-radius: 40px; color: #fff; margin-right: 10px;  text-align: center;  justify-content: space-around;  align-items: center;}
 .filter_filter:hover { background-color: #666; cursor: pointer;}
 .filter_filter>figure {  width: 20px;  height: 20px; background: url(../images/icon/filter.svg) no-repeat center center;
@@ -245,13 +245,13 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 .filter_bytime>figure { width: 10px; height: 15px; background: url(../images/icon/next.svg) no-repeat center center;
   background-size: cover; margin: 2px 0 0 4px; float: right;}
 .filter_byprice,
-.filter_bytime { border: 1px solid #999; border-radius: 40px; padding: 8px; font-size: 14px; font-family: 'Noto Sans TC'; line-height: 20px; letter-spacing: 0.1em;width: 40%;}
+.filter_bytime { border: 1px solid #999; border-radius: 40px; padding: 8px; font-size: 14px; font-family: 'Noto Sans TC'; line-height: 20px; letter-spacing: 0.1em;width: 47%;}
 .filter_byprice:hover,
 .filter_bytime:hover { background-color: rgb(240, 240, 240); cursor: pointer;}
-#filter { margin-top: 50px;}
+#filter {width:100%}
 .flex {  display: flex;}
 .filter { width: 100%; height: 100%; flex-direction: column; flex-direction: space-between;}
-.filter_inner { height: 0; width: 100%;  flex-direction: column; justify-content: center; align-items: center;  background-color: #000;overflow: hidden;}
+.filter_inner { height: 100vh; width: 100vw;  flex-direction: column; justify-content: center; align-items: center;  background-color: #000;overflow: hidden; position: absolute; margin-top: 50px;z-index: 10;opacity: 0;}
 .filter_color { height: 30%;}
 .filter_item { height: 40%; width: 80%; justify-content: space-between;  align-items: center;}
 .filter_sbar { height: 40%;  width: 80%;}
@@ -281,7 +281,7 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 .slider {-webkit-appearance: none;  width: 100%;  height: 3px;  border-radius: 5px;  background: #888;  outline: none;  opacity: 0.7;  -webkit-transition: .2s;  transition: opacity .2s;}
 .slider::-webkit-slider-thumb {  -webkit-appearance: none;  appearance: none;  width: 16px;  height: 16px;  border-radius: 50%;  background: #fff;  cursor: pointer;}
 .sbar1_txt{  padding:20px 0 0 0;  text-align: center;  color: #fff;}
-.filter_open {  height: 45vh;}
+.filter_open { display: block;opacity: 1;}
 
 /* alertdiv */
 #alertdiv{position: fixed;overflow: hidden;padding: 30px 50px;top: 50%;left: 50%;text-align: center;line-height: 30px;background-color: rgba(247, 247, 247, .95);color: #444; transform: translate(-50%, -50%);box-shadow: 3px 4px 11px 0px rgba(78, 78, 78, 0.27);font-size: 15px;}
