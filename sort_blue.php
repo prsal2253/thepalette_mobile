@@ -93,9 +93,9 @@
                     
                     <div class="sort_blue02_intro_txt">
                         <h2 class="sort_blue02_h2">Blue</h2>
-                        <h3>熱情的紅 沉穩的紅 撩人的紅</h3>
+                        <h3>神秘的藍 高貴的藍 透亮的藍</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>藍色是信任、忠誠、誠實的色彩。因此它總是讓人感覺真誠、保留、靜謐的。藍色是一種不喜歡引起注意、不愛譁眾取寵的顏色，它喜歡用自己的方式去實踐生活。想像我們躺著仰望一片明朗的天空、萬里無雲，你能注目那片湛藍很久，那樣的一望無際也像片鏡子，投射你內心的平靜、你與自己的私密對話。</p>
                     </div>
                 </div>
 
@@ -111,17 +111,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product01 sort_blue03_rec_product_img transition">
-                                        <img src="images/H-pink-cabinet-01.png" alt="">
+                                        <img src="images/H-blue-chair-11.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_l swiper-slide">
                                     <div class="sort_blue03_rec_product02 sort_blue03_rec_product_img transition">
-                                         <img src="images/H-blue-chair-06.png" alt="">
+                                         <img src="images/H-blue-chair-09.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
                                          <img src="images/H-blue-chair-01.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+                                    <div class="sort_blue03_rec_product04 sort_blue03_rec_product_img transition">
+                                         <img src="images/H-blue-chair-14.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -146,9 +151,9 @@
                     
                     <div class="sort_blue03_intro_txt">
                         <h2 class="sort_blue03_h2">Green</h2>
-                        <h3>熱情的橘 沉穩的橘 撩人的橘</h3>
+                        <h3>自然的綠 療育的綠 清爽的綠</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>綠色是大自然的顏色，象徵成長、和諧、清新。綠色系陳列沒有壓迫感，也令人看起來較坦率，精神。頁是一個緩和氣氛、增進人際關係的好顏色。</p>
                     </div>
                 </div>
 
@@ -164,22 +169,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product01 sort_blue03_rec_product_img transition">
-                                        <img src="images/H-orange-chair-04.png" alt="">
+                                        <img src="images/H-blue-cabinet-01.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product02 sort_blue03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-05.png" alt="">
+                                         <img src="images/H-blue-chair-12.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
-                                         <img src="images/H-light-09.png" alt="">
+                                         <img src="images/H-bottle-04.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
-                                         <img src="images/H-orange-chair-07.png" alt="">
+                                         <img src="images/H-green-chair-01.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -205,9 +210,9 @@
                     
                     <div class="sort_blue04_intro_txt">
                         <h2 class="sort_blue04_h2">Yellow</h2>
-                        <h3>熱情的粉 沉穩的粉 撩人的粉</h3>
+                        <h3>溫暖的黃 快樂的黃 朝氣的黃</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>有明快、輕薄的性格特徵，它也是早上第一道曙光的顏色，代表了太陽的光與熱，充滿了朝氣及希望，給人留下光明、輝煌、充實、成熟、溫暖、透明的感覺。</p>
                     </div>
                 </div>
 
@@ -223,22 +228,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product01 sort_blue03_rec_product_img transition">
-                                        <img src="images/H-pink-chair-09.png" alt="">
+                                        <img src="images/H-yellow-chair-02.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-03.png" alt="">
+                                         <img src="images/H-other-chair-11.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
-                                         <img src="images/H-pink-cabinet-02.png" alt="">
+                                         <img src="images/H-yellow-chair-07.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-07.png" alt="">
+                                         <img src="images/H-yellow-table-01.png" alt="">
                                     </div>
                                 </a>
                             </div>

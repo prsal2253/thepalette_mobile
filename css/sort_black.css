@@ -11,13 +11,13 @@
 .sort_black01_bg_l{
     width: 65%;
     height: 100%;
-    background-color: #ad776c;
+    background-color: rgb(70,70,70);
     float:left;
 } 
 .sort_black01_bg_r{
     width: 35%;
     height: 100%;
-    background-color: #662424;
+    background-color: #000;
     float: right;
 }
 /* 前方圖片與色塊 */
@@ -30,14 +30,14 @@
 .sort_black01_top>figure{
     width: 100%;
     height: 80%;
-    background: url(../images/article/41831742764_29cab9c5a9_k.jpg) no-repeat 60% bottom;
+    background: url(../images/banner/40745885510_cbc65a1f51_k_01.jpg) no-repeat 60% bottom;
     background-size: cover;
     position: relative;
 }
 .sort_black01_top_box1{
     height: 20%;
     width: 40%;
-    background-color: #ad776c;
+    background-color: rgb(70,70,70);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -45,7 +45,7 @@
 .sort_black01_top_box2{
     width: 20%;
     height: 15%;
-    background-color: #662424;
+    background-color: #000;
     position: absolute;
     top: 0;
     right: 0;
@@ -228,7 +228,7 @@ line-height: 40px;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #a4594a;
+        color: #fff;
         font-size: 80px;
         line-height: 80px;
     }
@@ -245,17 +245,16 @@ line-height: 40px;
     }
     .sort_black02_intro_img{
         height: 70vh;
-        background: url(../images/H-black-chair-07.png) no-repeat center center;
-        background-size: contain;
-        margin: -60% 0 0 -30%;
-
+        background: url(../images/H-black-table-01.png)no-repeat center center;
+        background-size: 80%;
+        margin: -90% 0 0 -18%;
     }
     .sort_black02_intro_txt{
         width: 80%;
         margin: 0 auto;
     }
     .sort_black02_intro_txt > h3{
-        color: #a4594a;
+        color: #fff;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -263,7 +262,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_black02_intro_txt > p{
-        color: #c09898;
+        color: rgb(180,180,180);
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;
@@ -323,9 +322,7 @@ line-height: 40px;
     margin: 0 auto;
 }
 .sort_black03_rec_product02 img{
-    height: 100%;
-    width: 90%;
-    object-fit: cover;
+    height: 80%;
     margin: 0 auto;
 }
 .sort_black02_rec_product_l{
@@ -364,7 +361,7 @@ line-height: 40px;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #973612;
+        color: #444;
         font-size: 80px;
         line-height: 80px;
     }
@@ -374,23 +371,23 @@ line-height: 40px;
         overflow: hidden;
     }
     .sort_black03_intro_bg{
-        background-color: #fff;
+        background-color: rgb(220,220,220);
         width: 90%;
         height: 30vh;
         margin: 0 auto;
     }
     .sort_black03_intro_img{
         height: 70vh;
-        background: url(../images/H-black-chair-05.png) no-repeat center center;
-        background-size: cover;
-        margin: -70% 0 0 -30%;
+        background: url(../images/H-white-chair-03.png) no-repeat center center;
+        background-size: 80%;
+        margin: -75% 0 0 -15%;
     }
     .sort_black03_intro_txt{
         width: 80%;
         margin: 0 auto;
     }
     .sort_black03_intro_txt > h3{
-        color: #973612;
+        color: rgb(100,100,100);
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -398,7 +395,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_black03_intro_txt > p{
-        color: #efa98c;
+        color: rgb(100,100,100);
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;
@@ -416,7 +413,7 @@ line-height: 40px;
         font-weight: 200;
         letter-spacing: 0.3em;
         font-family: 'Noto Sans TC';
-        color: #fff;
+        color: #000;
         text-align: center;
 
     }
@@ -438,12 +435,11 @@ line-height: 40px;
         padding: 50px 0; 
     }
     .sort_black04_h2{
-
         font-weight: 700;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #a4594a;
+        color: rgb(70,70,70);
         font-size: 80px;
         line-height: 80px;
     }
@@ -460,16 +456,16 @@ line-height: 40px;
     }
     .sort_black04_intro_img{
         height: 70vh;
-        background: url(../images/H-pink-chair-09.png) no-repeat center center;
-        background-size: cover;
-        margin: -75% 0 0 -30%;
+        background: url(../images/H-grey-chair-07.png) no-repeat center center;
+        background-size: 80%;
+        margin: -93% 0 0 -14%;
     }
     .sort_black04_intro_txt{
         width: 80%;
         margin: 0 auto;
     }
     .sort_black04_intro_txt > h3{
-        color: #a4594a;
+        color: #444;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -477,7 +473,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_black04_intro_txt > p{
-        color: #a4594a;
+        color: #444;
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;

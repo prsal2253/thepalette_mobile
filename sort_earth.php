@@ -67,11 +67,10 @@
                 <div class="sort_earth01_top">
                     <figure>
                         <div class="sort_earth01_top_topic">
-                            <h2>earth
-                                <br>Pink
-                                <br>Orange</h2>
+                            <h2>Earth
+                            <br>Tone</h2>
                             <br>
-                            <h3>紅 橘 粉</h3>
+                            <h3>大 地 色</h3>
                         </div>
                         <div class="sort_earth01_top_box1"></div>
                         <div class="sort_earth01_top_box2"></div>
@@ -92,10 +91,10 @@
                     </div>
                     
                     <div class="sort_earth02_intro_txt">
-                        <h2 class="sort_earth02_h2">earth</h2>
-                        <h3>熱情的紅 沉穩的紅 撩人的紅</h3>
+                        <h2 class="sort_earth02_h2">Brown</h2>
+                        <h3>沉穩的咖 穩定的咖 神秘的咖</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>咖啡可說是最淳樸、最本質的顏色，更可帶來心理上的輕鬆和幸福感，為人帶來一份溫暖的好心情。任何場合都不會過時或者失誤的顏色，雖沒有明豔的色彩，但更能突顯一份成熟和優雅。</p>
                     </div>
                 </div>
 
@@ -111,17 +110,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product01 sort_earth03_rec_product_img transition">
-                                        <img src="images/H-pink-cabinet-01.png" alt="">
+                                        <img src="images//H-brown-chair-08.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_l swiper-slide">
                                     <div class="sort_earth03_rec_product02 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-earth-chair-06.png" alt="">
+                                         <img src="images/H-brown-table-01.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-earth-chair-01.png" alt="">
+                                         <img src="images/H-brown-chair-01.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+                                    <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
+                                         <img src="images/H-brown-table-02.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -145,10 +149,9 @@
                     </div>
                     
                     <div class="sort_earth03_intro_txt">
-                        <h2 class="sort_earth03_h2">Orange</h2>
-                        <h3>熱情的橘 沉穩的橘 撩人的橘</h3>
-
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <h2 class="sort_earth03_h2">Ginger</h2>
+                        <h3>熱情的橘 輕快的橘 智慧的橘</h3>
+                        <p>橙色在空氣中的穿透力僅次於紅色，色感較紅色溫暖，是所有色彩中最溫暖的顏色,令人聯想到節慶、豐收的秋天，光輝的太陽，是富足幸福快樂的顏色。橙色這樣具飽和度的色調雖不容易搭配，卻是一種很棒'很有特色，且獨具風格的顏色。</p>
                     </div>
                 </div>
 
@@ -164,17 +167,17 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product01 sort_earth03_rec_product_img transition">
-                                        <img src="images/H-orange-chair-04.png" alt="">
+                                        <img src="images/H-orange-chair-02.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product02 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-05.png" alt="">
+                                         <img src="images/H-orange-chair-10.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-light-09.png" alt="">
+                                         <img src="images/H-red-chair-04.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
@@ -204,10 +207,10 @@
                     </div>
                     
                     <div class="sort_earth04_intro_txt">
-                        <h2 class="sort_earth04_h2">Pink</h2>
-                        <h3>熱情的粉 沉穩的粉 撩人的粉</h3>
+                        <h2 class="sort_earth04_h2">Yellow</h2>
+                        <h3>溫暖的黃 快樂的黃 朝氣的黃</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>有明快、輕薄的性格特徵，它也是早上第一道曙光的顏色，代表了太陽的光與熱，充滿了朝氣及希望，給人留下光明、輝煌、充實、成熟、溫暖、透明的感覺。</p>
                     </div>
                 </div>
 
@@ -223,22 +226,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product01 sort_earth03_rec_product_img transition">
-                                        <img src="images/H-pink-chair-09.png" alt="">
+                                        <img src="images/H-yellow-chair-06.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-03.png" alt="">
+                                        <img src="images/H-other-chair-11.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-pink-cabinet-02.png" alt="">
+                                        <img src="images/H-yellow-chair-07.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-07.png" alt="">
+                                        <img src="images/H-yellow-table-01.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -479,21 +482,21 @@
         $(window).scroll(function () {
             var scrolltop = $(this).scrollTop();
             if (scrolltop > 100 && scrolltop < 1500) {
-                $(".changebg").css('background-color', '#662424');
+                $(".changebg").css('background-color', 'rgb(95, 78, 66)');
             } else if (scrolltop > 1500 && scrolltop < 3000) {
-                $('.changebg').css('background-color', '#c2704f');
+                $('.changebg').css('background-color', 'rgb(194, 112, 79)');
             } else if (scrolltop > 3000) {
-                $('.changebg').css('background-color', '#df9282');
+                $('.changebg').css('background-color', 'rgb(216, 157, 84)');
             }
         });
         $(window).scroll(function() {
             var scrolltop = $(this).scrollTop();
             if (scrolltop>100 && scrolltop<1500){
-                $(".changebox").css('background-color','#2e4553');
+                $(".changebox").css('background-color','rgb(95, 78, 66)');
             }else if(scrolltop>1500 && scrolltop<3000){
-                $('.changebox').css('background-color','#568080');
+                $('.changebox').css('background-color','rgb(194, 112, 79)');
             }else if(scrolltop>3000){
-                $('.changebox').css('background-color','#d89d54');
+                $('.changebox').css('background-color','rgb(216, 157, 84)');
             }
         });
 

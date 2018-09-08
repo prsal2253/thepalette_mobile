@@ -67,11 +67,11 @@
                 <div class="sort_black01_top">
                     <figure>
                         <div class="sort_black01_top_topic">
-                            <h2>black
-                                <br>Pink
-                                <br>Orange</h2>
+                            <h2>Black
+                                <br>White
+                                <br>Grey</h2>
                             <br>
-                            <h3>紅 橘 粉</h3>
+                            <h3>黑 白 灰</h3>
                         </div>
                         <div class="sort_black01_top_box1"></div>
                         <div class="sort_black01_top_box2"></div>
@@ -92,10 +92,10 @@
                     </div>
                     
                     <div class="sort_black02_intro_txt">
-                        <h2 class="sort_black02_h2">black</h2>
-                        <h3>熱情的紅 沉穩的紅 撩人的紅</h3>
+                        <h2 class="sort_black02_h2">Black</h2>
+                        <h3>簡潔的黑 高雅的黑 經典的黑</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>黑色是一種百搭的顏色，不管和什麼顏色、什麼風格相搭配，都有和諧的感覺。黑色在家居中所表現的強烈內涵是多層面的，其蘊含的感情也很豐富。</p>
                     </div>
                 </div>
 
@@ -111,17 +111,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product01 sort_black03_rec_product_img transition">
-                                        <img src="images/H-pink-cabinet-01.png" alt="">
+                                        <img src="images/H-light-01.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_l swiper-slide">
                                     <div class="sort_black03_rec_product02 sort_black03_rec_product_img transition">
-                                         <img src="images/H-black-chair-06.png" alt="">
+                                         <img src="images/H-black-chair-02.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
-                                         <img src="images/H-black-chair-01.png" alt="">
+                                         <img src="images/H-cup-03.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                                    <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
+                                         <img src="images/H-black-table-03.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -145,17 +150,17 @@
                     </div>
                     
                     <div class="sort_black03_intro_txt">
-                        <h2 class="sort_black03_h2">Orange</h2>
-                        <h3>熱情的橘 沉穩的橘 撩人的橘</h3>
+                        <h2 class="sort_black03_h2">White</h2>
+                        <h3>俐落的白 夢幻的白 平靜的白</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>白色向來給人自由、無壓的感受，讓空間鋪陳在白色系中，平衡了整體美感。一打開家門都希望映入眼簾的是舒適的環境，感受到放鬆無壓的氛圍。</p>
                     </div>
                 </div>
 
                 <div class="sort_black03_rec">
                     <h5>推薦商品</h5>
                     <figure>
-                        <img src="images/icon/next_w.svg" alt="">
+                        <img src="images/icon/next.svg" alt="">
                     </figure>
                 </div>
                 <div class="sort_black03_rec_product">
@@ -164,22 +169,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product01 sort_black03_rec_product_img transition">
-                                        <img src="images/H-orange-chair-04.png" alt="">
+                                        <img src="images/H-white-chair-04.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product02 sort_black03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-05.png" alt="">
+                                         <img src="images/H-bottle-01.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
-                                         <img src="images/H-light-09.png" alt="">
+                                         <img src="images/H-light-02.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
-                                         <img src="images/H-orange-chair-07.png" alt="">
+                                         <img src="images/H-carpet01.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -204,10 +209,10 @@
                     </div>
                     
                     <div class="sort_black04_intro_txt">
-                        <h2 class="sort_black04_h2">Pink</h2>
-                        <h3>熱情的粉 沉穩的粉 撩人的粉</h3>
+                        <h2 class="sort_black04_h2">Grey</h2>
+                        <h3>柔和的灰 安靜的灰 沉穩的灰</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>灰色臥房可以同時吸睛又精緻，讓它得以跳脫無聊的刻板印象。可以選擇一件具代表性的家具，但重點是提亮整體灰色空間，而不是反客為主、讓眼睛分心。</p>
                     </div>
                 </div>
 
@@ -223,22 +228,22 @@
                             <div class="swiper-wrapper">
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product01 sort_black03_rec_product_img transition">
-                                        <img src="images/H-pink-chair-09.png" alt="">
+                                        <img src="images/H-light-05.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-03.png" alt="">
+                                         <img src="images/H-grey-chair-10.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
-                                         <img src="images/H-pink-cabinet-02.png" alt="">
+                                         <img src="images/H-candle-02.png" alt="">
                                     </div>
                                 </a>
                                 <a href="/" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-07.png" alt="">
+                                         <img src="images/H-grey-table-05.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -479,21 +484,21 @@
         $(window).scroll(function () {
             var scrolltop = $(this).scrollTop();
             if (scrolltop > 100 && scrolltop < 1500) {
-                $(".changebg").css('background-color', '#662424');
+                $(".changebg").css('background-color', '#000');
             } else if (scrolltop > 1500 && scrolltop < 3000) {
-                $('.changebg').css('background-color', '#c2704f');
+                $('.changebg').css('background-color', '#fff');
             } else if (scrolltop > 3000) {
-                $('.changebg').css('background-color', '#df9282');
+                $('.changebg').css('background-color', 'rgb(190,190,190)');
             }
         });
         $(window).scroll(function() {
             var scrolltop = $(this).scrollTop();
             if (scrolltop>100 && scrolltop<1500){
-                $(".changebox").css('background-color','#2e4553');
+                $(".changebox").css('background-color','#000');
             }else if(scrolltop>1500 && scrolltop<3000){
-                $('.changebox').css('background-color','#568080');
+                $('.changebox').css('background-color','#fff');
             }else if(scrolltop>3000){
-                $('.changebox').css('background-color','#d89d54');
+                $('.changebox').css('background-color','rgb(190,190,190)');
             }
         });
 
