@@ -275,10 +275,8 @@
                         </div>
                     </div>
                     <div class="filter_inner">
-
-                    </div> 
                     <!-- 篩選列表 -->
-                    <div class="filter_inner transition">
+                    <!-- <div class="filter_inner transition">
                         <div class="filter_color flex">
                             <div class="filter_color_in" style="margin-left: 0">
                                 <div class="filter_color1 filter_color_box"></div>
@@ -337,7 +335,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    </div> 
 
 
                     <div class="sort_red05_row flex">
@@ -499,7 +498,7 @@
         });
 
         $(".filter_filter").click(function () {
-            $(".filter_inner").toggleClass("show_filter_inner");
+            $(".filter_inner").toggleClass("filter_open");
         })
         //選選擇篩選品項
         $(".filter_items").click(function () {
