@@ -245,9 +245,9 @@ line-height: 40px;
     .sort_red02_intro_img{
         height: 70vh;
         background: url(../images/H-red-chair-07.png) no-repeat center center;
-        background-size: contain;
-        margin: -60% 0 0 -30%;
-
+        height: 70vh;
+        background-size: 76%;
+        margin: -70% 0 0 -23%;
     }
     .sort_red02_intro_txt{
         width: 80%;
@@ -381,8 +381,8 @@ line-height: 40px;
     .sort_red03_intro_img{
         height: 70vh;
         background: url(../images/H-red-chair-05.png) no-repeat center center;
-        background-size: cover;
-        margin: -70% 0 0 -30%;
+        background-size: 90%;
+        margin: -72% 0 0 -10%;
     }
     .sort_red03_intro_txt{
         width: 80%;
@@ -460,8 +460,8 @@ line-height: 40px;
     .sort_red04_intro_img{
         height: 70vh;
         background: url(../images/H-pink-chair-09.png) no-repeat center center;
-        background-size: cover;
-        margin: -75% 0 0 -30%;
+        background-size: 75%;
+        margin: -75% 0 0 -25%;
     }
     .sort_red04_intro_txt{
         width: 80%;

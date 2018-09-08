@@ -246,9 +246,8 @@ line-height: 40px;
     .sort_blue02_intro_img{
         height: 70vh;
         background: url(../images/H-blue-chair-11-side.png) no-repeat center center;
-        background-size: contain;
-        margin: -60% 0 0 -30%;
-        transform: translateY(180deg);
+        background-size: 92%;
+        margin: -62% 0 0 -14%;
     }
     .sort_blue02_intro_txt{
         width: 80%;
@@ -316,7 +315,7 @@ line-height: 40px;
     width: 100%;
     height: 100%;
 }
-.sort_blue03_rec_product01 img, .sort_blue03_rec_product03 img{
+.sort_blue03_rec_product01 img, .sort_blue03_rec_product03 img,.sort_blue03_rec_product04 img{
     height: 100%;
     width: 60%;
     object-fit: contain;
@@ -325,7 +324,7 @@ line-height: 40px;
 .sort_blue03_rec_product02 img{
     height: 100%;
     width: 90%;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 auto;
 }
 .sort_blue02_rec_product_l{
@@ -354,7 +353,6 @@ line-height: 40px;
     font-weight: 700;
     font-family: 'Playfair Display';
 }
-
 /* 顏色2 */
     .sort_blue03{
         padding: 50px 0; 
@@ -364,7 +362,7 @@ line-height: 40px;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #407060;
+        color: #95C1B3;
         font-size: 80px;
         line-height: 80px;
     }
@@ -381,16 +379,16 @@ line-height: 40px;
     }
     .sort_blue03_intro_img{
         height: 70vh;
-        background: url(../images/H-blue-chair-05.png) no-repeat center center;
-        background-size: cover;
-        margin: -70% 0 0 -30%;
+        background: url(../images/H-green-chair-01.png) no-repeat center center;
+        background-size: 80%;
+        margin: -62% 0 0 -16%;
     }
     .sort_blue03_intro_txt{
         width: 80%;
         margin: 0 auto;
     }
     .sort_blue03_intro_txt > h3{
-        color: #407060;
+        color: #95C1B3;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -398,7 +396,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_blue03_intro_txt > p{
-        color: #407060;
+        color: #2E5A57;
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;
@@ -438,12 +436,11 @@ line-height: 40px;
         padding: 50px 0; 
     }
     .sort_blue04_h2{
-
         font-weight: 700;
         font-family: 'Playfair Display';
         letter-spacing: 0.05em;
         text-align: left;
-        color: #407060;
+        color: #736358;
         font-size: 80px;
         line-height: 80px;
     }
@@ -460,16 +457,16 @@ line-height: 40px;
     }
     .sort_blue04_intro_img{
         height: 70vh;
-        background: url(../images/H-pink-chair-09.png) no-repeat center center;
-        background-size: cover;
-        margin: -75% 0 0 -30%;
+        background: url(../images/H-yellow-chair-07.png) no-repeat center center;
+        background-size: 80%;
+        margin: -75% 0 0 -22%;
     }
     .sort_blue04_intro_txt{
         width: 80%;
         margin: 0 auto;
     }
     .sort_blue04_intro_txt > h3{
-        color: #407060;
+        color: #736358;
         font-family: 'SourceHanSerifTC-SemiBold';
         font-size: 20px;
         line-height: 60px;
@@ -477,7 +474,7 @@ line-height: 40px;
         letter-spacing: 0.1em;
     }
     .sort_blue04_intro_txt > p{
-        color: #407060;
+        color: #827E74;
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;

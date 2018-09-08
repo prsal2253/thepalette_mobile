@@ -67,11 +67,10 @@
                 <div class="sort_texture01_top">
                     <figure>
                         <div class="sort_texture01_top_topic">
-                            <h2>texture
-                                <br>Pink
-                                <br>Orange</h2>
+                            <h2>Texture
+                                <br>Tone</h2>
                             <br>
-                            <h3>紅 橘 粉</h3>
+                            <h3>材 質</h3>
                         </div>
                         <div class="sort_texture01_top_box1"></div>
                         <div class="sort_texture01_top_box2"></div>
@@ -92,10 +91,9 @@
                     </div>
                     
                     <div class="sort_texture02_intro_txt">
-                        <h2 class="sort_texture02_h2">texture</h2>
-                        <h3>熱情的紅 沉穩的紅 撩人的紅</h3>
-
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <h2 class="sort_texture02_h2">Wood</h2>
+                        <h3>木紋，最接近大自然的樣貌</h3>
+                        <p>木頭是一種樸實的原料，不管是原始的樣貌，或者是經過專業的工匠精心雕琢，都可以展現不同的美麗面貌。利用木頭所打造而成的家具，，都可以為居家空間大加分。</p>
                     </div>
                 </div>
 
@@ -145,7 +143,7 @@
                     </div>
                     
                     <div class="sort_texture03_intro_txt">
-                        <h2 class="sort_texture03_h2">Orange</h2>
+                        <h2 class="sort_texture03_h2">Metal</h2>
                         <h3>熱情的橘 沉穩的橘 撩人的橘</h3>
 
                         <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
@@ -204,7 +202,7 @@
                     </div>
                     
                     <div class="sort_texture04_intro_txt">
-                        <h2 class="sort_texture04_h2">Pink</h2>
+                        <h2 class="sort_texture04_h2">Material</h2>
                         <h3>熱情的粉 沉穩的粉 撩人的粉</h3>
 
                         <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
