@@ -56,6 +56,12 @@ if(isset($_GET['id'])) {
             margin-left: auto;
             margin-right: auto;
         }
+        .swiper-container3 {
+            width: 100%;
+            height: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .swiper-slide {
             height: 155px;
@@ -423,24 +429,33 @@ if(isset($_GET['id'])) {
                         <h3 class="product_detail_05_h3">風格專欄</h3>
                     </div>
                     <div class="product_detail_05_article">
-                        <div class="product_detail_05_article_01">
-                            <a href="/" class="product_detail_05_article_box transition">
-                                <div class="article_txt flex">
-                                    <div class="article_date">
-                                        <div class="article_date_deco"></div>2018 JUN 23</div>
-                                    <div class="article_topic">七個裝潢提案,將你的公寓改造成宜人的居住空間。</div>
+                        <!-- Swiper -->
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper">
+                                <div class="product_detail_05_article_01 swiper-slide" style="height: 100%;">
+                                    <img src="images/about/41652216105_5fd10f9ef8_k.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+                                    <a href="/" class="product_detail_05_article_box transition">
+                                        <div class="article_txt flex">
+                                            <div class="article_date">
+                                                <div class="article_date_deco"></div>2018 JUN 23</div>
+                                            <div class="article_topic">七個裝潢提案,將你的公寓改造成宜人的居住空間。</div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="product_detail_05_article_02 swiper-slide" style="height: 100%;" style="width: 100%;height: 100%;object-fit: cover;">
+                                    <img src="images/about/27855179879_0f2427679a_b.jpg" alt="">
+                                    <a href="/" class="product_detail_05_article_box transition">
+                                        <div class="article_txt flex">
+                                            <div class="article_date">
+                                                <div class="article_date_deco"></div>2018 AUG 08</div>
+                                            <div class="article_topic">七個裝潢提案,將你的公寓改造成宜人的居住空間。</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination" style="margin-top: 20px;"></div>
                         </div>
-                        <!-- <div class="product_detail_05_article_02">
-                            <a href="/" class="product_detail_05_article_box transition">
-                                <div class="article_txt flex">
-                                    <div class="article_date">
-                                        <div class="article_date_deco"></div>2018 AUG 08</div>
-                                    <div class="article_topic">七個裝潢提案,將你的公寓改造成宜人的居住空間。</div>
-                                </div>
-                            </a>
-                        </div> -->
                     </div>
                 </div>
             </section>
@@ -507,7 +522,7 @@ if(isset($_GET['id'])) {
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 15,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -538,6 +553,19 @@ if(isset($_GET['id'])) {
             autoplay: {
                 delay: 2000,
                 disableOnInteraction: false,
+            },
+        });
+        var swiper = new Swiper('.swiper-container3', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>
