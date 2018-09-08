@@ -1,3 +1,26 @@
+<?php
+
+require __DIR__ . '/__db_connect.php';
+
+
+if(isset($_GET['id'])) {
+    $sql = sprintf('SELECT * FROM `products_list` WHERE 1 AND `product_sid`='.$_GET['id']);
+    $rs = $mysqli->query($sql);
+    $r = $rs->fetch_assoc();
+
+    if($r['same']!==0) {
+        $sql2 = "SELECT * FROM `products_list` WHERE `same`=". $r['same'];
+
+        $rs2 = $mysqli->query($sql2);
+
+        $s_same = [];
+
+        while ($c = $rs2->fetch_assoc()) {
+            $s_same[$c['product_sid']] = $c;
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +33,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product_detail.css">
     <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
+
 
     <style>
         html,
@@ -61,6 +85,52 @@
         .swiper-pagination-clickable .swiper-pagination-bullet {
             margin-right: 5px;
         }
+        .color1,.color2,.color3,.color4,.color5,.color6,.color7,.color8,.color9,.color10,.color11,.color12,.color13{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 2px;
+        }
+        .color1{
+            background-color: red;
+        }
+        .color2{
+            background-color: hotpink;
+        }
+        .color3{
+            background-color: darkorange;
+        }
+        .color4{
+            background-color: deepskyblue;
+        }
+        .color5{
+            background-color: green;
+        }
+        .color6{
+            background-color: yellow;
+        }
+        .color7{
+            background-color: black;
+        }
+        .color8{
+            background-color: white;
+        }
+        .color9{
+            background-color: darkgray;
+        }
+        .color10{
+            background-color: saddlebrown;
+        }
+        .color11{
+            background-color: lightyellow;
+        }
+        .color12{
+            background-color: cornflowerblue;
+        }
+        .color13{
+            background-color: purple;
+        }
     </style>
 </head>
 
@@ -82,19 +152,19 @@
         </section> -->
         <div id="product_detail_01">
             <section class="">
-                <div class="index_conten_flex product_detail_01">
+                <div class="index_conten_flex product_detail_01 card" data-sid="<?= $r['product_sid'] ?>">
                     <!-- 左邊 -->
                     <div class="product_detail_01_left flex">
                         <div class="product_detail_01_topic">
-                            <h2 class="product_detail_01_h2">Swoon Chair Space Copenhagen</h2>
+                            <h2 class="product_detail_01_h2"><?= $r['product_name'] ?></h2>
                             <div class="s_rate flex">
-                                <h3 class="product_detail_01_h3">by Fredericia Furniture&nbsp;&nbsp;</h3>
+                                <h3 class="product_detail_01_h3">by <?= $r['designer'] ?>&nbsp;&nbsp;</h3>
                                 <div class="s_star"></div>
-                                <h4 class="product_detail_01_h4">&nbsp;&nbsp;5.0 (32筆評論)</h4>
+                                <h4 class="product_detail_01_h4">&nbsp;<?= $r['star'] ?>&nbsp;&nbsp;(<?= $r['howmuch_star'] ?>筆評論)</h4>
                             </div>
                         </div>
                         <div class="product_detail_image">
-                            <img src="images/H-orange-chair-07.png" alt="">
+                            <img class="img-good" src="images/<?= $r['img'] ?>.png" alt="<?= $r['product_name'] ?>">
                         </div>
                     </div>
                     <!-- 右邊 -->
@@ -106,26 +176,31 @@
                             <h5 class="product_detail_01_h5">國泰銀行刷卡分期免利息</h5>
                         </div>
                         <div class="product_detail_01_description">
-                            <h6 class="product_detail_01_h6">商品描述</h6>
-                            <h7 class="product_detail_01_h7">一打開家門，都希望映入眼簾的是舒適清爽的環境，感受到的是放鬆無壓的氛圍，讓你一走進就感受到溫暖寧靜。觀察過許多不同類型的裝修風格，發現最能恆久，百看不厭，也最能讓人感受療癒，就是利用中性色調，營造出自然柔和的感受。
-                                <br>
-                                <br>
-                            </h7>
+                            <h6 class="product_detail_01_h6"><?= $r['introduction'] ?></h6>
+                            <h7 class="product_detail_01_h7"><?= $r['product_size'] ?></h7>
                         </div>
                         <div class="product_detail_01_price">
                             <h8 class="product_detail_01_h8">
-                                <span style="font-family: Georgia">$</span>16,970
-                                <span style="font-size: 12px; color:#666; text-decoration: line-through"> 21,300</span>
+                                <span style="font-family: Georgia" class="sub-total2"></span>
+                                <span style="font-size: 12px; color:#666; text-decoration: line-through" data-totalprice="<?= $r['price'] ?>" class="sub-total"></span>
                             </h8>
                         </div>
+
                         <div class="product_detail_01_color">
-                            <div class="choose_color color01 transition"></div>
-                            <div class="choose_color color02 transition"></div>
-                            <div class="choose_color color03 transition"></div>
+                            <?php if(($r['same']!=0)):?>
+                                <div class="product_quicklook_01_color">
+                                    <?php foreach($s_same as $k=>$v): ?>
+                                        <div class="choose_color color<?= $v['product_color_sid'] ?> transition"
+                                             data-sid="<?= $v['product_sid'] ?>" data-img="<?= $v['img'] ?>"></div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php else:?>
+                                <div></div>
+                            <?php endif;?>
                         </div>
                         <div class="product_detail_01_btns flex">
                             <div class="s_product_detail_01_num palette_select">
-                                <select>
+                                <select class="qty">
                                     <option>01</option>
                                     <option>02</option>
                                     <option>03</option>
@@ -464,6 +539,56 @@
                 delay: 2000,
                 disableOnInteraction: false,
             },
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        var dallorCommas = function (n) {    // 這是加$跟三三為單位中間加逗號
+            return '$ ' + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        };
+
+        var items = $('.sub-total');
+
+        items.each(function () {
+            var p = parseInt($(this).attr('data-totalprice'));
+            $(this).text(dallorCommas(p));
+            $('.sub-total2').text(dallorCommas(p*0.85));
+
+
+        });
+
+
+
+
+        $(".choose_color").click(function(){
+            $(this).css({
+                "border": "3px solid #333",
+                "border-radius": "50%"
+            }).siblings().css("border","");
+
+            var pid = $(this).attr('data-sid');
+            var img = $(this).attr('data-img');
+            $('.card').attr('data-sid', pid);
+            $('.img-good').attr('src', 'images/'+img+'.png');
+            console.log(pid);
+
+        });
+        //購物車功能
+        $('.add_to_cart').click(function(){
+            var card = $(this).closest('.card');
+            var sid = card.attr('data-sid');
+            var qty = card.find('.qty').val();
+            console.log(`sid: ${sid}, qty: ${qty}`);
+
+            $.get('add_to_cart.php', {sid:sid,qty:qty}, function(data){
+                //發送給誰，送的參數(字串KEY:值)，callback函式(json格式)
+                console.log(data);
+                alert('商品已加入購物車囉！啾咪～');
+                //點上面購物車數量會變
+                window.parent.changeQty(data);
+                changeQty(data);
+            }, 'json');
         });
     </script>
 </body>
