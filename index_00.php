@@ -1,5 +1,6 @@
 <?php include 'page_item/head.php';?>
 <link rel="stylesheet" href="css/pageitem.css?123">
+<link rel="stylesheet" href="css/product_detail.css?123">
     <style>
         .index02{
             width: 100%;
@@ -82,6 +83,12 @@
         .swiper-container2 {
             width: 100%;
             height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-container3 {
+            width: 100%;
+            height: 80%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -303,6 +310,7 @@
             transform: rotateY(180deg);
         }
         @media screen and (max-width:800px){
+            
             .index02_video{
                 height: 100vh;
                 margin-top: 0;
@@ -607,10 +615,53 @@
                 </div>
             </section>
         </div>
+        <!-- 文章 -->
+        <div id="product_detail_05">
+            <section style="padding:50px 15px;">
+                <div class="index_conten_flex product_detail_05">
+                    <div class="product_detail_05_topic">
+                        <h2 class="product_detail_05_h2">Style Insights</h2>
+                        <h3 class="product_detail_05_h3">風格專欄</h3>
+                    </div>
+                    <div class="product_detail_05_article">
+                        <!-- Swiper -->
+                        <div class="swiper-container3">
+                            <div class="swiper-wrapper">
+                                <div class="product_detail_05_article_01 swiper-slide" style="height: 100%;">
+                                    <img src="images/about/41652216105_5fd10f9ef8_k.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+                                    <a href="/" class="product_detail_05_article_box transition">
+                                        <div class="article_txt flex">
+                                            <div class="article_date">
+                                                <div class="article_date_deco"></div>2018 JUN 23</div>
+                                            <div class="article_topic">七個裝潢提案,將你的公寓改造成宜人的居住空間。</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_detail_05_article_02 swiper-slide" style="height: 100%;">
+                                    <img src="images/about/27855179879_0f2427679a_b.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+                                    <a href="/" class="product_detail_05_article_box transition">
+                                        <div class="article_txt flex">
+                                            <div class="article_date">
+                                                <div class="article_date_deco"></div>2018 AUG 08</div>
+                                            <div class="article_topic">七個裝潢提案,將你的公寓改造成宜人的居住空間。</div>
+                                        </div> 
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination" style="margin-top: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 <!-- footer -->
 <div class="index_footer">
 <?php include 'page_item/footer.php';?>
 </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper/js/swiper.min.js"></script>
+
 <script type="text/javascript" src="js/slider.js"></script>
 <script type="text/javascript">
 (function () {
@@ -804,6 +855,19 @@ function init(item) {
             autoplay: {
                 delay: 4000,
                 disableOnInteraction: false,
+            },
+        });
+        var swiper = new Swiper('.swiper-container3', {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>

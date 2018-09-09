@@ -360,6 +360,7 @@
     background-color: #000;
     height: 65vh;
     padding-top: 1px;
+    overflow: hidden;
 }
 .product_detail_05{
     margin: 80px auto;
