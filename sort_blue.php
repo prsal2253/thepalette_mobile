@@ -110,22 +110,25 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=48" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product01 sort_blue03_rec_product_img transition">
                                         <img src="images/H-blue-chair-11.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_l swiper-slide">
+
+                                <a href="product_detail.php?id=46" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product02 sort_blue03_rec_product_img transition">
                                          <img src="images/H-blue-chair-09.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=38" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
                                          <img src="images/H-blue-chair-01.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=51" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product04 sort_blue03_rec_product_img transition">
                                          <img src="images/H-blue-chair-14.png" alt="">
                                     </div>
@@ -168,22 +171,25 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=35" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product01 sort_blue03_rec_product_img transition">
                                         <img src="images/H-blue-cabinet-01.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=49" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product02 sort_blue03_rec_product_img transition">
                                          <img src="images/H-blue-chair-12.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=147" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
                                          <img src="images/H-bottle-04.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=54" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
                                          <img src="images/H-green-chair-01.png" alt="">
                                     </div>
@@ -227,22 +233,25 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=64" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product01 sort_blue03_rec_product_img transition">
                                         <img src="images/H-yellow-chair-02.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=123" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
                                          <img src="images/H-other-chair-11.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=69" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
                                          <img src="images/H-yellow-chair-07.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_blue03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=70" class="sort_blue03_rec_product_s swiper-slide">
                                     <div class="sort_blue03_rec_product03 sort_blue03_rec_product_img transition">
                                          <img src="images/H-yellow-table-01.png" alt="">
                                     </div>
