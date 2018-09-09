@@ -493,9 +493,9 @@ require __DIR__ . '/__db_connect.php';
             var scrolltop = $(this).scrollTop();
             if (scrolltop > 100 && scrolltop < 1500) {
                 $(".changebg").css('background-color', '#662424');
-            } else if (scrolltop > 1500 && scrolltop < 3000) {
+            } else if (scrolltop > 1500 && scrolltop < 2600) {
                 $('.changebg').css('background-color', '#c2704f');
-            } else if (scrolltop > 3000) {
+            } else if (scrolltop > 2800) {
                 $('.changebg').css('background-color', '#df9282');
             }
         });

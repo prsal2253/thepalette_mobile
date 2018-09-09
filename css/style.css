@@ -272,7 +272,7 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 .filter_item04 figure{  background: url(../images/icon/filter_shelf.svg) no-repeat center center;  background-size: cover;}
 .filter_item05 figure{  background: url(../images/icon/filter_light.svg) no-repeat center center;  background-size: cover;}
 .filter_item06 figure{  background: url(../images/icon/filter_deco.svg) no-repeat center center;  background-size: cover;}
-.item_choose{ border: 1px solid rgb(240, 240, 240);z-index: 99;}
+.filter_item li.item_choose{ border: 1px solid rgb(240, 240, 240);z-index: 99;}
 .toggle_color{border: 3px solid #fff;border-radius: 50%;cursor: pointer;z-index: 99;}
 .filter_sbar {  width: 100%;  justify-content: center;  align-items: center;flex-direction: column;}
 .filter_sbar1,

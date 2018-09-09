@@ -99,44 +99,44 @@ if(isset($_GET['id'])) {
             margin-left: 2px;
         }
         .color1{
-            background-color: red;
-        }
-        .color2{
-            background-color: hotpink;
-        }
-        .color3{
-            background-color: darkorange;
-        }
-        .color4{
-            background-color: deepskyblue;
-        }
-        .color5{
-            background-color: green;
-        }
-        .color6{
-            background-color: yellow;
-        }
-        .color7{
-            background-color: black;
-        }
-        .color8{
-            background-color: white;
-        }
-        .color9{
-            background-color: darkgray;
-        }
-        .color10{
-            background-color: saddlebrown;
-        }
-        .color11{
-            background-color: lightyellow;
-        }
-        .color12{
-            background-color: cornflowerblue;
-        }
-        .color13{
-            background-color: purple;
-        }
+        background-color: #802929;
+    }
+    .color2{
+        background-color: #da9480;
+    }
+    .color3{
+        background-color: #c55638;
+    }
+    .color4{
+        background-color: #2e4553;
+    }
+    .color5{
+        background-color: #407060;
+    }
+    .color6{
+        background-color: #d89d54;
+    }
+    .color7{
+        background-color: black;
+    }
+    .color8{
+        background-color: white;
+    }
+    .color9{
+        background-color: #999;
+    }
+    .color10{
+        background-color: #736558;
+    }
+    .color11{
+        background-color: #D59A54;
+    }
+    .color12{
+        background-color: #70929E;
+    }
+    .color13{
+        background-color: #80346D;
+    }
     </style>
 </head>
 
