@@ -50,11 +50,11 @@ if(isset($_POST['email']) and isset($_POST['password'])) {
     <section  class="item_10">
         <div class="index_conten">
             <!--     登入成功與否訊息           -->
-            <?php if(isset($msg_type)): ?>
-            <div id="info" class="alert" role="alert">
-                <?= $msg_info ?>
-            </div>
-            <?php endif ; ?>
+<!--            --><?php //if(isset($msg_type)): ?>
+<!--            <div id="info" class="alert" role="alert">-->
+<!--                --><?//= $msg_info ?>
+<!--            </div>-->
+<!--            --><?php //endif ; ?>
 
             <?php if(isset($msg_type) and $msg_type=='success' and isset($_SESSION['come_from'])): ?>
 <!--           如果沒有設定$msg_type變數就代表還沒登入-->

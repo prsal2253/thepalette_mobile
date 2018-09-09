@@ -20,6 +20,7 @@ if (!empty($_SESSION['cart'])) {
 }
 ?>
 <style>
+.index_main{padding: 100px 0 0 0}
 .palette_logo {
     display: block;
     margin: 0 0 0 0px;
@@ -137,7 +138,7 @@ header.fixed_bg h1.palette_logo .logo_small{display:block;}
     //go top & header class
     $(function(){
         $(window).scroll(function(){
-		if( $(window).scrollTop() > 300){
+		if( $(window).scrollTop() > 100){
             $(".go_top").fadeIn(600);
             $("#navbar").addClass('fixed_bg');
 		}else{
@@ -160,7 +161,7 @@ header.fixed_bg h1.palette_logo .logo_small{display:block;}
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
-            document.getElementById("navbar").style.top = "-100px";
+            document.getElementById("navbar").style.top = "-150px";
         }
         prevScrollpos = currentScrollPos;
         }

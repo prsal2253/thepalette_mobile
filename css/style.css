@@ -33,9 +33,9 @@ a:active 	{ font:15px/18px 'Roboto', 'Noto Sans TC'; color:#000; text-decoration
 
 /* 網站主內容架構 */
 .index_top{  width:100%; height:auto; position:relative;z-index: 10;}
-.index_main{width:100%; margin:0 auto;min-height:100vh;padding: 0}
+.index_main{width:100%; margin:0 auto;min-height:100vh;padding: 100px 0 0 0}
 .index_main section{padding: 50px 15px;}
-.index_footer{width:100%; clear:both; margin:0 auto;background: #000;height: 300px; z-index: 99;position: absolute;}
+.index_footer{width:100%; clear:both; margin:0 auto;background: #000;height: 300px; z-index: 3;position: absolute;}
 
 /* 內容架構，不做滿版時限制寬度為1200 */
 .index_conten{width:100%; max-width:1200px;margin:0 auto;}
@@ -110,6 +110,19 @@ header h1 a.palette_logo{color: #fff;letter-spacing: .1em;z-index: 9999;font-siz
 
 /* 螢幕滑過800後加入class */
 header.fixed_bg{background-color: rgba(0,0,0,1);}
+
+.palette_logo {display: block;margin: 0 0 0 0px;position: absolute;top: 0px;height:100%;padding:20px;}
+.palette_logo img{width: 75px;}
+h1.palette_logo .logo_top{display:block;}
+h1.palette_logo .logo_small{display:none;}
+h1.palette_logo .logo_small img{width:92px;}
+
+.palette_menubox .palette_logo {top:0;left:0;}
+header.fixed_bg h1.palette_logo {padding:10px;}
+header.fixed_bg h1.palette_logo .logo_top{display:none;}
+header.fixed_bg h1.palette_logo .logo_small{display:block;}
+
+
 
 .palette_menu {cursor: pointer;z-index: 999;}
 .menu_icon{width: 30px;height: 20px;margin: 20px auto;cursor: pointer;position: relative;z-index: 999;right:15px;}

@@ -1,12 +1,41 @@
 <?php
 session_start();
 unset($_SESSION['user']);
-//在登入頁已經設定了$_SESSION['user'] = $result->fetch_assoc();
-if(isset($_SERVER['HTTP_REFERER'])) {
-//    先判斷HTTP_REFERER有無設定
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
-//    Location從哪裡來回到那個頁面
-} else {
-    header('Location: ./');
-//    如果HTTP_REFERER沒有設定就回到當下資料夾index頁面
-}
+?>
+
+<?php include 'page_item/head.php';?>
+</head>
+<body id="login" class="">
+<!-- top -->
+<div class="index_top">
+    <?php include 'page_item/header.php';?>
+</div>
+<!-- main -->
+<div class="index_main">
+    <!-- 麵包屑 -->
+    <section  class="bread_crumbs">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">member</a></li>
+            <li>logout</li>
+        </ul></section>
+    <section  class="item_10">
+        <div class="index_conten">
+        </div>
+    </section>
+</div>
+
+<script>
+    alert('登出成功，一秒後跳轉頁面');
+    <?php if(isset($_SERVER['HTTP_REFERER'])):?>
+
+setTimeout(function(){
+    location.href = "<?= $_SERVER['HTTP_REFERER'] ?>";
+                    }, 1000);
+<?php else:?>
+    setTimeout(function(){
+        location.href = 'index.php';
+    }, 1000);
+
+<?php endif;?>
+</script>
