@@ -282,24 +282,25 @@ require __DIR__ . '/__db_connect.php';
                             </ul>
                         </div>
                     </div>
-                    <div class="filter_inner">
-                    <!-- 篩選列表 -->
-                    <!-- <div class="filter_inner transition">
-                        <div class="filter_color flex">
-                            <div class="filter_color_in" style="margin-left: 0">
-                                <div class="filter_color1 filter_color_box"></div>
-                                <p>紅色</p>
-                            </div>
-                            <div class="filter_color_in">
-                                <div class="filter_color2 filter_color_box"></div>
-                                <p>粉色</p>
-                            </div>
-                            <div class="filter_color_in">
-                                <div class="filter_color3 filter_color_box"></div>
-                                <p>橘色</p>
-                            </div>
+                    
+                    <!-- 篩選展開 -->
+                        <div class="index_conten_flex filter_inner transition">
+                    <div class="filter_color flex">
+                        <div class="filter_color_in" style="margin-left: 0">
+                            <div class="filter_color1 filter_color_box"></div>
+                            <p>紅色</p>
                         </div>
-                        <ul class="filter_item flex">
+                        <div class="filter_color_in">
+                            <div class="filter_color2 filter_color_box"></div>
+                            <p>粉色</p>
+                        </div>
+                        <div class="filter_color_in">
+                            <div class="filter_color3 filter_color_box"></div>
+                            <p>橘色</p>
+                        </div>
+                    </div>
+                    <ul class="filter_item flex">
+                        <div class="filter_item_in1 flex">
                             <li class="filter_item01 filter_items transition">
                                 <figure></figure>
                                 <p>椅子</p>
@@ -312,6 +313,8 @@ require __DIR__ . '/__db_connect.php';
                                 <figure></figure>
                                 <p>沙發</p>
                             </li>
+                        </div>
+                        <div class="filter_item_in2 flex">
                             <li class="filter_item04 filter_items transition">
                                 <figure></figure>
                                 <p>櫃子</p>
@@ -324,27 +327,27 @@ require __DIR__ . '/__db_connect.php';
                                 <figure></figure>
                                 <p>其他</p>
                             </li>
-                        </ul>
-                        <div class="filter_sbar flex">
-                            <div class="filter_sbar1">
-                                
-                                <input id="range" type="range" min="0" max="150" value="0" step="50" oninput="change()" onchange="change()" class="slider">
-                                <div class="sbar1_txt">
-                                    家具高度 :
-                                    <span id="value">0</span> cm
-                                </div>
-                            </div>
-                            <div class="filter_sbar2">
-                                
-                                <input id="range2" type="range" min="0" max="150" value="0" step="50" oninput="change2()" onchange="change2()" class="slider">
-                                <div class="sbar1_txt">
-                                    家具寬度 :
-                                    <span id="value2">0</span> cm
-                                </div>
+                        </div>
+                    </ul>
+                    <div class="filter_sbar flex">
+                        <div class="filter_sbar1">
+                            <!--寬度-->
+                            <input id="range" type="range" min="0" max="150" value="0" step="50" oninput="change()" onchange="change()" class="slider">
+                            <div class="sbar1_txt">
+                                家具高度 :
+                                <span id="value">0</span> cm
                             </div>
                         </div>
-                    </div> -->
-                    </div> 
+                        <div class="filter_sbar2">
+                            <!--高度-->
+                            <input id="range2" type="range" min="0" max="150" value="0" step="50" oninput="change2()" onchange="change2()" class="slider">
+                            <div class="sbar1_txt">
+                                家具寬度 :
+                                <span id="value2">0</span> cm
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
                     <div class="sort_red05_row flex">

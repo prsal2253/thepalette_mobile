@@ -251,10 +251,10 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 #filter {width:100%}
 .flex {  display: flex;}
 .filter { width: 100%; height: 100%; flex-direction: column; flex-direction: space-between;}
-.filter_inner { height: 100vh; width: 100vw;  flex-direction: column; justify-content: center; align-items: center;  background-color: #000;overflow: hidden; position: absolute; margin-top: 50px;z-index: 10;opacity: 0;}
-.filter_color { height: 30%;}
-.filter_item { height: 40%; width: 80%; justify-content: space-between;  align-items: center;}
-.filter_sbar { height: 40%;  width: 80%;}
+.filter_inner { height: 0vh; width: 100vw;  flex-direction: column; justify-content: center; align-items: center;  background-color: #000;overflow: hidden; position: absolute; margin-top: 50px;z-index: 10;opacity: 0;    position: absolute;left: 0;}
+.filter_color { height: 15%;}
+.filter_item {width: 80%; justify-content: space-between;  align-items: center;flex-direction: column;padding-top: 5%;}
+.filter_sbar { height: 40%;  width: 80%;flex-direction: column;}
 .filter_color {  align-items: center; justify-content: center;}
 .filter_color_box {  width: 30px;  height: 30px;  border:3px solid #000; border-radius: 50%;  margin: 60px auto 15px auto;transition: all .5s;}
 .filter_color_box:hover{cursor: pointer;border:3px solid #fff; }
@@ -262,10 +262,10 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 .filter_color1 { background-color: #662424;}
 .filter_color2 { background-color: #ad776c;}
 .filter_color3 { background-color: #a4594a;}
-.filter_item li { margin: 50px 10px 0 0;  padding: 10px 30px;  border-radius: 20px;  border: 1px solid #000;}
+.filter_item li { margin: 50px 10px 0 0;  padding: 10px 20px 30px 20px;  border-radius: 20px;  border: 1px solid #000;}
 .filter_item p{ color: rgb(240, 240, 240); letter-spacing: 0.3em;  text-align: center;  font-weight: 400;  line-height: 25px;  font-size: 15px;  margin-top: 10px;}
 .filter_item li:hover { border-radius: 20px; border: 1px solid #999;  cursor: pointer;}
-.filter_item figure{  width: 80px;  height: 80px;  margin-top: 10px;}
+.filter_item figure{  width: 60px;  height: 60px;  margin-top: 10px;}
 .filter_item01 figure{ background: url(../images/icon/filter_chair.svg) no-repeat center center;  background-size: cover;}
 .filter_item02 figure{  background: url(../images/icon/filter_table.svg) no-repeat center center;  background-size: cover;}
 .filter_item03 figure{  background: url(../images/icon/filter_sofa.svg) no-repeat center center;  background-size: cover;}
@@ -274,14 +274,15 @@ input[type="text"].footer_bottom_right_txtmail {  width: 75%;  height: 40px;  bo
 .filter_item06 figure{  background: url(../images/icon/filter_deco.svg) no-repeat center center;  background-size: cover;}
 .item_choose{ border: 1px solid rgb(240, 240, 240);z-index: 99;}
 .toggle_color{border: 3px solid #fff;border-radius: 50%;cursor: pointer;z-index: 99;}
-.filter_sbar {  width: 100%;  justify-content: center;  align-items: center;  padding-top: 20px;}
+.filter_sbar {  width: 100%;  justify-content: center;  align-items: center;flex-direction: column;}
 .filter_sbar1,
-.filter_sbar2 {width: 25%;}
-.filter_sbar1 {margin-right: 80px;}
+.filter_sbar2 {width: 80%;}
+.filter_sbar2{margin-top: 8%;}
 .slider {-webkit-appearance: none;  width: 100%;  height: 3px;  border-radius: 5px;  background: #888;  outline: none;  opacity: 0.7;  -webkit-transition: .2s;  transition: opacity .2s;}
 .slider::-webkit-slider-thumb {  -webkit-appearance: none;  appearance: none;  width: 16px;  height: 16px;  border-radius: 50%;  background: #fff;  cursor: pointer;}
 .sbar1_txt{  padding:20px 0 0 0;  text-align: center;  color: #fff;}
-.filter_open { display: block;opacity: 1;}
+.filter_item_in2{margin-top: -6%;}
+.filter_open {opacity: 1;height: 100vh;}
 
 /* alertdiv */
 #alertdiv{position: fixed;overflow: hidden;padding: 30px 50px;top: 50%;left: 50%;text-align: center;line-height: 30px;background-color: rgba(247, 247, 247, .95);color: #444; transform: translate(-50%, -50%);box-shadow: 3px 4px 11px 0px rgba(78, 78, 78, 0.27);font-size: 15px;}
