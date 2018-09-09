@@ -74,7 +74,6 @@
 
 /* part5 */
 .sort_blue05{
-    /*width: 70%;*/
     flex-direction: column;
     justify-content: space-between;
     margin-top: 80px;
@@ -247,7 +246,7 @@ line-height: 40px;
         height: 70vh;
         background: url(../images/H-blue-chair-11-side.png) no-repeat center center;
         background-size: 92%;
-        margin: -80% 0 0 -32%;
+        margin: -62% 0 0 -32%;
     }
     .sort_blue02_intro_txt{
         width: 80%;

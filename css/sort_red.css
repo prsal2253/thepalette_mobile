@@ -73,8 +73,7 @@
 }
 
 /* part5 */
-.sort_red05{ 
-    /*width: 70%;*/
+.sort_red05{
     flex-direction: column;
     justify-content: space-between;
 }
