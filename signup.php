@@ -39,8 +39,8 @@ $pageName = 'register';
         <div class="index_conten">
             <div class="item_02">
 <!--     註冊成功與否訊息           -->
-                <div id="info" class="alert" role="alert" style="display: none">
-                </div>
+<!--                <div id="info" class="alert" role="alert" style="display: none">-->
+<!--                </div>-->
 <!--                -->
                 <form name="form1" method="post" action="" onsubmit="return checkForm()">
                     <!-- 會員名稱 -->
@@ -272,9 +272,11 @@ $pageName = 'register';
                 if(data.success){
                 //    是ture代表註冊成功  else就是註冊失敗秀按鈕出來
 
+                    alert('註冊成功');
                     setTimeout(function(){
                         location.href = 'signup_03.php';
-                    }, 1000);
+                    },1000);
+
 
                 } else {
 
@@ -282,10 +284,11 @@ $pageName = 'register';
                 }
 
                 if(data.info){
-                    var info = $('#info');
-                    info.text(data.info.msg);
-                    //api裡面的info文字訊息
-                    info.show();
+                    alert('註冊失敗請再次確認輸入資料');
+                    // var info = $('#info');
+                    // info.text(data.info.msg);
+                    // //api裡面的info文字訊息
+                    // info.show();
 
                     // info.attr('class', 'alert alert-'+data.info.type);
                     // 上面是更改bs4外觀樣式樣式

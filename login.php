@@ -59,6 +59,7 @@ if(isset($_POST['email']) and isset($_POST['password'])) {
             <?php if(isset($msg_type) and $msg_type=='success' and isset($_SESSION['come_from'])): ?>
 <!--           如果沒有設定$msg_type變數就代表還沒登入-->
                 <script>
+                    alert('登入成功，一秒後跳轉頁面');
                     setTimeout(function(){
                         location.href = '<?= $_SESSION['come_from'] ?>';
                     }, 1000);
