@@ -37,7 +37,7 @@ span.description_mark_b{color: #000;}
 .sale_icon span{font-size: 10px;-webkit-transform: scale(0.83);}
 
 /* item01 左側選單 */
-.item_01{width: 100%;padding:0;display: inline-flex;position: fixed;bottom: 0;left:0;background:rgba(0, 0, 0, .95);height: 40px;padding: 10px;z-index: 10;box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);}
+.item_01{width: 100%;padding:0;display: inline-flex;position: fixed;bottom: 0;left:0;background:rgba(0, 0, 0, .95);height: 40px;padding: 10px;z-index: 2;box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);}
 .item_01 .item_01menu{width:calc(100%/3);text-align: center;border-left: 1px dotted #999;}
 .item_01 .item_01menu:first-child{border-left: 0px dotted #fff;}
 

@@ -35,7 +35,7 @@ a:active 	{ font:15px/18px 'Roboto', 'Noto Sans TC'; color:#000; text-decoration
 .index_top{  width:100%; height:auto; position:relative;z-index: 10;}
 .index_main{width:100%; margin:0 auto;min-height:100vh;padding: 100px 0 0 0}
 .index_main section{padding: 50px 15px;}
-.index_footer{width:100%; clear:both; margin:0 auto;background: #000;height: 300px; z-index: 99;position: absolute;}
+.index_footer{width:100%; clear:both; margin:0 auto;background: #000;height: 300px; z-index: 3;position: absolute;}
 
 /* 內容架構，不做滿版時限制寬度為1200 */
 .index_conten{width:100%; max-width:1200px;margin:0 auto;}
