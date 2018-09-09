@@ -111,9 +111,11 @@ foreach($my_orders as $v){
                                 <div class="description_80">
                                     <div class="sale_icon"><span>活動商品</span></div>
                                     <a href="product_detail.php?id=<?= $dt['product_sid'] ?>" class="product_name"><?= $dt['product_name'] ?></a>
+                                    <div class="flex">
                                     <P><?= $c_ar[$dt['product_color_sid']] ?></P>
                                     <P class="product-item-qty"  data-qty="<?= $dt['quantity'] ?>"> x <?= $dt['quantity'] ?> </P>
-                                    <P class="product-item-price" data-price=" <?= $dt['price'] ?>"><?= $dt['price'] ?></P>
+                                    <P class="product-item-price" data-price=" <?= $dt['price'] ?>">$<?= $dt['price'] ?></P>
+                                    </div>
                                 </div>
                         </div>
                         <?php

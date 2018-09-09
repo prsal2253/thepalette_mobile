@@ -202,9 +202,11 @@ if (isset($_GET['id'])) {
                                 <div class="description_80">
                                     <div class="sale_icon"><span>活動商品</span></div>
                                     <a href="#" class="product_name"><?= $dt['product_name'] ?></a>
+                                    <div class="flex">
                                     <p><?= $c_ar[$dt['product_color_sid']] ?></p>
                                     <p class="product-item-qty"   data-qty="<?= $dt['quantity'] ?>"> x <?= $dt['quantity'] ?></div></p>
-                                    <p class="product-item-price"  data-price=" <?= $dt['price'] ?>"><?= $dt['price'] ?></p>
+                                    <p class="product-item-price"  data-price=" <?= $dt['price'] ?>">＄<?= $dt['price'] ?></p>
+                                    </div>
                                 </div>
                     <?php
                     endif;

@@ -37,8 +37,7 @@ require __DIR__. '/__db_connect.php';
                     <p>請查看信箱完成認證，開始享受購物的樂趣！</p>
                 </div>
                 <div class="item_02_conten">
-                    <input type="submit" value="註冊會員">
-                    <a href="header.php">跑回首頁</a>
+                    <a href="index.php">開始購物</a>
                 </div>
                 <?php endif; ?>
                 <?php unset($_SESSION['sighup_email'],$_SESSION['sighup_name']);?>
