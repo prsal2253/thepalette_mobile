@@ -90,6 +90,6 @@ if (isset($_SESSION['user']) and !empty($_SESSION['cart'])) {
         // 錯誤處理
     };
 
-
+unset($_SESSION['cart']);
 
 ?>

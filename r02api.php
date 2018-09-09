@@ -3,9 +3,9 @@ require __DIR__ . '/__db_connect.php';
 
 
 
-    $od_sql = "INSERT INTO `reservation_sid`(
-                     `member_sid`, `order_sid`, `reservation_date`, `reservation_time`
-                    ) VALUES (?,?,?,?)";
+$od_sql = "INSERT INTO `reservation_sid`(
+                     `member_sid`, `order_sid`, `reservation_date`, `reservation_time`, `date`
+                    ) VALUES (?,?,?,?,NOW())";
     $od_stmt = $mysqli->prepare($od_sql);
 
 
@@ -16,8 +16,9 @@ require __DIR__ . '/__db_connect.php';
         $_POST['reservation_time']
     );
 
-    unset($_SESSION['orders_sid']);
+//    unset($_SESSION['orders_sid']);
     $od_stmt->execute();
+
 
 
 ?>

@@ -42,8 +42,9 @@ require __DIR__ . '/__db_connect.php';
                         </div>
                         <div class="order_listbox order_listbox_tatle item_conten_button">
                                 <div>
-                                    <input type="button" onclick="location.href='order_list.php'" class="palette_btn_back" value="訂單詳細">
-                                    <input type="submit" onclick="location.href='order_list.php'" value="繼續購物">
+                                    <input type="button" onclick="location.href='order_detail.php?id=<?= $_SESSION["orders_sid"] ?>'" class="palette_btn_back" value="訂單詳細">
+                                    <input type="submit" onclick="location.href='index.php'" value="繼續購物">
+                                    <?php unset($_SESSION['orders_sid']); ?>
                                 </div>
                          </div>
                     </div>

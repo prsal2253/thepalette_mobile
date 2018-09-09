@@ -87,7 +87,11 @@ if (isset($_GET['id'])) {
                     <?php foreach ($my_orders as $order): ?>
                     <div class="item_02_conten">
                             <div class="order_listbox">
+                                <?php if (!empty($rt1['date'])): ?>
+                                    <p class=""><span class="description_mark">訂單狀態：預約完成</span></p>
+                                <?php else: ?>
                                     <p class=""><span class="description_mark">訂單狀態：款項確認</span></p>
+                                <?php endif; ?>
                                 </div>
                                 <div class="order_listbox">
                                     <p class="">訂購日期：<?= $order['order_date'] ?></p>
@@ -100,7 +104,7 @@ if (isset($_GET['id'])) {
                                    <ul class="order_timebar">
                                        <li></li>
                                        <li class="this_time"></li>
-                                       <?php if (!empty($r['reservation_date'])): ?>
+                                       <?php if (!empty($rt1['date'])): ?>
                                            <li class="this_time"></li>
                                        <?php else: ?>
                                            <li class=""></li>
@@ -110,7 +114,7 @@ if (isset($_GET['id'])) {
                                    <div class="order_timebar_detail">
                                        <p>訂單成立<br/><span><?= $order['order_date'] ?></span></p>
                                        <p>匯款確認<br/><span><?= $order['order_date'] ?></span></p>
-                                       <p>預約確認<br/><span><?= $rt1['reservation_date'] ?></span></p>
+                                       <p>預約確認<br/><span><?= $rt1['date']  ?></span></p>
                                        <p>訂單完成<br/><span></span></p>
                                    </div>
                                
