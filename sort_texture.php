@@ -109,19 +109,26 @@ require __DIR__ . '/__db_connect.php';
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=126" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product01 sort_texture03_rec_product_img transition">
-                                        <img src="images/H-pink-cabinet-01.png" alt="">
+                                        <img src="images/H-other-table-05.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_l swiper-slide">
+
+                                <a href="product_detail.php?id=127" class="sort_texture03_rec_product_l swiper-slide">
                                     <div class="sort_texture03_rec_product02 sort_texture03_rec_product_img transition">
-                                         <img src="images/H-texture-chair-06.png" alt="">
+                                         <img src="images/H-other-table-06.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=121" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product03 sort_texture03_rec_product_img transition">
-                                         <img src="images/H-texture-chair-01.png" alt="">
+                                         <img src="images/H-other-chair-03.png" alt="">
+                                    </div>
+                                </a>
+
+                                <a href="product_detail.php?id=144" class="sort_texture03_rec_product_s swiper-slide">
+                                    <div class="sort_texture03_rec_product03 sort_texture03_rec_product_img transition">
+                                         <img src="images/H-other-chair-07.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -146,9 +153,9 @@ require __DIR__ . '/__db_connect.php';
                     
                     <div class="sort_texture03_intro_txt">
                         <h2 class="sort_texture03_h2">Metal</h2>
-                        <h3>熱情的橘 沉穩的橘 撩人的橘</h3>
+                        <h3>金屬，創造新穎的時髦風格</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>光澤質感的元素再度成為新一季的流行趨勢．在空間中加入銅色、銀色甚至一點金色吧。他們與室內設計中的基本色調相當搭配，能呈現煥然一新的面貌．</p>
                     </div>
                 </div>
 
@@ -162,24 +169,24 @@ require __DIR__ . '/__db_connect.php';
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=133" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product01 sort_texture03_rec_product_img transition">
-                                        <img src="images/H-orange-chair-04.png" alt="">
+                                        <img src="images/H-candle-03.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=142" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product02 sort_texture03_rec_product_img transition">
-                                         <img src="images/H-pink-chair-05.png" alt="">
+                                         <img src="images/H-light-07.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=150" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product03 sort_texture03_rec_product_img transition">
-                                         <img src="images/H-light-09.png" alt="">
+                                         <img src="images/H-other-table-03.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=151" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product03 sort_texture03_rec_product_img transition">
-                                         <img src="images/H-orange-chair-07.png" alt="">
+                                         <img src="images/H-light-08.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -205,9 +212,9 @@ require __DIR__ . '/__db_connect.php';
                     
                     <div class="sort_texture04_intro_txt">
                         <h2 class="sort_texture04_h2">Material</h2>
-                        <h3>熱情的粉 沉穩的粉 撩人的粉</h3>
+                        <h3>建立自己理想中的質感生活。</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>在每季樂此不疲地添置家飾品外，我們亦逐漸愛上搜集質感家品；閒時愉快地佈置家居，看著它一點一點的變成理想中的模樣，不知不覺就成為了極為療癒的紓壓途徑。</p>
                     </div>
                 </div>
 
@@ -221,22 +228,22 @@ require __DIR__ . '/__db_connect.php';
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=31" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product01 sort_texture03_rec_product_img transition">
                                         <img src="images/H-pink-chair-09.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=31" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product03 sort_texture03_rec_product_img transition">
                                          <img src="images/H-pink-chair-03.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=31" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product03 sort_texture03_rec_product_img transition">
                                          <img src="images/H-pink-cabinet-02.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_texture03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=31" class="sort_texture03_rec_product_s swiper-slide">
                                     <div class="sort_texture03_rec_product03 sort_texture03_rec_product_img transition">
                                          <img src="images/H-pink-chair-07.png" alt="">
                                     </div>
