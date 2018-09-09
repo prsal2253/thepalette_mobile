@@ -80,12 +80,12 @@ if(isset($_POST['name']) and isset($_POST['email']) and isset($_POST['password']
         if($af===1) {
 //            如果有新增成功$af為1 前端的info會做更改
             $result['success'] = true;
-            $result['info'] = [
+//            $result['info'] = [
 //                'type' => 'success',
-                'msg' => '註冊完成'
+//                'msg' => '註冊完成'
                 // msg這裡是文字內容
 //                key =>value
-            ];
+//            ];
             $_SESSION['sighup_name'] = $_POST['name'];
             $_SESSION['sighup_email'] = $_POST['email'];
 

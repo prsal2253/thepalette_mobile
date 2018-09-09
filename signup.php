@@ -284,7 +284,7 @@ $pageName = 'register';
                 }
 
                 if(data.info){
-                    alert('註冊失敗請再次確認輸入資料');
+                    alert('註冊失敗，Email已被使用');
                     // var info = $('#info');
                     // info.text(data.info.msg);
                     // //api裡面的info文字訊息
