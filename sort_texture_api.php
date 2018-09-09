@@ -91,49 +91,41 @@ $product_rs = $mysqli->query($product_sql);
 
 ?>
 
-    <div class="sort_red05_row flex">
-        <?php while ($r = $product_rs->fetch_assoc()): ?>
-            <div name="product" class="sort_red05_box_s product_sid_data" data-sid="<?= $r['product_sid'] ?>">
+<div class="sort_red05_row flex">
+    <?php while ($r = $product_rs->fetch_assoc()): ?>
+        <a href="product_detail.php?id=<?= $r['product_sid'] ?>"
+           name="product" class="sort_red05_box_s product_sid_data product-item" data-sid="<?= $r['product_sid'] ?>">
+            <figure>
                 <img src="images/<?= $r['img'] ?>.png" alt="<?= $r['product_name'] ?>">
-                <div class="product_mask transition">
-                    <div class="product_favorate transition"></div>
-                    <div class="product_name_nd_btn">
-                        <div class="product_name">
-                            <h3 class="product_name_h3"><a href="#"
-                                                           id="product_name"><?= $r['product_name'] ?></a></h3>
-                        </div>
-                        <div class="product_btn"></div>
-                        <a href="product_quicklook.php?id=<?= $r['product_sid'] ?>"
-                           class="palette_btn quick_look_palette_btn quick"
-                           data-fancybox
-                           data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "1000px","height" :
-                                   "70vh"}}}'>快速查看</a>
-                    </div>
-                </div>
+            </figure>
+            <div class="sort_red05_pname">
+                <h2><?= $r['product_name'] ?></h2>
+                <h3>$<?= $r['price'] ?></h3>
             </div>
-        <?php endwhile; ?>
-    </div>
-    <!-- 頁碼 -->
-    <div class="sort_red05_page">
-        <ul>
-            <a <?= $page == 1 ? "style='display: none'" : "href='?page=" . $page2 . "&" . http_build_query($build_query) .'#my_red'. "'" ?>>
-                <!--                           接字串的方式 $page2是變數 前後加上. -->
-                <li class="page_prev">
-                    <figure></figure>
-                    PREV
-                </li>
-            </a>
-            <?php for ($i = 1; $i <= $total_pages; $i++): ?>
-                <li class="page p<?= $i == $page ? 'active' : '' ?>">
-                    <a <?= $page == $i ? '' : "href='?page=" . $i . "&" . http_build_query($build_query) . '#my_red'."'" ?>>
-                        <p><?= $i ?></p></a>
-                </li>
-            <?php endfor ?>
-            <a <?= $page == $total_pages ? "style='display: none'" : "href='?page=" . $page1 . "&" . http_build_query($build_query) .'#my_red'. "'" ?>>
-                <li class="page_next">
-                    <figure></figure>
-                    NEXT
-                </li>
-            </a>
-        </ul>
-    </div>
+        </a>
+    <?php endwhile; ?>
+</div>
+<!-- 頁碼 -->
+<div class="sort_red05_page">
+    <ul>
+        <a <?= $page == 1 ? "style='display: none'" : "href='?page=" . $page2 . "&" . http_build_query($build_query) ."#my_red". "'" ?>>
+            <!--                           接字串的方式 $page2是變數 前後加上. -->
+            <li class="page_prev">
+                <figure></figure>
+                PREV
+            </li>
+        </a>
+        <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+            <li class="page p<?= $i == $page ? 'active' : '' ?>">
+                <a <?= $page == $i ? '' : "href='?page=" . $i . "&" . http_build_query($build_query) . '#my_red'."'" ?>>
+                    <p><?= $i ?></p></a>
+            </li>
+        <?php endfor ?>
+        <a <?= $page == $total_pages ? "style='display: none'" : "href='?page=" . $page1 . "&" . http_build_query($build_query) .'#my_red'. "'" ?>>
+            <li class="page_next">
+                <figure></figure>
+                NEXT
+            </li>
+        </a>
+    </ul>
+</div>

@@ -1,8 +1,8 @@
 <?php
 
-//require __DIR__ . '/__db_connect.php';
+
 $mysqli = new mysqli('localhost', 'orange', '0987', 'the palette');
-//$mysqli = new mysqli('localhost', 'sandra', 'ssan+1222', 'the palette');
+
 $mysqli->query("SET NAMES utf8");
 $pageName = 'product_list_red';
 
@@ -86,6 +86,17 @@ $product_sql = sprintf("SELECT * FROM  `products_list` $where LIMIT %s, %s ", ($
 //這裡會拿到sql的字串
 $product_rs = $mysqli->query($product_sql);
 
+if (isset ($_SESSION['user'])) {
+    $data_fa = [];
+    $sql_love = 'SELECT * FROM `members_favourite` WHERE `member_sid`=' . $_SESSION['user']['member_sid'];
+    $rs_love = $mysqli->query($sql_love);
+
+    while ($r_love = $rs_love->fetch_assoc()) {
+        //    這裡迴圈先一一取出$rs_love陣列
+        $data_fa[$r_love['product_sid']] = $r_love['product_sid'];
+//以'product_sid'自己當作key對應'product_sid'的val
+    }
+}
 ?>
 <?php include 'page_item/head.php';?>
     <style>
@@ -349,7 +360,122 @@ $product_rs = $mysqli->query($product_sql);
             </div>
         </section>
     </div>
+    <!-- 商品列表 -->
+    <div class="index_main">
+        <div id="sort_red05">
+            <section>
+                <div class="index_conten_flex sort_red05">
+                    <div id="filter" class="transition">
 
+                        <div class="index_conten_flex filter">
+                            <ul class="filter_sec1">
+                                <li class="filter_filter transition">
+                                    <figure></figure>商品篩選</li>
+                                <select class="filter_byprice transition price_select" data-price="">
+                                    <div class="s_product_detail_01_num palette_select">
+                                        <option value="1">依價錢由低到高</option>
+                                        <option value="2">依價錢由高到低</option>
+                                        <option value="3">依上架順序由舊到新</option>
+                                        <option value="4">依上架順序由新到舊</option>
+                                    </div>
+                                </select>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 篩選展開 -->
+                    <div class="index_conten_flex filter_inner transition total_change">
+                        <div class="filter_color flex">
+                            <div class="filter_color_in" style="margin-left: 0">
+                                <div class="filter_color7 filter_color_box" data-color="black"></div>
+                                <p>黑色</p>
+                            </div>
+                            <div class="filter_color_in">
+                                <div class="filter_color8 filter_color_box" data-color="white"></div>
+                                <p>白色</p>
+                            </div>
+                            <div class="filter_color_in">
+                                <div class="filter_color9 filter_color_box" data-color="gray"></div>
+                                <p>灰色</p>
+                            </div>
+                        </div>
+                        <ul class="filter_item flex">
+                            <div class="filter_item_in1 flex">
+                                <li class="filter_item01 filter_items transition" data-category="chair">
+                                    <figure></figure>
+                                    <p>椅子</p>
+                                </li>
+                                <li class="filter_item02 filter_items transition" data-category="table">
+                                    <figure></figure>
+                                    <p>桌子</p>
+                                </li>
+                                <li class="filter_item03 filter_items transition" data-category="sofa">
+                                    <figure></figure>
+                                    <p>沙發</p>
+                                </li>
+                            </div>
+                            <div class="filter_item_in2 flex">
+                                <li class="filter_item04 filter_items transition" data-category="box">
+                                    <figure></figure>
+                                    <p>櫃子</p>
+                                </li>
+                                <li class="filter_item05 filter_items transition" data-category="light">
+                                    <figure></figure>
+                                    <p>燈飾</p>
+                                </li>
+                                <li class="filter_item06 filter_items transition" data-category="other" style="margin: 50px 0 0 0">
+                                    <figure></figure>
+                                    <p>其他</p>
+                                </li>
+                            </div>
+                        </ul>
+                        <div class="filter_sbar flex">
+                            <div class="filter_sbar1">
+                                <!--寬度-->
+                                <input id="range" type="range" min="50" max="150" value="150" step="50" oninput="change()"
+                                       onchange="change()" class="slider slider_hight">
+                                <div class="sbar1_txt">
+                                    家具高度 :
+                                    <span id="value">150</span> cm
+                                </div>
+                            </div>
+                            <div class="filter_sbar2">
+                                <!--高度-->
+                                <input id="range2" type="range" min="50" max="150" value="0" step="50" oninput="change2()"
+                                       onchange="change2()" class="slider slider_long">
+                                <div class="sbar1_txt">
+                                    家具寬度 :
+                                    <span id="value2">150</span> cm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="addall">
+                        <div class="sort_red05_row flex">
+                            <?php while ($r = $product_rs->fetch_assoc()): ?>
+                                <a href="product_detail.php?id=<?= $r['product_sid'] ?>"
+                                   name="product" class="sort_red05_box_s product_sid_data product-item" data-sid="<?= $r['product_sid'] ?>">
+                                    <figure>
+                                        <img src="images/<?= $r['img'] ?>.png" alt="<?= $r['product_name'] ?>">
+                                    </figure>
+                                    <div class="sort_red05_pname">
+                                        <h2><?= $r['product_name'] ?></h2>
+                                        <h3>$<?= $r['price'] ?></h3>
+                                    </div>
+                                </a>
+                            <?php endwhile; ?>
+                        </div>
+                    </div>
+
+                    <!-- 頁碼 -->
+                    <div class="sort_red05_page">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="js/swiper/js/swiper.min.js"></script>
@@ -379,14 +505,11 @@ $product_rs = $mysqli->query($product_sql);
 
         // 選擇篩選顏色
         $(".filter_color_box").click(function () {
-            $(this).css({
-                "border": "3px solid #fff",
-                "border-radius": "50%"
-            }).children().css("color", "rgb(240,240,240)");
+            $(this).toggleClass("toggle_color");
         });
 
         $(".filter_filter").click(function () {
-            $(".filter_inner").toggleClass("show_filter_inner");
+            $(".filter_inner").toggleClass("filter_open");
         })
         //選選擇篩選品項
         $(".filter_items").click(function () {
@@ -440,10 +563,175 @@ $product_rs = $mysqli->query($product_sql);
                 delay: 2000,
                 disableOnInteraction: false,
             },
+        })
+
+
+
+        // var total_change = $('.total_change');
+
+        var color_change = $('.total_change .filter_color_box');
+        var items_change = $('.total_change .filter_items');
+        var setHigh_change = $('.slider_hight');
+        var setLong_change = $('.slider_long')
+
+        var D_color = {black: 0, white: 0, gray: 0},
+            D_items  = {},
+            D_setHigh = 0,
+            D_setLong = 0,
+            D_price = 0;
+
+        color_change.click(function () {
+            color_change.each(function () {
+                if ($(this).hasClass('toggle_color')) {
+                    D_color[ $(this).attr('data-color') ] = 1;
+                } else {
+                    D_color[ $(this).attr('data-color') ] = 0;
+                }
+            });
+            console.log(D_color);
+            get_select_data();
+
+        });
+        items_change.click(function () {
+            items_change.each(function () {
+                if ($(this).hasClass('item_choose')) {
+                    D_items[ $(this).attr('data-category') ] = 1;
+                } else {
+                    D_items[ $(this).attr('data-category') ] = 0;
+                }
+            });
+            console.log(D_items);
+            get_select_data();
         });
 
-    </script>
+        var high_select = 0;
+        setHigh_change.change(function () {
+            high_select = setHigh_change.val();
+            D_setHigh = high_select;
+            console.log(high_select);
+            get_select_data();
+        });
+        var long_select = 0;
+        setLong_change.change(function () {
+            long_select = setLong_change.val();
+            D_setLong = long_select;
+            console.log(long_select);
+            get_select_data();
+        });
 
+
+        var price_select = 0;
+        $('.price_select').change(function () {
+            price_select = $('.price_select').val();
+            D_price = price_select;
+            console.log(price_select);
+            get_select_data();
+
+        });
+
+
+
+        var color_map = {
+            black: 7,
+            white: 8,
+            gray: 9
+        };
+
+        var item_map = {
+            chair: 1,
+            table: 2,
+            sofa: 3,
+            box: 4,
+            light: 5,
+            other: 6
+        };
+
+
+
+        function get_select_data(){
+            var color = [],
+                items = [],
+                s, i;
+            for(s in D_color){
+                if(D_color[s]==1) {
+                    color.push(color_map[s]);
+                }
+            }
+            for(s in D_items){
+                if(D_items[s]==1) {
+                    items.push(item_map[s]);
+                }
+            }
+            $.get('sort_black_api.php', {
+                color: color.join(','),
+                items: items.join(','),
+                high:D_setHigh,
+                long:D_setLong,
+                price:D_price
+            }, function (data) {
+                $('.addall').html(data);
+            });
+        }
+
+        get_select_data()
+
+        // 最愛
+
+        $(".product_favorate").click(function (data) {
+            <?php if (isset ($_SESSION['user'])):?>
+            if ($(this).hasClass('icon_love_click')) {
+                $(this).removeClass("icon_love_click");
+                var product = $(this).closest('.product-item');
+                var sid = product.attr('data-sid');
+                $.get('unlove_api.php', {sid: sid}, function (data) {
+                    //發送給誰，送的參數(字串KEY:值)，callback函式(json格式)
+                    if (data.success) {
+                        console.log(data);
+                        alert('商品已從追蹤清單刪除！');
+
+
+                    } else {
+                        alert('你登入了嗎？');
+                        $(this).removeClass("icon_love_click");
+
+                    }
+                    ;
+
+                }, 'json');
+            } else {
+                $(this).addClass("icon_love_click");
+                var product = $(this).closest('.product-item');
+                var sid = product.attr('data-sid');
+                $.get('love_api.php', {sid: sid}, function (data) {
+                    //發送給誰，送的參數(字串KEY:值)，callback函式(json格式)
+
+                    if (data.success) {
+                        console.log(data);
+                        alert('商品已加入追蹤清單！');
+
+                    } else {
+
+                        alert('你登入了嗎？');
+                        $(this).addClass("icon_love_click");
+
+                    }
+                    ;
+
+                }, 'json');
+            }
+            <?php else:?>
+            alert('你登入了嗎？');
+            <?php endif;?>
+        });
+
+
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>
