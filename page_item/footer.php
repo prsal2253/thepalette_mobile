@@ -87,3 +87,9 @@
         </section>
         <!-- </div> -->
     </div>
+
+    <script>
+        $(".footer_bottom ul").click(function () {
+            $(this).children().toggleClass("show_content");
+        })
+    </script>
