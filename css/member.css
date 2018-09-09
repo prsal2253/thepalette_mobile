@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-#member .index_main{background: url(../images/background/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: cover;min-height:100vh;}
-#login .index_main{background: url(../images/background/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size:cover;min-height:100vh;}
-#signup .index_main{background: url(../images/background/avenue-boiserie.jpg) bottom center repeat-y;background-attachment: fixed;background-size: cover;min-height:100vh;}
+#member .index_main{background: url(../images/background/avenue-boiserie.jpg) top -66px left repeat-y;background-attachment: fixed;background-size: auto 105%;min-height:100vh;}
+#login .index_main{background: url(../images/background/avenue-boiserie.jpg) top -66px left repeat-y;background-attachment: fixed;background-size:auto 105%;min-height:100vh;}
+#signup .index_main{background: url(../images/background/avenue-boiserie.jpg) top -66px left  repeat-y;background-attachment: fixed;background-size: auto 105%;min-height:100vh;}
 #shoppingcar .index_main{background: url(../images/background/S-wall-03-1920px.jpg) bottom center repeat-y;background-attachment: fixed;background-size: cover;min-height:100vh;}
 #reservation .index_main{background: url(../images/background/S-wall-03-1920px.jpg) bottom center repeat-y;background-attachment: fixed;background-size: cover;min-height:100vh;}
 
@@ -137,7 +137,7 @@ a.description_q:hover{background: #ccc;}
 .item_10 .index_conten_l a{font-size: 13px;line-height: 40px;color: #888;    padding: 0 20px 0 0;}
 .item_10 .index_conten_r p{width: 88%;color: #888;font-size: 13px;line-height: 21px;margin: 0 auto 0;text-align: justify;}
 .item_10 .member_conten input[type="text"]{margin-bottom: 20px;}
-.item_10 .member_conten input[type="text"].member_name{margin:0 0 20px; width: 70%;}
+.item_10 .member_conten input[type="password"].member_name{margin:0 0 20px; width: 70%;}
 .item_10 .member_conten input[type="submit"],.item_10 a.palette_btn {width: 100%;margin-bottom: 10px;}
 .item_10 .member_conten .fb_bnt{background: #3845a7;margin-bottom: 0;}
 @media screen and (max-width: 750px) {
