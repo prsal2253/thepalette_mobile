@@ -1,3 +1,6 @@
+<?php
+require __DIR__ . '/__db_connect.php';
+?>
 <?php include 'page_item/head.php';?>
     <style>
             html,
@@ -228,7 +231,7 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="product_detail.php?id=123" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=68" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product01 sort_earth03_rec_product_img transition">
                                         <img src="images/H-yellow-chair-06.png" alt="">
                                     </div>
@@ -240,13 +243,13 @@
                                     </div>
                                 </a>
 
-                                <a href="product_detail.php?id=123" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=69" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                         <img src="images/H-yellow-chair-07.png" alt="">
                                     </div>
                                 </a>
 
-                                <a href="product_detail.php?id=123" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=70" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                         <img src="images/H-yellow-table-01.png" alt="">
                                     </div>

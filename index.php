@@ -1,3 +1,6 @@
+<?php
+require __DIR__ . '/__db_connect.php';
+?>
 <?php include 'page_item/head.php';?>
 <link rel="stylesheet" href="css/pageitem.css?123">
 <link rel="stylesheet" href="css/product_detail.css?123">
@@ -655,6 +658,9 @@
                 </div>
             </section>
         </div>
+
+    <!-- 聯絡我們 -->
+    
 <!-- footer -->
 <div class="index_footer">
 <?php include 'page_item/footer.php';?>
