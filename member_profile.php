@@ -31,9 +31,9 @@ if (empty($_SESSION['user'])) {
     <div class="index_conten_flex">
         <div class="index_conten_l">
             <div class="item_01">
-                <div class="item_01menu"><a href="#"><h6 class="transition">訂單列表</h6><span class="transition">Order List</span></a></div>
+                <div class="item_01menu"><a href="order_list.php"><h6 class="transition">訂單列表</h6><span class="transition">Order List</span></a></div>
                 <div class="item_01menu item_01menu_in"><h6 class="transition">會員資料</h6><span class="transition">member profile</span></div>
-                <div class="item_01menu"><a href="#"><h6 class="transition">追蹤清單</h6><span class="transition">my favourite</span></a></div>
+                <div class="item_01menu"><a href="favorite_list.php"><h6 class="transition">追蹤清單</h6><span class="transition">my favourite</span></a></div>
             </div>
         </div>
         <div class="index_conten_r">
