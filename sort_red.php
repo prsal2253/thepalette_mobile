@@ -95,7 +95,7 @@
                         <h2 class="sort_red02_h2">Red</h2>
                         <h3>熱情的紅 沉穩的紅 撩人的紅</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>一個安靜的配色方案需要為眼睛提供一個顯著的休息的地方。選擇大膽的紅色傢俱，它為房間提供了視線的集中點和青春氣息。 </p>
                     </div>
                 </div>
 
@@ -109,19 +109,24 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=23" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product01 sort_red03_rec_product_img transition">
                                         <img src="images/H-pink-cabinet-01.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_l swiper-slide">
+                                <a href="product_detail.php?id=6" class="sort_red03_rec_product_l swiper-slide">
                                     <div class="sort_red03_rec_product02 sort_red03_rec_product_img transition">
                                          <img src="images/H-red-chair-06.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=1" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
                                          <img src="images/H-red-chair-01.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="product_detail.php?id=3" class="sort_red03_rec_product_s swiper-slide">
+                                    <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
+                                         <img src="images/H-red-chair-03.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -148,7 +153,7 @@
                         <h2 class="sort_red03_h2">Orange</h2>
                         <h3>熱情的橘 沉穩的橘 撩人的橘</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>橘色的色彩家族龐大，可以隨意搭配許多色彩。在色彩的能量上，橘色代表歡樂的、童玩式的熱鬧意象；表現內在愉悅的感覺、說不出道理的開心。</p>
                     </div>
                 </div>
 
@@ -162,22 +167,22 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=16" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product01 sort_red03_rec_product_img transition">
                                         <img src="images/H-orange-chair-04.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=29" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product02 sort_red03_rec_product_img transition">
                                          <img src="images/H-pink-chair-05.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=152" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
                                          <img src="images/H-light-09.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=19" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
                                          <img src="images/H-orange-chair-07.png" alt="">
                                     </div>
@@ -207,7 +212,7 @@
                         <h2 class="sort_red04_h2">Pink</h2>
                         <h3>熱情的粉 沉穩的粉 撩人的粉</h3>
 
-                        <p>改編自 Jenny Han 的同名青春愛情小說，內容講述亞裔女孩 Lara Jean 這名默默無名的女孩，有著溫柔、聰穎的性格，卻十分內向。她的心思細膩，對那些「愛過的男孩們」卻不曾訴說心中的情感，這是她永藏心底的秘密。</p>
+                        <p>粉色系很適合運用在家中，讓每天回家看到舒壓的粉色，都可以得到徹底的放鬆。不用讓整個家變成童話世界，只需要加入粉色系的點綴，粉色能引入柔和光線，讓居家空間的感覺明亮，乾淨，溫馨和樂趣。</p>
                     </div>
                 </div>
 
@@ -221,22 +226,22 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=33" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product01 sort_red03_rec_product_img transition">
                                         <img src="images/H-pink-chair-09.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=27" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
                                          <img src="images/H-pink-chair-03.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=24" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
                                          <img src="images/H-pink-cabinet-02.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_red03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=31" class="sort_red03_rec_product_s swiper-slide">
                                     <div class="sort_red03_rec_product03 sort_red03_rec_product_img transition">
                                          <img src="images/H-pink-chair-07.png" alt="">
                                     </div>

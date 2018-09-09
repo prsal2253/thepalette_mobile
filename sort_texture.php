@@ -20,7 +20,6 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-    
             .swiper-slide {
                 
                 text-align: center;

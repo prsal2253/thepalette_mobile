@@ -250,7 +250,7 @@ line-height: 40px;
     }
     .sort_red02_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_red02_intro_txt > h3{
         color: #a4594a;
@@ -385,7 +385,7 @@ line-height: 40px;
     }
     .sort_red03_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_red03_intro_txt > h3{
         color: #973612;
@@ -464,7 +464,7 @@ line-height: 40px;
     }
     .sort_red04_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_red04_intro_txt > h3{
         color: #a4594a;
