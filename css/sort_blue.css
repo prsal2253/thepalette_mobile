@@ -247,11 +247,11 @@ line-height: 40px;
         height: 70vh;
         background: url(../images/H-blue-chair-11-side.png) no-repeat center center;
         background-size: 92%;
-        margin: -62% 0 0 -14%;
+        margin: -80% 0 0 -32%;
     }
     .sort_blue02_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_blue02_intro_txt > h3{
         color: #9cbac4;
@@ -381,11 +381,11 @@ line-height: 40px;
         height: 70vh;
         background: url(../images/H-green-chair-01.png) no-repeat center center;
         background-size: 80%;
-        margin: -62% 0 0 -16%;
+        margin: -83% 0 0 -28%;
     }
     .sort_blue03_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_blue03_intro_txt > h3{
         color: #95C1B3;
@@ -459,11 +459,11 @@ line-height: 40px;
         height: 70vh;
         background: url(../images/H-yellow-chair-07.png) no-repeat center center;
         background-size: 80%;
-        margin: -75% 0 0 -22%;
+        margin: -86% -13% 0 -59%;
     }
     .sort_blue04_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_blue04_intro_txt > h3{
         color: #736358;

@@ -250,7 +250,7 @@ line-height: 40px;
     }
     .sort_black02_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_black02_intro_txt > h3{
         color: #fff;
@@ -383,7 +383,7 @@ line-height: 40px;
     }
     .sort_black03_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_black03_intro_txt > h3{
         color: rgb(100,100,100);
@@ -457,11 +457,11 @@ line-height: 40px;
         height: 70vh;
         background: url(../images/H-grey-chair-07.png) no-repeat center center;
         background-size: 80%;
-        margin: -93% 0 0 -14%;
+        margin: -91% -3% 0 -29%;
     }
     .sort_black04_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_black04_intro_txt > h3{
         color: #444;

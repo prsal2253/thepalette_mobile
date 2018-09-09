@@ -199,22 +199,26 @@ $product_rs = $mysqli->query($product_sql);
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=136" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product01 sort_black03_rec_product_img transition">
                                         <img src="images/H-light-01.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_l swiper-slide">
+
+                                <a href="product_detail.php?id=71" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product02 sort_black03_rec_product_img transition">
                                          <img src="images/H-black-chair-02.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=135" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
                                          <img src="images/H-cup-03.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=75" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
                                          <img src="images/H-black-table-03.png" alt="">
                                     </div>
@@ -257,22 +261,22 @@ $product_rs = $mysqli->query($product_sql);
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                            <a href="product_detail.php?id=103" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product01 sort_black03_rec_product_img transition">
                                         <img src="images/H-white-chair-04.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=129" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product02 sort_black03_rec_product_img transition">
                                          <img src="images/H-bottle-01.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=137" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
                                          <img src="images/H-light-02.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=134" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
                                          <img src="images/H-carpet01.png" alt="">
                                     </div>
@@ -316,22 +320,22 @@ $product_rs = $mysqli->query($product_sql);
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                            <a href="product_detail.php?id=140" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product01 sort_black03_rec_product_img transition">
                                         <img src="images/H-light-05.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=90" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
                                          <img src="images/H-grey-chair-10.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=132" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
                                          <img src="images/H-candle-02.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_black03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=96" class="sort_black03_rec_product_s swiper-slide">
                                     <div class="sort_black03_rec_product03 sort_black03_rec_product_img transition">
                                          <img src="images/H-grey-table-05.png" alt="">
                                     </div>
