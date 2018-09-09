@@ -2,6 +2,18 @@
 
 require __DIR__. '/__db_connect.php';
 
+if(isset($_SESSION['sighup_email']) and isset($_SESSION['sighup_name'])){
+    $sql = sprintf("SELECT `member_sid`, `name`, `gender`, `email`, `password`, `mobile`, `address_city`, `address_side`, `address_post`, `address`, `year`, `month`, `day`, `activated`  FROM `members` WHERE `email`='%s'",
+//    比對帳號密碼一不一樣用SELECT，WHERE這欄要等於什麼，用這兩個條件下去找
+        $mysqli->escape_string($_SESSION['sighup_email']));
+//        這邊escape_string是代表填表單去掉$_POST['email']單引號，只是準備字串，password不用escape_string如果編碼過前面就要加sha1
+//    上面是一串的呦!要注意包再一起
+
+    $result =$mysqli->query($sql);
+    $_SESSION['user'] = $result->fetch_assoc();
+}
+
+
 
 ?>
 <?php include 'page_item/head.php';?>
