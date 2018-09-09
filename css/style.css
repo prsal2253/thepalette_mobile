@@ -122,7 +122,7 @@ header.fixed_bg{background-color: rgba(0,0,0,1);}
 .menu_active:hover .bar{width: 100%;}
 .menu_active:hover .bar:nth-child(3){width: 100%;}
 
-.palette_menu_open{position: absolute;right:-100vw;top:0px;background:#000;display:inline-flex;width:100vw;opacity: 0;height: 100vh;z-index: 10;justify-content: center;align-items: center;overflow: hidden;}
+.palette_menu_open{position: absolute;right:-100vw;top:0px;background:#000;display:inline-flex;width:100vw;opacity: 0;height: 100vh;z-index: 998;justify-content: center;align-items: center;overflow: hidden;}
 .menu_active .palette_menu_open{opacity: 1;right:-0px}
 .palette_menu_open .palette_menubox{width:90vw;height: 90vh;display: inline-flex;}
 .palette_menu_open .palette_menubox .menubox_l{width: 100%;height:calc(100% - 60px);overflow-y: auto;display: inline-flex;align-content: center;flex-wrap: wrap;}
