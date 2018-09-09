@@ -655,6 +655,9 @@
                 </div>
             </section>
         </div>
+
+    <!-- 聯絡我們 -->
+    
 <!-- footer -->
 <div class="index_footer">
 <?php include 'page_item/footer.php';?>

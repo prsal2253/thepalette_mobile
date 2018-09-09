@@ -266,7 +266,7 @@ $pageName = 'register';
 
         if(isPass) {
 
-            $.post('signup_api.php', $(document.form1).serialize(), function(data){
+            $.post('signup_02_api.php', $(document.form1).serialize(), function(data){
                 //這裏不是用表單方式發送出去而是用ajax方式發送出去，所以資料JQ物件包起來
                 // $(document.form1).serialize()表單序列化
                 if(data.success){
