@@ -19,7 +19,31 @@ if (!empty($_SESSION['cart'])) {
     }
 }
 ?>
-    <header id="navbar"><h1><a class="palette_logo" href="index.php">The Palette</a></h1>
+<style>
+.palette_logo {
+    display: block;
+    margin: 0 0 0 0px;
+    position: absolute;
+    top: 0px;
+    height:100%;
+    padding:20px;
+}
+.palette_logo img{
+    width: 75px;
+}
+h1.palette_logo .logo_top{display:block;}
+h1.palette_logo .logo_small{display:none;}
+h1.palette_logo .logo_small img{width:92px;}
+
+.palette_menubox .palette_logo {top:0;left:0;}
+header.fixed_bg h1.palette_logo {padding:10px;}
+header.fixed_bg h1.palette_logo .logo_top{display:none;}
+header.fixed_bg h1.palette_logo .logo_small{display:block;}
+</style>
+    <header id="navbar"><h1 class="palette_logo">
+        <a  class="logo_top" href="index.php"><img src="../thepalette/images/logo/logo_white-01.svg" alt=""></a>
+        <a  class="logo_small" href="index.php"><img src="../thepalette/images/logo/logo_white-06.svg" alt=""></a>
+    </h1>
         <nav>
             <!-- cart icon -->
             <div class="car_icon transition"><a href="shoppingcar_01.php"><span class="qty-badge"></span></a></div>
@@ -34,6 +58,7 @@ if (!empty($_SESSION['cart'])) {
                     <!-- menu -->
                     <div class="palette_menu_open transition">
                         <div class="palette_menubox">
+                            <div class="palette_logo"><a href="index.php"><img src="../thepalette/images/logo/logo_white-03.svg" alt=""></a></div>
                             <div class="menubox_l" id="sbt_m_manuhover1">
                                     <h3 class="menutile">
                                         <a class="menutile_link" href="about.html">關於我們<span>About Us</span></a>
