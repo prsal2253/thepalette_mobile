@@ -30,7 +30,7 @@
 .sort_texture01_top>figure{
     width: 100%;
     height: 80%;
-    background: url(../images/banner/41652279495_20e9f2bcc7_k.jpg) no-repeat 63% bottom;
+    background: url(../images/article/41831742764_29cab9c5a9_k.jpg) no-repeat 63% bottom;
     background-size: cover;
     position: relative;
 }
@@ -245,14 +245,13 @@ line-height: 40px;
     }
     .sort_texture02_intro_img{
         height: 70vh;
-        background: url(../images/H-texture-chair-07.png) no-repeat center center;
-        background-size: contain;
-        margin: -60% 0 0 -30%;
-
+        background: url(../images/H-other-chair-09.png) no-repeat center center;
+        background-size: 64%;
+        margin: -58% 0 0 -65%;
     }
     .sort_texture02_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_texture02_intro_txt > h3{
         color: #a4594a;
@@ -381,13 +380,13 @@ line-height: 40px;
     }
     .sort_texture03_intro_img{
         height: 70vh;
-        background: url(../images/H-texture-chair-05.png) no-repeat center center;
-        background-size: cover;
+        background: url(../images/H-other-chair-05-r.png) no-repeat center center;
+        background-size: 80%;
         margin: -70% 0 0 -30%;
     }
     .sort_texture03_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_texture03_intro_txt > h3{
         color: #973612;
@@ -461,12 +460,12 @@ line-height: 40px;
     .sort_texture04_intro_img{
         height: 70vh;
         background: url(../images/H-pink-chair-09.png) no-repeat center center;
-        background-size: cover;
+        background-size: 80%;
         margin: -75% 0 0 -30%;
     }
     .sort_texture04_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_texture04_intro_txt > h3{
         color: #a4594a;
