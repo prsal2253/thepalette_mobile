@@ -80,7 +80,7 @@ if (isset($_GET['id'])) {
                     <!-- top -->
                     <div class="item_02_conten">
                         <a class="palette_btn palette_btn_back" onclick="history.back()">回訂單列表頁</a>
-                        <p class="description">總共<span class="description_mark" id="total_howmuch"></span>筆訂單</p>
+                        <!-- <p class="description">總共<span class="description_mark" id="total_howmuch"></span>筆訂單</p> -->
                     </div>
 
                     <!-- 狀態列 -->
@@ -124,7 +124,7 @@ if (isset($_GET['id'])) {
                         <div class="item_02_conten">
                             <div class="order_listbox">付款方式 : <span class="description_mark_b">信用卡一次付清(已付款)</span><a data-fancybox data-type="ajax" data-src="https://codepen.io/fancyapps/pen/oBgoqB.html" href="javascript:;" class="description_q transition" class="description_q transition" href="#" title="付款說明">?</a></div>
                             <div class="order_listbox">
-                                <div>
+                                <div style="width: 100%;">
                                     <p>付款時間：<?= $order['order_date'] ?></p>
                                     <p>發卡銀行：國泰世華銀行</p>
                                     <p>卡片種類：VISA</p>
@@ -141,7 +141,7 @@ if (isset($_GET['id'])) {
                                             href="javascript:;" class="description_q transition"
                                             class="description_q transition" href="#">?</a></div>
                                 <div class="order_listbox">
-                                    <div>
+                                    <div style="width: 100%;">
                                         <p>預約日期：<?= $rt1['reservation_date'] ?></p>
                                         <p>配送時間：<?= $rt1['reservation_time'] ?></p>
                                     </div>
@@ -179,14 +179,14 @@ if (isset($_GET['id'])) {
                         </div>
 
                         <!-- 一件商品 -->
-                        <div class="order_listbox">
+                        <!-- <div class="order_listbox">
                                 <figure class="description_20"><a href="#"><img src="images/S-yellow-chair01-500px.png" alt="商品名稱"></a></figure>
                                 <div class="description_80">
                                     <div class="sale_icon"><span>活動商品</span></div>
                                     <a href="#" class="product_name">Anastasia Tufted Chair - Christopher Knight HomeAnastasia Tufted Chair - Christopher Knight Home</a>
                                 <p>黃色x 1 $120000</p>
                                 </div>
-                        </div>
+                        </div> -->
 
                         <!-- 一件商品 -->
                     <?php
@@ -204,8 +204,8 @@ if (isset($_GET['id'])) {
                                     <a href="#" class="product_name"><?= $dt['product_name'] ?></a>
                                     <div class="flex">
                                     <p><?= $c_ar[$dt['product_color_sid']] ?></p>
-                                    <p class="product-item-qty"   data-qty="<?= $dt['quantity'] ?>"> x <?= $dt['quantity'] ?></div></p>
-                                    <p class="product-item-price"  data-price=" <?= $dt['price'] ?>">＄<?= $dt['price'] ?></p>
+                                    <p class="product-item-qty"   data-qty="<?= $dt['quantity'] ?>"> x <?= $dt['quantity'] ?></p>
+                                    <p class="product-item-price"  data-price=" <?= $dt['price'] ?>">＄<?= $dt['price'] ?></p></div>
                                     </div>
                                 </div>
                     <?php
@@ -218,7 +218,31 @@ if (isset($_GET['id'])) {
 
 
 
-                        <div class="order_listbox order_listbox_tatle">
+                        <div class="order_listbox order_listbox_tatle" style="
+    padding-bottom: 0;">
+                            <div>
+                                <p>總共 <span class="description_mark" id="total-qty"></span> 件商品</p>
+                            </div>
+                        </div>
+ 
+                                <?php if ($order['transport'] == 2): ?>
+                                <div class="order_listbox order_listbox_tatle">
+                                <div>
+                                    <p>運費</p>
+                                    <h3 class="product_price" id="transport_pay" data-price="800"><span>＄</span>800
+                                    </h3>
+                                    <p>，訂單金額</p>
+                                    <h3 class="product_price" id="total-price"></h3>
+                                 </div></div>
+                                <?php else: ?>
+                                <div class="order_listbox order_listbox_tatle">
+                                <div>
+                                    <p>訂單金額</p>
+                                    <h3 class="product_price" id="total-price"></h3>
+                                </div></div>
+                                <?php endif ?>
+
+                        <!-- <div class="order_listbox order_listbox_tatle">
                             <div>
                                 <p>總共 <span class="description_mark" id="total-qty"></span> 件商品</p>
                                 <?php if ($order['transport'] == 2): ?>
@@ -232,8 +256,8 @@ if (isset($_GET['id'])) {
                                     <h3 class="product_price" id="total-price"></h3>
                                 <?php endif ?>
                             </div>
-                        </div>
-                        
+                        </div> -->
+    
                     </div>
                 <?php endforeach; ?>
             </div>

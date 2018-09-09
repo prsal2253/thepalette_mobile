@@ -88,7 +88,7 @@ if (empty($_SESSION['user'])) {
                     <!-- 聯絡地址 -->
                     <div class="item_02_conten">
                             <div class="item_02_conten_l">聯絡地址</div>
-                            <div class="item_02_conten_r">
+                            <div class="palette_select item_02_conten_r">
                                 <!--------------    地址選項S ------------->
                                 <div id="twzipcode">
                                     <div name="address_city"

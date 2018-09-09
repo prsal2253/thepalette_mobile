@@ -87,12 +87,14 @@ if (isset($_SESSION['user']) and !empty($_SESSION['cart'])) {
                                     <img src="images/<?= $r['img'] ?>.png" alt="<?= $r['product_name'] ?>"></a></figure>
                             <div class="description_70">
                                 <div class="sale_icon"><span>活動商品</span></div>
-                                <a href="product_detail.php?id=<?= $r['product_sid'] ?>" class="product_name"><?= $r['product_name'] ?></a>
+                                <a href="product_detail.php?id=<?= $r['product_sid'] ?>" class="product_name" style="line-height:20px;"><?= $r['product_name'] ?></a>
+                                <div class="flex" style="">
                                 <p><?= $c_ar[$r['product_color_sid']] ?></p>
+                                <p style="margin:0 5px;"> x </p>
                                 <p class="product-item-qty"
                                    data-qty="<?= $r['qty'] ?>"><?= $r['qty'] ?></p>
                                 <p class="product-item-price"
-                                   data-price="<?= $r['price'] ?>"><?= $r['price'] ?></p>
+                                   data-price="<?= $r['price'] ?>" style="margin:0 5px;">$<?= $r['price'] ?></p></div>
                                 </div>
                             </div>
                             <div class="description_10"></div>

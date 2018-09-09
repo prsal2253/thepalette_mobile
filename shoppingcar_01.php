@@ -51,6 +51,9 @@ if (!empty($_SESSION['cart'])) {
     }
 }
 ?>
+<style>
+    .sale_icon{margin-bottom: 5px;}
+</style>
 <?php include 'page_item/head.php';?>
 </head>
 <body id="shoppingcar" class="shoppingcar_01">
@@ -91,27 +94,27 @@ if (!empty($_SESSION['cart'])) {
                     ?>
                         <!-- 一件商品 -->
                         <div class="order_listbox product-item" data-sid="<?= $k ?>">
-                                <figure class="description_20"><a href="product_detail.php?id=<?= $r['product_sid'] ?>"><img src="images/<?= $r['img'] ?>.png" alt="<?= $r['product_name'] ?>"></a></figure>
+                                <figure class="description_25"><a href="product_detail.php?id=<?= $r['product_sid'] ?>"><img src="images/<?= $r['img'] ?>.png" alt="<?= $r['product_name'] ?>"></a></figure>
                                 <div class="description_60">
-                                    <div class="sale_icon" style="margin-bottom: 5px;"><span>活動商品</span></div>
+                                    <div class="sale_icon" style=""><span>活動商品</span></div>
                                     <a href="product_detail.php?id=<?= $r['product_sid'] ?>" class="product_name" style="line-height:20px;"><?= $r['product_name'] ?></a>
-                                    <div class="flex" style="line-height:20px;">
+                                    <div class="flex" style="line-height:20px; margin: 5px auto;">
                                     <p><?= $c_ar[$r['product_color_sid']] ?></p>
-                                    <p> x </p>
-                                    <p class="product-item-qty" data-qty="<?= $r['qty'] ?>">
-                                        <select class="qty-sel">
+                                    <p style="margin:0 5px;"> x </p>
+                                    <p class="palette_select product-item-qty" data-qty="<?= $r['qty'] ?>" style="width: 30%;">
+                                        <select class="qty-sel" style="height:20px;line-height:20px;">
                                             <?php for ($i = 1; $i <= 5; $i++): ?>
                                                 <option value="<?= $i ?>"><?= $i ?></option>
                                             <?php endfor; ?>
                                         </select> </p>
-                                   
+                                    </div>
+                                                                       
                                     <div class="product-item-price" data-price="<?= $r['price'] ?>">
                                         $<?= $r['price'] ?>
                                     </div>
-                                   
-                                    </div>
                                 </div>
-                                <div class="description_20">
+                                <div class="description_5"></div>
+                                <div class="description_10">
                                 <div class="icon_love
                                     <?= $data_fa[$r['product_sid']] == $r['product_sid']  ? 'icon_love_click' : '' ?>" style="    margin-bottom: 10px;">
                                         </div>
@@ -169,7 +172,7 @@ if (!empty($_SESSION['cart'])) {
                 <?php else: ?>
                     <!-- 購物車沒有商品時的狀態 -->
                     <div class="order_listbox carts_none">
-                        <h3>購物車目前沒有任何商品</h3>
+                        <h3 style="width: 100%;     color: #000; text-align: center;">購物車目前沒有任何商品</h3>
                     </div>
                 <?php endif ?>
 
