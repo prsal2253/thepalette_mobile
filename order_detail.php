@@ -79,7 +79,7 @@ if (isset($_GET['id'])) {
                 <div class="item_02 item_03 item_04">
                     <!-- top -->
                     <div class="item_02_conten">
-                        <a class="palette_btn palette_btn_back" onclick="history.back()">回訂單列表頁</a>
+                        <a class="palette_btn palette_btn_back" href="order_list.php">回訂單列表頁</a>
                         <!-- <p class="description">總共<span class="description_mark" id="total_howmuch"></span>筆訂單</p> -->
                     </div>
 

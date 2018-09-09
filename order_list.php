@@ -91,7 +91,11 @@ foreach($my_orders as $v){
                     ?>
                     <div class="item_02_conten howmuch">
                         <div class="order_listbox">
-                            <p class=""><span class="description_mark">訂單狀態：款項確認</span></p>
+                            <?php if (!empty($order['reservation_sid'])): ?>
+                                <p class=""><span class="description_mark">訂單狀態：預約完成</span></p>
+                            <?php else: ?>
+                                <p class=""><span class="description_mark">訂單狀態：款項確認</span></p>
+                            <?php endif; ?>
                         </div>
                         <div class="order_listbox">
                             <p class="">訂購日期：<?= $order['order_date'] ?></p>
