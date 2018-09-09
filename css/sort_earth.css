@@ -250,7 +250,7 @@ line-height: 40px;
     }
     .sort_earth02_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_earth02_intro_txt > h3{
         color: #A18970;
@@ -379,11 +379,11 @@ line-height: 40px;
         height: 70vh;
         background: url(../images/H-orange-chair-02.png) no-repeat center center;
         background-size: 80%;
-        margin: -82% 0 0 -15%;
+        margin: -70% 0 0 -33%;
     }
     .sort_earth03_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_earth03_intro_txt > h3{
         color: #973612;
@@ -457,11 +457,11 @@ line-height: 40px;
         height: 70vh;
         background: url(../images/H-yellow-chair-07.png) no-repeat center center;
         background-size: 80%;
-        margin: -75% 0 0 -22%;
+        margin: -73% -13% 0 -59%;
     }
     .sort_earth04_intro_txt{
         width: 80%;
-        margin: 0 auto;
+        margin: -50px auto 0 auto;
     }
     .sort_earth04_intro_txt > h3{
         color: #726257;

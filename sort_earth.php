@@ -109,24 +109,27 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=116" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product01 sort_earth03_rec_product_img transition">
-                                        <img src="images//H-brown-chair-08.png" alt="">
+                                        <img src="images/H-brown-chair-08.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_l swiper-slide">
+
+                                <a href="product_detail.php?id=118" class="sort_earth03_rec_product_l swiper-slide">
                                     <div class="sort_earth03_rec_product02 sort_earth03_rec_product_img transition">
                                          <img src="images/H-brown-table-01.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=109" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                          <img src="images/H-brown-chair-01.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=122" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-brown-table-02.png" alt="">
+                                         <img src="images/H-other-chair-10.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -166,22 +169,22 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=14" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product01 sort_earth03_rec_product_img transition">
                                         <img src="images/H-orange-chair-02.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=4" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product02 sort_earth03_rec_product_img transition">
-                                         <img src="images/H-orange-chair-10.png" alt="">
-                                    </div>
-                                </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
-                                    <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                          <img src="images/H-red-chair-04.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=108" class="sort_earth03_rec_product_s swiper-slide">
+                                    <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
+                                         <img src="images/H-bottle-03.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="product_detail.php?id=19" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                          <img src="images/H-orange-chair-07.png" alt="">
                                     </div>
@@ -225,22 +228,25 @@
                     <!-- Swiper -->
                     <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+                                <a href="product_detail.php?id=123" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product01 sort_earth03_rec_product_img transition">
                                         <img src="images/H-yellow-chair-06.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=123" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                         <img src="images/H-other-chair-11.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=123" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                         <img src="images/H-yellow-chair-07.png" alt="">
                                     </div>
                                 </a>
-                                <a href="/" class="sort_earth03_rec_product_s swiper-slide">
+
+                                <a href="product_detail.php?id=123" class="sort_earth03_rec_product_s swiper-slide">
                                     <div class="sort_earth03_rec_product03 sort_earth03_rec_product_img transition">
                                         <img src="images/H-yellow-table-01.png" alt="">
                                     </div>
