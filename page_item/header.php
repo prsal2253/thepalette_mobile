@@ -42,8 +42,8 @@ header.fixed_bg h1.palette_logo .logo_top{display:none;}
 header.fixed_bg h1.palette_logo .logo_small{display:block;}
 </style>
     <header id="navbar"><h1 class="palette_logo">
-        <a  class="logo_top" href="index.php"><img src="../thepalette/images/logo/logo_white-01.svg" alt=""></a>
-        <a  class="logo_small" href="index.php"><img src="../thepalette/images/logo/logo_white-06.svg" alt=""></a>
+        <a  class="logo_top" href="index.php"><img src="../thepalette_mobile/images/logo/logo_white-01.svg" alt=""></a>
+        <a  class="logo_small" href="index.php"><img src="../thepalette_mobile/images/logo/logo_white-06.svg" alt=""></a>
     </h1>
         <nav>
             <!-- cart icon -->
@@ -59,7 +59,7 @@ header.fixed_bg h1.palette_logo .logo_small{display:block;}
                     <!-- menu -->
                     <div class="palette_menu_open transition">
                         <div class="palette_menubox">
-                            <div class="palette_logo"><a href="index.php"><img src="../thepalette/images/logo/logo_white-03.svg" alt=""></a></div>
+                            <div class="palette_logo"><a href="index.php"><img src="../thepalette_mobile/images/logo/logo_white-03.svg" alt=""></a></div>
                             <div class="menubox_l" id="sbt_m_manuhover1">
                                     <h3 class="menutile">
                                         <a class="menutile_link" href="about.html">關於我們<span>About Us</span></a>
