@@ -213,6 +213,18 @@ header.fixed_bg h1.palette_logo .logo_small{display:block;}
 
 
 
+    (function () {
+        window.alert = function (text) {
+            //解析alert内容中的换行符
+            text = text.toString().replace(/\\/g, '\\').replace(/\n/g, '<br />').replace(/\r/g, '<br />');
+
+            // 自定义DIV弹窗
+            var alertdiv = '<div id="alertdiv">' + text + '<br /><input type="submit" name="button" id="button" value="確認" onclick="$(this).parent().remove();" /></div>';
+            $(document.body).append(alertdiv);
+            // 显示
+            $("#alertdiv").show();
+        };
+    })();
 
 
 
