@@ -148,6 +148,9 @@ if (isset ($_SESSION['user'])) {
             .swiper-pagination-clickable .swiper-pagination-bullet {
                 margin-right: 5px;
             }
+            .filter_color3 { background-color: #c55638;}
+            .filter_color6{ background-color: rgb(216, 157, 84);}
+            .filter_color10{background-color: rgb(95, 78, 66);}
         </style>
 </head>
 <!-- 頁面ID -->

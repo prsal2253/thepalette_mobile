@@ -147,6 +147,9 @@ if (isset ($_SESSION['user'])) {
             .swiper-pagination-clickable .swiper-pagination-bullet {
                 margin-right: 5px;
             }
+            .filter_color11{ background-color:#DEB887;}
+            .filter_color12{background-color:#F0F8FF;}
+            .filter_color13{background-color:#8FBC8F;}
         </style>
 </head>
 <!-- 頁面ID -->
