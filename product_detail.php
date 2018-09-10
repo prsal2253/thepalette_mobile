@@ -21,20 +21,7 @@ if(isset($_GET['id'])) {
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/product_detail.css">
-    <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
-
-
+<?php include 'page_item/head.php';?>
     <style>
         html,
         body {
@@ -139,8 +126,10 @@ if(isset($_GET['id'])) {
     }
     </style>
 </head>
-
 <body>
+<div class="index_top">
+    <?php include 'page_item/header.php';?> 
+</div>
     <div class="index_main">
         <!-- 麵包屑
         <section class="bread_crumbs bread_crumbs_b">
