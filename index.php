@@ -418,7 +418,7 @@ require __DIR__ . '/__db_connect.php';
                         <div class="top_banner_slider">
                             <ul>
                             <li class="prev_slide">
-                                    <div class="top_banner_image" style="background-image:url(images/article/27683649797_babbcb85cc_b.jpg);    background-size: auto 90vh;">
+                                    <div class="top_banner_image" style="background-image:url(images/banner/27683649797_babbcb85cc_b.jpg);    background-size: auto 90vh;">
                                     <div class="ps-content" style="background-color: #ad776c ">
                                             <h2>Red<br/>Orange<br/>Pink</h2>
                                             <p>Better Living Throug Color</p>
@@ -438,7 +438,7 @@ require __DIR__ . '/__db_connect.php';
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="top_banner_image" style="background-image:url(images/article/40745881410_ab590a502f_k.jpg)">
+                                    <div class="top_banner_image" style="background-image:url(images/banner/40745881410_ab590a502f_k.jpg)">
                                         <div class="ps-content" style="background-color:rgb(64, 112, 96)">
                                                 <h2>Black<br/>White<br/>Gray</h2>
                                                 <p>Better Living Throug Color</p>
@@ -632,7 +632,7 @@ require __DIR__ . '/__db_connect.php';
                         <div class="swiper-container3">
                             <div class="swiper-wrapper">
                                 <div class="product_detail_05_article_01 swiper-slide" style="height: 100%;">
-                                    <img src="images/about/41652216105_5fd10f9ef8_k.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+                                    <img src="images/banner/41652216105_5fd10f9ef8_k.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
                                     <a href="/" class="product_detail_05_article_box transition">
                                         <div class="article_txt flex">
                                             <div class="article_date">
@@ -642,7 +642,7 @@ require __DIR__ . '/__db_connect.php';
                                     </a>
                                 </div>
                                 <div class="product_detail_05_article_02 swiper-slide" style="height: 100%;">
-                                    <img src="images/about/27855179879_0f2427679a_b.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+                                    <img src="images/banner/27855179879_0f2427679a_b.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover;">
                                     <a href="/" class="product_detail_05_article_box transition">
                                         <div class="article_txt flex">
                                             <div class="article_date">
