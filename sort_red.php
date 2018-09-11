@@ -15,6 +15,7 @@ $page = isset($_GET['page']) ? intval($_GET['page']) : 1; //用戶要看第幾�
 $page1 = $page + 1;
 $page2 = $page - 1;
 
+$build_query = $_GET;
 
 $color = isset($_GET['color']) ? $_GET['color'] : 0; //顏色
 $items = isset($_GET['items']) ? $_GET['items'] : 0;//種類
@@ -642,7 +643,8 @@ if (isset ($_SESSION['user'])) {
 
 
 
-        function get_select_data(){
+        function get_select_data(p){
+            var page = p || 1;
             var color = [],
                 items = [],
                 s, i;
@@ -657,6 +659,7 @@ if (isset ($_SESSION['user'])) {
                 }
             }
             $.get('sort_red_api.php', {
+                page: page,
                 color: color.join(','),
                 items: items.join(','),
                 high:D_setHigh,

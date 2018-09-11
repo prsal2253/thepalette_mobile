@@ -651,7 +651,8 @@ if (isset ($_SESSION['user'])) {
 
 
 
-        function get_select_data(){
+        function get_select_data(p){
+            var page = p || 1;
             var color = [],
                 items = [],
                 s, i;
@@ -666,6 +667,7 @@ if (isset ($_SESSION['user'])) {
                 }
             }
             $.get('sort_earth_api.php', {
+                page: page,
                 color: color.join(','),
                 items: items.join(','),
                 high:D_setHigh,
