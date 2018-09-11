@@ -125,6 +125,17 @@ if(isset($_GET['id'])) {
     .color13{
         background-color: #80346D;
     }
+    /* 版頭針對白背景做更動 */
+    h1.palette_logo img {display: none;}
+    h1.palette_logo .logo_top {
+    display: block;width: 70px;height: 100px;background: url(images/logo/logo-01.svg) top left no-repeat;background-size: 100% auto;}
+    .car_icon {background: url(images/icon/shopping-cart_b.svg) center no-repeat;    background-size: 88% auto;}
+    .menu_icon .bar {background-color: #000;}
+    .palette_menu.menu_active .menu_icon .bar {background-color: #fff;}
+
+    .fixed_bg .palette_logo img {display: block;}
+    .fixed_bg  .car_icon {background: url(images/icon/shopping-cart.svg) center no-repeat;    background-size: 88% auto;}
+    .fixed_bg  .menu_icon .bar {background-color: #fff;}
     </style>
 </head>
 <body>
