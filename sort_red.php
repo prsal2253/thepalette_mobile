@@ -492,7 +492,7 @@ if (isset ($_SESSION['user'])) {
                 $(".changebg").css('background-color', '#662424');
             } else if (scrolltop > 1500 && scrolltop < 2600) {
                 $('.changebg').css('background-color', '#c2704f');
-            } else if (scrolltop > 2800) {
+            } else if (scrolltop > 2600) {
                 $('.changebg').css('background-color', '#df9282');
             }
         });
