@@ -315,8 +315,12 @@ require __DIR__ . '/__db_connect.php';
         @media screen and (max-width:800px){
             
             .index02_video{
-                height: 100vh;
+                height: 210px;
                 margin-top: 0;
+            }
+            .index02_video video{
+                width: 100%;
+                height: auto;
             }
             .index02_video_txt{
                 padding: 85vh 0 0 10vw;
@@ -452,11 +456,8 @@ require __DIR__ . '/__db_connect.php';
     <section id="index02"> 
         <div class="index_conten index02">
             <div class="index02_video">
-                <div class="index02_video_txt">
-                    <figure></figure>
-                    <h2>Better Living<br>Through Color</h2>
-                </div>
-                <video src="" loop ></video>
+            <video src="images/background/796977780.mp4" autoplay></video>
+             <video src="" loop></video>
             </div>
             <div class="index02_about">
                 <div class="index02_about_topic">
@@ -670,6 +671,11 @@ require __DIR__ . '/__db_connect.php';
 
 <script type="text/javascript" src="js/slider.js"></script>
 <script type="text/javascript">
+        // 影片loop
+        $('video').on('ended', function () {
+            this.load();
+            this.play();
+        });
 (function () {
 
 function init(item) {
