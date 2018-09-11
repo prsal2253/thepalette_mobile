@@ -465,8 +465,7 @@ if (isset ($_SESSION['user'])) {
                         </div>
                     </div>
 
-                    <!-- 頁碼 -->
-                    <div class="sort_red05_page">
+                    
 
                     </div>
                 </div>
@@ -474,6 +473,7 @@ if (isset ($_SESSION['user'])) {
         </div>
     </div>
 
+<?php include 'page_item/footer.php';?>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
